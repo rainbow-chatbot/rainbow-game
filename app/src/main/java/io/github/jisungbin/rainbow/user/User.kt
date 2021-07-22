@@ -9,10 +9,11 @@
 
 package io.github.jisungbin.rainbow.user
 
-import io.github.jisungbin.acnhapi.models.items.ItemWrapper
+import io.github.jisungbin.acnhapi.models.items.common.Item
 import io.github.jisungbin.acnhapi.models.villager.Villager
 
 data class User(
     var villager: Villager,
-    var items: List<ItemWrapper>
+    var items: List<Item>,
+    var money: Int,
 )

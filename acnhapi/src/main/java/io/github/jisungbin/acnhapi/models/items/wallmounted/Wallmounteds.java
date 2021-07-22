@@ -2,6 +2,15 @@
  * © 2021 지성빈. all rights reserved.
  * This project license is under the MIT.
  *
+ * [Wallmounteds.java] created by Ji Sungbin on 21. 7. 23. 오전 4:14.
+ *
+ * Please see project github repository license.
+ */
+
+/*
+ * © 2021 지성빈. all rights reserved.
+ * This project license is under the MIT.
+ *
  * [Wallmounteds.java] created by Ji Sungbin on 21. 7. 23. 오전 3:09.
  *
  * Please see project github repository license.
@@ -15,981 +24,982 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import io.github.jisungbin.acnhapi.models.items.ItemWrapper;
+import io.github.jisungbin.acnhapi.models.items.common.Item;
+import io.github.jisungbin.acnhapi.models.items.common.ItemWrapper;
 
 public class Wallmounteds implements ItemWrapper {
     @SerializedName("set_of_stockings")
-    private List<Wallmounted> setOfStockings;
+    private List<Item> setOfStockings;
 
     @SerializedName("gold_HHA_plaque")
-    private List<Wallmounted> goldHHAPlaque;
+    private List<Item> goldHHAPlaque;
 
     @SerializedName("pennant")
-    private List<Wallmounted> pennant;
+    private List<Item> pennant;
 
     @SerializedName("Mom's_embroidery")
-    private List<Wallmounted> momSEmbroidery;
+    private List<Item> momSEmbroidery;
 
     @SerializedName("ornament_mobile")
-    private List<Wallmounted> ornamentMobile;
+    private List<Item> ornamentMobile;
 
     @SerializedName("pretty_tulip_wreath")
-    private List<Wallmounted> prettyTulipWreath;
+    private List<Item> prettyTulipWreath;
 
     @SerializedName("Bunny_Day_wall_clock")
-    private List<Wallmounted> bunnyDayWallClock;
+    private List<Item> bunnyDayWallClock;
 
     @SerializedName("wall-mounted_candle")
-    private List<Wallmounted> wallMountedCandle;
+    private List<Item> wallMountedCandle;
 
     @SerializedName("fishing-boat_flag")
-    private List<Wallmounted> fishingBoatFlag;
+    private List<Item> fishingBoatFlag;
 
     @SerializedName("imperial_decorative_shelves")
-    private List<Wallmounted> imperialDecorativeShelves;
+    private List<Item> imperialDecorativeShelves;
 
     @SerializedName("timber_doorplate")
-    private List<Wallmounted> timberDoorplate;
+    private List<Item> timberDoorplate;
 
     @SerializedName("fossil_doorplate")
-    private List<Wallmounted> fossilDoorplate;
+    private List<Item> fossilDoorplate;
 
     @SerializedName("golden_gears")
-    private List<Wallmounted> goldenGears;
+    private List<Item> goldenGears;
 
     @SerializedName("gears")
-    private List<Wallmounted> gears;
+    private List<Item> gears;
 
     @SerializedName("hyacinth_wreath")
-    private List<Wallmounted> hyacinthWreath;
+    private List<Item> hyacinthWreath;
 
     @SerializedName("party_garland")
-    private List<Wallmounted> partyGarland;
+    private List<Item> partyGarland;
 
     @SerializedName("Bunny_Day_wreath")
-    private List<Wallmounted> bunnyDayWreath;
+    private List<Item> bunnyDayWreath;
 
     @SerializedName("fish_doorplate")
-    private List<Wallmounted> fishDoorplate;
+    private List<Item> fishDoorplate;
 
     @SerializedName("fancy_mum_wreath")
-    private List<Wallmounted> fancyMumWreath;
+    private List<Item> fancyMumWreath;
 
     @SerializedName("skull_doorplate")
-    private List<Wallmounted> skullDoorplate;
+    private List<Item> skullDoorplate;
 
     @SerializedName("deer_decoration")
-    private List<Wallmounted> deerDecoration;
+    private List<Item> deerDecoration;
 
     @SerializedName("mushroom_wreath")
-    private List<Wallmounted> mushroomWreath;
+    private List<Item> mushroomWreath;
 
     @SerializedName("dark_tulip_wreath")
-    private List<Wallmounted> darkTulipWreath;
+    private List<Item> darkTulipWreath;
 
     @SerializedName("hanging_scroll")
-    private List<Wallmounted> hangingScroll;
+    private List<Item> hangingScroll;
 
     @SerializedName("heart_doorplate")
-    private List<Wallmounted> heartDoorplate;
+    private List<Item> heartDoorplate;
 
     @SerializedName("shower_set")
-    private List<Wallmounted> showerSet;
+    private List<Item> showerSet;
 
     @SerializedName("Mom's_art")
-    private List<Wallmounted> momSArt;
+    private List<Item> momSArt;
 
     @SerializedName("bathroom_towel_rack")
-    private List<Wallmounted> bathroomTowelRack;
+    private List<Item> bathroomTowelRack;
 
     @SerializedName("pot_rack")
-    private List<Wallmounted> potRack;
+    private List<Item> potRack;
 
     @SerializedName("cuckoo_clock")
-    private List<Wallmounted> cuckooClock;
+    private List<Item> cuckooClock;
 
     @SerializedName("fossil_plaque")
-    private List<Wallmounted> fossilPlaque;
+    private List<Item> fossilPlaque;
 
     @SerializedName("snazzy_pansy_wreath")
-    private List<Wallmounted> snazzyPansyWreath;
+    private List<Item> snazzyPansyWreath;
 
     @SerializedName("New_Year's_shimekazari")
-    private List<Wallmounted> newYearSShimekazari;
+    private List<Item> newYearSShimekazari;
 
     @SerializedName("shamrock_doorplate")
-    private List<Wallmounted> shamrockDoorplate;
+    private List<Item> shamrockDoorplate;
 
     @SerializedName("cute_wall-mounted_clock")
-    private List<Wallmounted> cuteWallMountedClock;
+    private List<Item> cuteWallMountedClock;
 
     @SerializedName("orange_wall-mounted_clock")
-    private List<Wallmounted> orangeWallMountedClock;
+    private List<Item> orangeWallMountedClock;
 
     @SerializedName("cherry_lamp")
-    private List<Wallmounted> cherryLamp;
+    private List<Item> cherryLamp;
 
     @SerializedName("gold_rose_wreath")
-    private List<Wallmounted> goldRoseWreath;
+    private List<Item> goldRoseWreath;
 
     @SerializedName("hanging_terrarium")
-    private List<Wallmounted> hangingTerrarium;
+    private List<Item> hangingTerrarium;
 
     @SerializedName("dark_lily_wreath")
-    private List<Wallmounted> darkLilyWreath;
+    private List<Item> darkLilyWreath;
 
     @SerializedName("macrame_tapestry")
-    private List<Wallmounted> macrameTapestry;
+    private List<Item> macrameTapestry;
 
     @SerializedName("mum_wreath")
-    private List<Wallmounted> mumWreath;
+    private List<Item> mumWreath;
 
     @SerializedName("Bunny_Day_glowy_garland")
-    private List<Wallmounted> bunnyDayGlowyGarland;
+    private List<Item> bunnyDayGlowyGarland;
 
     @SerializedName("Leo_sculpture")
-    private List<Wallmounted> leoSculpture;
+    private List<Item> leoSculpture;
 
     @SerializedName("tree_branch_wreath")
-    private List<Wallmounted> treeBranchWreath;
+    private List<Item> treeBranchWreath;
 
     @SerializedName("bug_plaque")
-    private List<Wallmounted> bugPlaque;
+    private List<Item> bugPlaque;
 
     @SerializedName("wall_fan")
-    private List<Wallmounted> wallFan;
+    private List<Item> wallFan;
 
     @SerializedName("wall-mounted_phone")
-    private List<Wallmounted> wallMountedPhone;
+    private List<Item> wallMountedPhone;
 
     @SerializedName("grasshopper-head_model")
-    private List<Wallmounted> grasshopperHeadModel;
+    private List<Item> grasshopperHeadModel;
 
     @SerializedName("mermaid_wall_clock")
-    private List<Wallmounted> mermaidWallClock;
+    private List<Item> mermaidWallClock;
 
     @SerializedName("tulip_wreath")
-    private List<Wallmounted> tulipWreath;
+    private List<Item> tulipWreath;
 
     @SerializedName("intercom_monitor")
-    private List<Wallmounted> intercomMonitor;
+    private List<Item> intercomMonitor;
 
     @SerializedName("butterfly-fish_model")
-    private List<Wallmounted> butterflyFishModel;
+    private List<Item> butterflyFishModel;
 
     @SerializedName("log_wall-mounted_clock")
-    private List<Wallmounted> logWallMountedClock;
+    private List<Item> logWallMountedClock;
 
     @SerializedName("cosmos_wreath")
-    private List<Wallmounted> cosmosWreath;
+    private List<Item> cosmosWreath;
 
     @SerializedName("lily_wreath")
-    private List<Wallmounted> lilyWreath;
+    private List<Item> lilyWreath;
 
     @SerializedName("chic_windflower_wreath")
-    private List<Wallmounted> chicWindflowerWreath;
+    private List<Item> chicWindflowerWreath;
 
     @SerializedName("rose_wreath")
-    private List<Wallmounted> roseWreath;
+    private List<Item> roseWreath;
 
     @SerializedName("exit_sign")
-    private List<Wallmounted> exitSign;
+    private List<Item> exitSign;
 
     @SerializedName("antique_phone")
-    private List<Wallmounted> antiquePhone;
+    private List<Item> antiquePhone;
 
     @SerializedName("HHA_pennant")
-    private List<Wallmounted> hHAPennant;
+    private List<Item> hHAPennant;
 
     @SerializedName("blue_rose_wreath")
-    private List<Wallmounted> blueRoseWreath;
+    private List<Item> blueRoseWreath;
 
     @SerializedName("purple_hyacinth_wreath")
-    private List<Wallmounted> purpleHyacinthWreath;
+    private List<Item> purpleHyacinthWreath;
 
     @SerializedName("pendulum_clock")
-    private List<Wallmounted> pendulumClock;
+    private List<Item> pendulumClock;
 
     @SerializedName("boomerang")
-    private List<Wallmounted> boomerang;
+    private List<Item> boomerang;
 
     @SerializedName("ventilation_fan")
-    private List<Wallmounted> ventilationFan;
+    private List<Item> ventilationFan;
 
     @SerializedName("autograph_cards")
-    private List<Wallmounted> autographCards;
+    private List<Item> autographCards;
 
     @SerializedName("pansy_wreath")
-    private List<Wallmounted> pansyWreath;
+    private List<Item> pansyWreath;
 
     @SerializedName("mounted_blue_marlin")
-    private List<Wallmounted> mountedBlueMarlin;
+    private List<Item> mountedBlueMarlin;
 
     @SerializedName("fish_print")
-    private List<Wallmounted> fishPrint;
+    private List<Item> fishPrint;
 
     @SerializedName("ironwood_clock")
-    private List<Wallmounted> ironwoodClock;
+    private List<Item> ironwoodClock;
 
     @SerializedName("magnetic_knife_rack")
-    private List<Wallmounted> magneticKnifeRack;
+    private List<Item> magneticKnifeRack;
 
     @SerializedName("studio_wall_spotlight")
-    private List<Wallmounted> studioWallSpotlight;
+    private List<Item> studioWallSpotlight;
 
     @SerializedName("iron_doorplate")
-    private List<Wallmounted> ironDoorplate;
+    private List<Item> ironDoorplate;
 
     @SerializedName("breaker")
-    private List<Wallmounted> breaker;
+    private List<Item> breaker;
 
     @SerializedName("wall-mounted_TV_(20_in.)")
-    private List<Wallmounted> wallMountedTV20In;
+    private List<Item> wallMountedTV20In;
 
     @SerializedName("study_poster")
-    private List<Wallmounted> studyPoster;
+    private List<Item> studyPoster;
 
     @SerializedName("wooden-block_wall_clock")
-    private List<Wallmounted> woodenBlockWallClock;
+    private List<Item> woodenBlockWallClock;
 
     @SerializedName("formal_paper")
-    private List<Wallmounted> formalPaper;
+    private List<Item> formalPaper;
 
     @SerializedName("ornament_wreath")
-    private List<Wallmounted> ornamentWreath;
+    private List<Item> ornamentWreath;
 
     @SerializedName("wall-mounted_tool_board")
-    private List<Wallmounted> wallMountedToolBoard;
+    private List<Item> wallMountedToolBoard;
 
     @SerializedName("diner_neon_clock")
-    private List<Wallmounted> dinerNeonClock;
+    private List<Item> dinerNeonClock;
 
     @SerializedName("tapestry")
-    private List<Wallmounted> tapestry;
+    private List<Item> tapestry;
 
     @SerializedName("windflower_wreath")
-    private List<Wallmounted> windflowerWreath;
+    private List<Item> windflowerWreath;
 
     @SerializedName("fish_plaque")
-    private List<Wallmounted> fishPlaque;
+    private List<Item> fishPlaque;
 
     @SerializedName("snowflake_wreath")
-    private List<Wallmounted> snowflakeWreath;
+    private List<Item> snowflakeWreath;
 
     @SerializedName("wall_clock")
-    private List<Wallmounted> wallClock;
+    private List<Item> wallClock;
 
     @SerializedName("bronze_HHA_plaque")
-    private List<Wallmounted> bronzeHHAPlaque;
+    private List<Item> bronzeHHAPlaque;
 
     @SerializedName("cherry-blossom_clock")
-    private List<Wallmounted> cherryBlossomClock;
+    private List<Item> cherryBlossomClock;
 
     @SerializedName("corkboard")
-    private List<Wallmounted> corkboard;
+    private List<Item> corkboard;
 
     @SerializedName("imperial_dining_lantern")
-    private List<Wallmounted> imperialDiningLantern;
+    private List<Item> imperialDiningLantern;
 
     @SerializedName("iron_wall_lamp")
-    private List<Wallmounted> ironWallLamp;
+    private List<Item> ironWallLamp;
 
     @SerializedName("iron_wall_rack")
-    private List<Wallmounted> ironWallRack;
+    private List<Item> ironWallRack;
 
     @SerializedName("fancy_lily_wreath")
-    private List<Wallmounted> fancyLilyWreath;
+    private List<Item> fancyLilyWreath;
 
     @SerializedName("crest_doorplate")
-    private List<Wallmounted> crestDoorplate;
+    private List<Item> crestDoorplate;
 
     @SerializedName("throwback_wall_clock")
-    private List<Wallmounted> throwbackWallClock;
+    private List<Item> throwbackWallClock;
 
     @SerializedName("wedding_decoration")
-    private List<Wallmounted> weddingDecoration;
+    private List<Item> weddingDecoration;
 
     @SerializedName("fruit_wreath")
-    private List<Wallmounted> fruitWreath;
+    private List<Item> fruitWreath;
 
     @SerializedName("silver_HHA_plaque")
-    private List<Wallmounted> silverHHAPlaque;
+    private List<Item> silverHHAPlaque;
 
     @SerializedName("Toy_Day_stockings")
-    private List<Wallmounted> toyDayStockings;
+    private List<Item> toyDayStockings;
 
     @SerializedName("wall-mounted_TV_(50_in.)")
-    private List<Wallmounted> wallMountedTV50In;
+    private List<Item> wallMountedTV50In;
 
     @SerializedName("spider_doorplate")
-    private List<Wallmounted> spiderDoorplate;
+    private List<Item> spiderDoorplate;
 
     @SerializedName("chic_cosmos_wreath")
-    private List<Wallmounted> chicCosmosWreath;
+    private List<Item> chicCosmosWreath;
 
     @SerializedName("mounted_black_bass")
-    private List<Wallmounted> mountedBlackBass;
+    private List<Item> mountedBlackBass;
 
     @SerializedName("wasp-head_model")
-    private List<Wallmounted> waspHeadModel;
+    private List<Item> waspHeadModel;
 
     @SerializedName("cool_pansy_wreath")
-    private List<Wallmounted> coolPansyWreath;
+    private List<Item> coolPansyWreath;
 
     @SerializedName("tree's_bounty_mobile")
-    private List<Wallmounted> treeSBountyMobile;
+    private List<Item> treeSBountyMobile;
 
     @SerializedName("surveillance_camera")
-    private List<Wallmounted> surveillanceCamera;
+    private List<Item> surveillanceCamera;
 
     @SerializedName("cool_windflower_wreath")
-    private List<Wallmounted> coolWindflowerWreath;
+    private List<Item> coolWindflowerWreath;
 
     @SerializedName("floral_swag")
-    private List<Wallmounted> floralSwag;
+    private List<Item> floralSwag;
 
     @SerializedName("Sagittarius_arrow")
-    private List<Wallmounted> sagittariusArrow;
+    private List<Item> sagittariusArrow;
 
     @SerializedName("paw-print_doorplate")
-    private List<Wallmounted> pawPrintDoorplate;
+    private List<Item> pawPrintDoorplate;
 
     @SerializedName("shell_wreath")
-    private List<Wallmounted> shellWreath;
+    private List<Item> shellWreath;
 
     @SerializedName("pretty_cosmos_wreath")
-    private List<Wallmounted> prettyCosmosWreath;
+    private List<Item> prettyCosmosWreath;
 
     @SerializedName("key_holder")
-    private List<Wallmounted> keyHolder;
+    private List<Item> keyHolder;
 
     @SerializedName("dark_rose_wreath")
-    private List<Wallmounted> darkRoseWreath;
+    private List<Item> darkRoseWreath;
 
     @SerializedName("world_map")
-    private List<Wallmounted> worldMap;
+    private List<Item> worldMap;
 
     @SerializedName("broom_and_dustpan")
-    private List<Wallmounted> broomAndDustpan;
+    private List<Item> broomAndDustpan;
 
     @SerializedName("bamboo_wall_decoration")
-    private List<Wallmounted> bambooWallDecoration;
+    private List<Item> bambooWallDecoration;
 
     @SerializedName("festive_wreath")
-    private List<Wallmounted> festiveWreath;
+    private List<Item> festiveWreath;
 
     @SerializedName("mobile")
-    private List<Wallmounted> mobile;
+    private List<Item> mobile;
 
     @SerializedName("cool_hyacinth_wreath")
-    private List<Wallmounted> coolHyacinthWreath;
+    private List<Item> coolHyacinthWreath;
 
     @SerializedName("wooden-plank_sign")
-    private List<Wallmounted> woodenPlankSign;
+    private List<Item> woodenPlankSign;
 
     @SerializedName("retro_radiator")
-    private List<Wallmounted> retroRadiator;
+    private List<Item> retroRadiator;
 
     @SerializedName("fancy_rose_wreath")
-    private List<Wallmounted> fancyRoseWreath;
+    private List<Item> fancyRoseWreath;
 
     @SerializedName("spooky_garland")
-    private List<Wallmounted> spookyGarland;
+    private List<Item> spookyGarland;
 
     @SerializedName("air_conditioner")
-    private List<Wallmounted> airConditioner;
+    private List<Item> airConditioner;
 
     @SerializedName("light_switch")
-    private List<Wallmounted> lightSwitch;
+    private List<Item> lightSwitch;
 
     @SerializedName("bone_doorplate")
-    private List<Wallmounted> boneDoorplate;
+    private List<Item> boneDoorplate;
 
     @SerializedName("Lunar_New_Year_decoration")
-    private List<Wallmounted> lunarNewYearDecoration;
+    private List<Item> lunarNewYearDecoration;
 
     @SerializedName("natural_mum_wreath")
-    private List<Wallmounted> naturalMumWreath;
+    private List<Item> naturalMumWreath;
 
     @SerializedName("double-sided_wall_clock")
-    private List<Wallmounted> doubleSidedWallClock;
+    private List<Item> doubleSidedWallClock;
 
     @SerializedName("mantis-head_model")
-    private List<Wallmounted> mantisHeadModel;
+    private List<Item> mantisHeadModel;
 
     @SerializedName("starry_garland")
-    private List<Wallmounted> starryGarland;
+    private List<Item> starryGarland;
 
     @SerializedName("potted_ivy")
-    private List<Wallmounted> pottedIvy;
+    private List<Item> pottedIvy;
 
     @SerializedName("coconut_wall_planter")
-    private List<Wallmounted> coconutWallPlanter;
+    private List<Item> coconutWallPlanter;
 
     @SerializedName("Jack's_portrait")
-    private List<Wallmounted> jackSPortrait;
+    private List<Item> jackSPortrait;
 
     @SerializedName("spider_web")
-    private List<Wallmounted> spiderWeb;
+    private List<Item> spiderWeb;
 
-    public List<Wallmounted> getSetOfStockings() {
+    public List<Item> getSetOfStockings() {
         return setOfStockings;
     }
 
-    public List<Wallmounted> getGoldHHAPlaque() {
+    public List<Item> getGoldHHAPlaque() {
         return goldHHAPlaque;
     }
 
-    public List<Wallmounted> getPennant() {
+    public List<Item> getPennant() {
         return pennant;
     }
 
-    public List<Wallmounted> getMomSEmbroidery() {
+    public List<Item> getMomSEmbroidery() {
         return momSEmbroidery;
     }
 
-    public List<Wallmounted> getOrnamentMobile() {
+    public List<Item> getOrnamentMobile() {
         return ornamentMobile;
     }
 
-    public List<Wallmounted> getPrettyTulipWreath() {
+    public List<Item> getPrettyTulipWreath() {
         return prettyTulipWreath;
     }
 
-    public List<Wallmounted> getBunnyDayWallClock() {
+    public List<Item> getBunnyDayWallClock() {
         return bunnyDayWallClock;
     }
 
-    public List<Wallmounted> getWallMountedCandle() {
+    public List<Item> getWallMountedCandle() {
         return wallMountedCandle;
     }
 
-    public List<Wallmounted> getFishingBoatFlag() {
+    public List<Item> getFishingBoatFlag() {
         return fishingBoatFlag;
     }
 
-    public List<Wallmounted> getImperialDecorativeShelves() {
+    public List<Item> getImperialDecorativeShelves() {
         return imperialDecorativeShelves;
     }
 
-    public List<Wallmounted> getTimberDoorplate() {
+    public List<Item> getTimberDoorplate() {
         return timberDoorplate;
     }
 
-    public List<Wallmounted> getFossilDoorplate() {
+    public List<Item> getFossilDoorplate() {
         return fossilDoorplate;
     }
 
-    public List<Wallmounted> getGoldenGears() {
+    public List<Item> getGoldenGears() {
         return goldenGears;
     }
 
-    public List<Wallmounted> getGears() {
+    public List<Item> getGears() {
         return gears;
     }
 
-    public List<Wallmounted> getHyacinthWreath() {
+    public List<Item> getHyacinthWreath() {
         return hyacinthWreath;
     }
 
-    public List<Wallmounted> getPartyGarland() {
+    public List<Item> getPartyGarland() {
         return partyGarland;
     }
 
-    public List<Wallmounted> getBunnyDayWreath() {
+    public List<Item> getBunnyDayWreath() {
         return bunnyDayWreath;
     }
 
-    public List<Wallmounted> getFishDoorplate() {
+    public List<Item> getFishDoorplate() {
         return fishDoorplate;
     }
 
-    public List<Wallmounted> getFancyMumWreath() {
+    public List<Item> getFancyMumWreath() {
         return fancyMumWreath;
     }
 
-    public List<Wallmounted> getSkullDoorplate() {
+    public List<Item> getSkullDoorplate() {
         return skullDoorplate;
     }
 
-    public List<Wallmounted> getDeerDecoration() {
+    public List<Item> getDeerDecoration() {
         return deerDecoration;
     }
 
-    public List<Wallmounted> getMushroomWreath() {
+    public List<Item> getMushroomWreath() {
         return mushroomWreath;
     }
 
-    public List<Wallmounted> getDarkTulipWreath() {
+    public List<Item> getDarkTulipWreath() {
         return darkTulipWreath;
     }
 
-    public List<Wallmounted> getHangingScroll() {
+    public List<Item> getHangingScroll() {
         return hangingScroll;
     }
 
-    public List<Wallmounted> getHeartDoorplate() {
+    public List<Item> getHeartDoorplate() {
         return heartDoorplate;
     }
 
-    public List<Wallmounted> getShowerSet() {
+    public List<Item> getShowerSet() {
         return showerSet;
     }
 
-    public List<Wallmounted> getMomSArt() {
+    public List<Item> getMomSArt() {
         return momSArt;
     }
 
-    public List<Wallmounted> getBathroomTowelRack() {
+    public List<Item> getBathroomTowelRack() {
         return bathroomTowelRack;
     }
 
-    public List<Wallmounted> getPotRack() {
+    public List<Item> getPotRack() {
         return potRack;
     }
 
-    public List<Wallmounted> getCuckooClock() {
+    public List<Item> getCuckooClock() {
         return cuckooClock;
     }
 
-    public List<Wallmounted> getFossilPlaque() {
+    public List<Item> getFossilPlaque() {
         return fossilPlaque;
     }
 
-    public List<Wallmounted> getSnazzyPansyWreath() {
+    public List<Item> getSnazzyPansyWreath() {
         return snazzyPansyWreath;
     }
 
-    public List<Wallmounted> getNewYearSShimekazari() {
+    public List<Item> getNewYearSShimekazari() {
         return newYearSShimekazari;
     }
 
-    public List<Wallmounted> getShamrockDoorplate() {
+    public List<Item> getShamrockDoorplate() {
         return shamrockDoorplate;
     }
 
-    public List<Wallmounted> getCuteWallMountedClock() {
+    public List<Item> getCuteWallMountedClock() {
         return cuteWallMountedClock;
     }
 
-    public List<Wallmounted> getOrangeWallMountedClock() {
+    public List<Item> getOrangeWallMountedClock() {
         return orangeWallMountedClock;
     }
 
-    public List<Wallmounted> getCherryLamp() {
+    public List<Item> getCherryLamp() {
         return cherryLamp;
     }
 
-    public List<Wallmounted> getGoldRoseWreath() {
+    public List<Item> getGoldRoseWreath() {
         return goldRoseWreath;
     }
 
-    public List<Wallmounted> getHangingTerrarium() {
+    public List<Item> getHangingTerrarium() {
         return hangingTerrarium;
     }
 
-    public List<Wallmounted> getDarkLilyWreath() {
+    public List<Item> getDarkLilyWreath() {
         return darkLilyWreath;
     }
 
-    public List<Wallmounted> getMacrameTapestry() {
+    public List<Item> getMacrameTapestry() {
         return macrameTapestry;
     }
 
-    public List<Wallmounted> getMumWreath() {
+    public List<Item> getMumWreath() {
         return mumWreath;
     }
 
-    public List<Wallmounted> getBunnyDayGlowyGarland() {
+    public List<Item> getBunnyDayGlowyGarland() {
         return bunnyDayGlowyGarland;
     }
 
-    public List<Wallmounted> getLeoSculpture() {
+    public List<Item> getLeoSculpture() {
         return leoSculpture;
     }
 
-    public List<Wallmounted> getTreeBranchWreath() {
+    public List<Item> getTreeBranchWreath() {
         return treeBranchWreath;
     }
 
-    public List<Wallmounted> getBugPlaque() {
+    public List<Item> getBugPlaque() {
         return bugPlaque;
     }
 
-    public List<Wallmounted> getWallFan() {
+    public List<Item> getWallFan() {
         return wallFan;
     }
 
-    public List<Wallmounted> getWallMountedPhone() {
+    public List<Item> getWallMountedPhone() {
         return wallMountedPhone;
     }
 
-    public List<Wallmounted> getGrasshopperHeadModel() {
+    public List<Item> getGrasshopperHeadModel() {
         return grasshopperHeadModel;
     }
 
-    public List<Wallmounted> getMermaidWallClock() {
+    public List<Item> getMermaidWallClock() {
         return mermaidWallClock;
     }
 
-    public List<Wallmounted> getTulipWreath() {
+    public List<Item> getTulipWreath() {
         return tulipWreath;
     }
 
-    public List<Wallmounted> getIntercomMonitor() {
+    public List<Item> getIntercomMonitor() {
         return intercomMonitor;
     }
 
-    public List<Wallmounted> getButterflyFishModel() {
+    public List<Item> getButterflyFishModel() {
         return butterflyFishModel;
     }
 
-    public List<Wallmounted> getLogWallMountedClock() {
+    public List<Item> getLogWallMountedClock() {
         return logWallMountedClock;
     }
 
-    public List<Wallmounted> getCosmosWreath() {
+    public List<Item> getCosmosWreath() {
         return cosmosWreath;
     }
 
-    public List<Wallmounted> getLilyWreath() {
+    public List<Item> getLilyWreath() {
         return lilyWreath;
     }
 
-    public List<Wallmounted> getChicWindflowerWreath() {
+    public List<Item> getChicWindflowerWreath() {
         return chicWindflowerWreath;
     }
 
-    public List<Wallmounted> getRoseWreath() {
+    public List<Item> getRoseWreath() {
         return roseWreath;
     }
 
-    public List<Wallmounted> getExitSign() {
+    public List<Item> getExitSign() {
         return exitSign;
     }
 
-    public List<Wallmounted> getAntiquePhone() {
+    public List<Item> getAntiquePhone() {
         return antiquePhone;
     }
 
-    public List<Wallmounted> getHHAPennant() {
+    public List<Item> getHHAPennant() {
         return hHAPennant;
     }
 
-    public List<Wallmounted> getBlueRoseWreath() {
+    public List<Item> getBlueRoseWreath() {
         return blueRoseWreath;
     }
 
-    public List<Wallmounted> getPurpleHyacinthWreath() {
+    public List<Item> getPurpleHyacinthWreath() {
         return purpleHyacinthWreath;
     }
 
-    public List<Wallmounted> getPendulumClock() {
+    public List<Item> getPendulumClock() {
         return pendulumClock;
     }
 
-    public List<Wallmounted> getBoomerang() {
+    public List<Item> getBoomerang() {
         return boomerang;
     }
 
-    public List<Wallmounted> getVentilationFan() {
+    public List<Item> getVentilationFan() {
         return ventilationFan;
     }
 
-    public List<Wallmounted> getAutographCards() {
+    public List<Item> getAutographCards() {
         return autographCards;
     }
 
-    public List<Wallmounted> getPansyWreath() {
+    public List<Item> getPansyWreath() {
         return pansyWreath;
     }
 
-    public List<Wallmounted> getMountedBlueMarlin() {
+    public List<Item> getMountedBlueMarlin() {
         return mountedBlueMarlin;
     }
 
-    public List<Wallmounted> getFishPrint() {
+    public List<Item> getFishPrint() {
         return fishPrint;
     }
 
-    public List<Wallmounted> getIronwoodClock() {
+    public List<Item> getIronwoodClock() {
         return ironwoodClock;
     }
 
-    public List<Wallmounted> getMagneticKnifeRack() {
+    public List<Item> getMagneticKnifeRack() {
         return magneticKnifeRack;
     }
 
-    public List<Wallmounted> getStudioWallSpotlight() {
+    public List<Item> getStudioWallSpotlight() {
         return studioWallSpotlight;
     }
 
-    public List<Wallmounted> getIronDoorplate() {
+    public List<Item> getIronDoorplate() {
         return ironDoorplate;
     }
 
-    public List<Wallmounted> getBreaker() {
+    public List<Item> getBreaker() {
         return breaker;
     }
 
-    public List<Wallmounted> getWallMountedTV20In() {
+    public List<Item> getWallMountedTV20In() {
         return wallMountedTV20In;
     }
 
-    public List<Wallmounted> getStudyPoster() {
+    public List<Item> getStudyPoster() {
         return studyPoster;
     }
 
-    public List<Wallmounted> getWoodenBlockWallClock() {
+    public List<Item> getWoodenBlockWallClock() {
         return woodenBlockWallClock;
     }
 
-    public List<Wallmounted> getFormalPaper() {
+    public List<Item> getFormalPaper() {
         return formalPaper;
     }
 
-    public List<Wallmounted> getOrnamentWreath() {
+    public List<Item> getOrnamentWreath() {
         return ornamentWreath;
     }
 
-    public List<Wallmounted> getWallMountedToolBoard() {
+    public List<Item> getWallMountedToolBoard() {
         return wallMountedToolBoard;
     }
 
-    public List<Wallmounted> getDinerNeonClock() {
+    public List<Item> getDinerNeonClock() {
         return dinerNeonClock;
     }
 
-    public List<Wallmounted> getTapestry() {
+    public List<Item> getTapestry() {
         return tapestry;
     }
 
-    public List<Wallmounted> getWindflowerWreath() {
+    public List<Item> getWindflowerWreath() {
         return windflowerWreath;
     }
 
-    public List<Wallmounted> getFishPlaque() {
+    public List<Item> getFishPlaque() {
         return fishPlaque;
     }
 
-    public List<Wallmounted> getSnowflakeWreath() {
+    public List<Item> getSnowflakeWreath() {
         return snowflakeWreath;
     }
 
-    public List<Wallmounted> getWallClock() {
+    public List<Item> getWallClock() {
         return wallClock;
     }
 
-    public List<Wallmounted> getBronzeHHAPlaque() {
+    public List<Item> getBronzeHHAPlaque() {
         return bronzeHHAPlaque;
     }
 
-    public List<Wallmounted> getCherryBlossomClock() {
+    public List<Item> getCherryBlossomClock() {
         return cherryBlossomClock;
     }
 
-    public List<Wallmounted> getCorkboard() {
+    public List<Item> getCorkboard() {
         return corkboard;
     }
 
-    public List<Wallmounted> getImperialDiningLantern() {
+    public List<Item> getImperialDiningLantern() {
         return imperialDiningLantern;
     }
 
-    public List<Wallmounted> getIronWallLamp() {
+    public List<Item> getIronWallLamp() {
         return ironWallLamp;
     }
 
-    public List<Wallmounted> getIronWallRack() {
+    public List<Item> getIronWallRack() {
         return ironWallRack;
     }
 
-    public List<Wallmounted> getFancyLilyWreath() {
+    public List<Item> getFancyLilyWreath() {
         return fancyLilyWreath;
     }
 
-    public List<Wallmounted> getCrestDoorplate() {
+    public List<Item> getCrestDoorplate() {
         return crestDoorplate;
     }
 
-    public List<Wallmounted> getThrowbackWallClock() {
+    public List<Item> getThrowbackWallClock() {
         return throwbackWallClock;
     }
 
-    public List<Wallmounted> getWeddingDecoration() {
+    public List<Item> getWeddingDecoration() {
         return weddingDecoration;
     }
 
-    public List<Wallmounted> getFruitWreath() {
+    public List<Item> getFruitWreath() {
         return fruitWreath;
     }
 
-    public List<Wallmounted> getSilverHHAPlaque() {
+    public List<Item> getSilverHHAPlaque() {
         return silverHHAPlaque;
     }
 
-    public List<Wallmounted> getToyDayStockings() {
+    public List<Item> getToyDayStockings() {
         return toyDayStockings;
     }
 
-    public List<Wallmounted> getWallMountedTV50In() {
+    public List<Item> getWallMountedTV50In() {
         return wallMountedTV50In;
     }
 
-    public List<Wallmounted> getSpiderDoorplate() {
+    public List<Item> getSpiderDoorplate() {
         return spiderDoorplate;
     }
 
-    public List<Wallmounted> getChicCosmosWreath() {
+    public List<Item> getChicCosmosWreath() {
         return chicCosmosWreath;
     }
 
-    public List<Wallmounted> getMountedBlackBass() {
+    public List<Item> getMountedBlackBass() {
         return mountedBlackBass;
     }
 
-    public List<Wallmounted> getWaspHeadModel() {
+    public List<Item> getWaspHeadModel() {
         return waspHeadModel;
     }
 
-    public List<Wallmounted> getCoolPansyWreath() {
+    public List<Item> getCoolPansyWreath() {
         return coolPansyWreath;
     }
 
-    public List<Wallmounted> getTreeSBountyMobile() {
+    public List<Item> getTreeSBountyMobile() {
         return treeSBountyMobile;
     }
 
-    public List<Wallmounted> getSurveillanceCamera() {
+    public List<Item> getSurveillanceCamera() {
         return surveillanceCamera;
     }
 
-    public List<Wallmounted> getCoolWindflowerWreath() {
+    public List<Item> getCoolWindflowerWreath() {
         return coolWindflowerWreath;
     }
 
-    public List<Wallmounted> getFloralSwag() {
+    public List<Item> getFloralSwag() {
         return floralSwag;
     }
 
-    public List<Wallmounted> getSagittariusArrow() {
+    public List<Item> getSagittariusArrow() {
         return sagittariusArrow;
     }
 
-    public List<Wallmounted> getPawPrintDoorplate() {
+    public List<Item> getPawPrintDoorplate() {
         return pawPrintDoorplate;
     }
 
-    public List<Wallmounted> getShellWreath() {
+    public List<Item> getShellWreath() {
         return shellWreath;
     }
 
-    public List<Wallmounted> getPrettyCosmosWreath() {
+    public List<Item> getPrettyCosmosWreath() {
         return prettyCosmosWreath;
     }
 
-    public List<Wallmounted> getKeyHolder() {
+    public List<Item> getKeyHolder() {
         return keyHolder;
     }
 
-    public List<Wallmounted> getDarkRoseWreath() {
+    public List<Item> getDarkRoseWreath() {
         return darkRoseWreath;
     }
 
-    public List<Wallmounted> getWorldMap() {
+    public List<Item> getWorldMap() {
         return worldMap;
     }
 
-    public List<Wallmounted> getBroomAndDustpan() {
+    public List<Item> getBroomAndDustpan() {
         return broomAndDustpan;
     }
 
-    public List<Wallmounted> getBambooWallDecoration() {
+    public List<Item> getBambooWallDecoration() {
         return bambooWallDecoration;
     }
 
-    public List<Wallmounted> getFestiveWreath() {
+    public List<Item> getFestiveWreath() {
         return festiveWreath;
     }
 
-    public List<Wallmounted> getMobile() {
+    public List<Item> getMobile() {
         return mobile;
     }
 
-    public List<Wallmounted> getCoolHyacinthWreath() {
+    public List<Item> getCoolHyacinthWreath() {
         return coolHyacinthWreath;
     }
 
-    public List<Wallmounted> getWoodenPlankSign() {
+    public List<Item> getWoodenPlankSign() {
         return woodenPlankSign;
     }
 
-    public List<Wallmounted> getRetroRadiator() {
+    public List<Item> getRetroRadiator() {
         return retroRadiator;
     }
 
-    public List<Wallmounted> getFancyRoseWreath() {
+    public List<Item> getFancyRoseWreath() {
         return fancyRoseWreath;
     }
 
-    public List<Wallmounted> getSpookyGarland() {
+    public List<Item> getSpookyGarland() {
         return spookyGarland;
     }
 
-    public List<Wallmounted> getAirConditioner() {
+    public List<Item> getAirConditioner() {
         return airConditioner;
     }
 
-    public List<Wallmounted> getLightSwitch() {
+    public List<Item> getLightSwitch() {
         return lightSwitch;
     }
 
-    public List<Wallmounted> getBoneDoorplate() {
+    public List<Item> getBoneDoorplate() {
         return boneDoorplate;
     }
 
-    public List<Wallmounted> getLunarNewYearDecoration() {
+    public List<Item> getLunarNewYearDecoration() {
         return lunarNewYearDecoration;
     }
 
-    public List<Wallmounted> getNaturalMumWreath() {
+    public List<Item> getNaturalMumWreath() {
         return naturalMumWreath;
     }
 
-    public List<Wallmounted> getDoubleSidedWallClock() {
+    public List<Item> getDoubleSidedWallClock() {
         return doubleSidedWallClock;
     }
 
-    public List<Wallmounted> getMantisHeadModel() {
+    public List<Item> getMantisHeadModel() {
         return mantisHeadModel;
     }
 
-    public List<Wallmounted> getStarryGarland() {
+    public List<Item> getStarryGarland() {
         return starryGarland;
     }
 
-    public List<Wallmounted> getPottedIvy() {
+    public List<Item> getPottedIvy() {
         return pottedIvy;
     }
 
-    public List<Wallmounted> getCoconutWallPlanter() {
+    public List<Item> getCoconutWallPlanter() {
         return coconutWallPlanter;
     }
 
-    public List<Wallmounted> getJackSPortrait() {
+    public List<Item> getJackSPortrait() {
         return jackSPortrait;
     }
 
-    public List<Wallmounted> getSpiderWeb() {
+    public List<Item> getSpiderWeb() {
         return spiderWeb;
     }
 
-    public List<Wallmounted> getRandomType() {
-        List<List<Wallmounted>> wallmounteds = Arrays.asList(setOfStockings, goldHHAPlaque, pennant, momSEmbroidery, ornamentMobile, prettyTulipWreath, bunnyDayWallClock, wallMountedCandle, fishingBoatFlag, imperialDecorativeShelves, timberDoorplate, fossilDoorplate, goldenGears, gears, hyacinthWreath, partyGarland, bunnyDayWreath, fishDoorplate, fancyMumWreath, skullDoorplate, deerDecoration, mushroomWreath, darkTulipWreath, hangingScroll, heartDoorplate, showerSet, momSArt, bathroomTowelRack, potRack, cuckooClock, fossilPlaque, snazzyPansyWreath, newYearSShimekazari, shamrockDoorplate, cuteWallMountedClock, orangeWallMountedClock, cherryLamp, goldRoseWreath, hangingTerrarium, darkLilyWreath, macrameTapestry, mumWreath, bunnyDayGlowyGarland, leoSculpture, treeBranchWreath, bugPlaque, wallFan, wallMountedPhone, grasshopperHeadModel, mermaidWallClock, tulipWreath, intercomMonitor, butterflyFishModel, logWallMountedClock, cosmosWreath, lilyWreath, chicWindflowerWreath, roseWreath, exitSign, antiquePhone, hHAPennant, blueRoseWreath, purpleHyacinthWreath, pendulumClock, boomerang, ventilationFan, autographCards, pansyWreath, mountedBlueMarlin, fishPrint, ironwoodClock, magneticKnifeRack, studioWallSpotlight, ironDoorplate, breaker, wallMountedTV20In, studyPoster, woodenBlockWallClock, formalPaper, ornamentWreath, wallMountedToolBoard, dinerNeonClock, tapestry, windflowerWreath, fishPlaque, snowflakeWreath, wallClock, bronzeHHAPlaque, cherryBlossomClock, corkboard, imperialDiningLantern, ironWallLamp, ironWallRack, fancyLilyWreath, crestDoorplate, throwbackWallClock, weddingDecoration, fruitWreath, silverHHAPlaque, toyDayStockings, wallMountedTV50In, spiderDoorplate, chicCosmosWreath, mountedBlackBass, waspHeadModel, coolPansyWreath, treeSBountyMobile, surveillanceCamera, coolWindflowerWreath, floralSwag, sagittariusArrow, pawPrintDoorplate, shellWreath, prettyCosmosWreath, keyHolder, darkRoseWreath, worldMap, broomAndDustpan, bambooWallDecoration, festiveWreath, mobile, coolHyacinthWreath, woodenPlankSign, retroRadiator, fancyRoseWreath, spookyGarland, airConditioner, lightSwitch, boneDoorplate, lunarNewYearDecoration, naturalMumWreath, doubleSidedWallClock, mantisHeadModel, starryGarland, pottedIvy, coconutWallPlanter, jackSPortrait, spiderWeb);
+    public List<Item> getRandomType() {
+        List<List<Item>> wallmounteds = Arrays.asList(setOfStockings, goldHHAPlaque, pennant, momSEmbroidery, ornamentMobile, prettyTulipWreath, bunnyDayWallClock, wallMountedCandle, fishingBoatFlag, imperialDecorativeShelves, timberDoorplate, fossilDoorplate, goldenGears, gears, hyacinthWreath, partyGarland, bunnyDayWreath, fishDoorplate, fancyMumWreath, skullDoorplate, deerDecoration, mushroomWreath, darkTulipWreath, hangingScroll, heartDoorplate, showerSet, momSArt, bathroomTowelRack, potRack, cuckooClock, fossilPlaque, snazzyPansyWreath, newYearSShimekazari, shamrockDoorplate, cuteWallMountedClock, orangeWallMountedClock, cherryLamp, goldRoseWreath, hangingTerrarium, darkLilyWreath, macrameTapestry, mumWreath, bunnyDayGlowyGarland, leoSculpture, treeBranchWreath, bugPlaque, wallFan, wallMountedPhone, grasshopperHeadModel, mermaidWallClock, tulipWreath, intercomMonitor, butterflyFishModel, logWallMountedClock, cosmosWreath, lilyWreath, chicWindflowerWreath, roseWreath, exitSign, antiquePhone, hHAPennant, blueRoseWreath, purpleHyacinthWreath, pendulumClock, boomerang, ventilationFan, autographCards, pansyWreath, mountedBlueMarlin, fishPrint, ironwoodClock, magneticKnifeRack, studioWallSpotlight, ironDoorplate, breaker, wallMountedTV20In, studyPoster, woodenBlockWallClock, formalPaper, ornamentWreath, wallMountedToolBoard, dinerNeonClock, tapestry, windflowerWreath, fishPlaque, snowflakeWreath, wallClock, bronzeHHAPlaque, cherryBlossomClock, corkboard, imperialDiningLantern, ironWallLamp, ironWallRack, fancyLilyWreath, crestDoorplate, throwbackWallClock, weddingDecoration, fruitWreath, silverHHAPlaque, toyDayStockings, wallMountedTV50In, spiderDoorplate, chicCosmosWreath, mountedBlackBass, waspHeadModel, coolPansyWreath, treeSBountyMobile, surveillanceCamera, coolWindflowerWreath, floralSwag, sagittariusArrow, pawPrintDoorplate, shellWreath, prettyCosmosWreath, keyHolder, darkRoseWreath, worldMap, broomAndDustpan, bambooWallDecoration, festiveWreath, mobile, coolHyacinthWreath, woodenPlankSign, retroRadiator, fancyRoseWreath, spookyGarland, airConditioner, lightSwitch, boneDoorplate, lunarNewYearDecoration, naturalMumWreath, doubleSidedWallClock, mantisHeadModel, starryGarland, pottedIvy, coconutWallPlanter, jackSPortrait, spiderWeb);
         return getRandomValue(wallmounteds);
     }
 
-    private List<Wallmounted> getRandomValue(List<List<Wallmounted>> wallmounteds) {
+    private List<Item> getRandomValue(List<List<Item>> wallmounteds) {
         int index = new Random().nextInt(wallmounteds.size());
         return wallmounteds.get(index);
     }

@@ -2,31 +2,31 @@
  * © 2021 지성빈. all rights reserved.
  * This project license is under the MIT.
  *
- * [Misc.kt] created by Ji Sungbin on 21. 7. 23. 오전 3:17.
+ * [Item.kt] created by Ji Sungbin on 21. 7. 23. 오전 4:13.
  *
  * Please see project github repository license.
  */
 
-package io.github.jisungbin.acnhapi.models.items.misc
+package io.github.jisungbin.acnhapi.models.items.common
 
 import com.google.gson.annotations.SerializedName
-import io.github.jisungbin.acnhapi.models.items.ItemWrapper
+import io.github.jisungbin.acnhapi.models.common.NameTranslations
 
-data class Misc(
+data class Item(
     @field:SerializedName("body-title")
-    val bodyTitle: Any,
+    val bodyTitle: String,
 
     @field:SerializedName("kit-cost")
-    val kitCost: Any,
+    val kitCost: String,
 
     @field:SerializedName("pattern-title")
-    val patternTitle: Any,
+    val patternTitle: Any?,
 
     @field:SerializedName("isInteractive")
     val isInteractive: Boolean,
 
     @field:SerializedName("pattern")
-    val pattern: Any,
+    val pattern: Any?,
 
     @field:SerializedName("sell-price")
     val sellPrice: Int,
@@ -35,7 +35,7 @@ data class Misc(
     val source: String,
 
     @field:SerializedName("hha-series")
-    val hhaSeries: String,
+    val hhaSeries: Any?,
 
     @field:SerializedName("source-detail")
     val sourceDetail: String,
@@ -50,7 +50,7 @@ data class Misc(
     val hhaConcept1: String,
 
     @field:SerializedName("hha-concept-2")
-    val hhaConcept2: String,
+    val hhaConcept2: Any?,
 
     @field:SerializedName("internal-id")
     val internalId: Int,
@@ -59,13 +59,13 @@ data class Misc(
     val canCustomizePattern: Boolean,
 
     @field:SerializedName("buy-price")
-    val buyPrice: Int,
+    val buyPrice: Any?,
 
     @field:SerializedName("variant")
-    val variant: Any,
+    val variant: String,
 
     @field:SerializedName("hha-set")
-    val hhaSet: Any,
+    val hhaSet: Any?,
 
     @field:SerializedName("tag")
     val tag: String,
@@ -80,16 +80,16 @@ data class Misc(
     val canCustomizeBody: Boolean,
 
     @field:SerializedName("variant-id")
-    val variantId: Any,
+    val variantId: String,
 
     @field:SerializedName("image_uri")
     val imageUri: String,
 
     @field:SerializedName("speaker-type")
-    val speakerType: Any,
+    val speakerType: Any?,
 
     @field:SerializedName("lighting-type")
-    val lightingType: Any,
+    val lightingType: Any?,
 
     @field:SerializedName("version")
     val version: String,
@@ -105,4 +105,4 @@ data class Misc(
 
     @field:SerializedName("file-name")
     val fileName: String
-) : ItemWrapper
+)

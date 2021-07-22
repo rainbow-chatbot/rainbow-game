@@ -15,2948 +15,2949 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import io.github.jisungbin.acnhapi.models.items.ItemWrapper;
+import io.github.jisungbin.acnhapi.models.items.common.Item;
+import io.github.jisungbin.acnhapi.models.items.common.ItemWrapper;
 
 public class Miscs implements ItemWrapper {
     @SerializedName("magazine_rack")
-    private List<Misc> magazineRack;
+    private List<Item> magazineRack;
 
     @SerializedName("beach_ball")
-    private List<Misc> beachBall;
+    private List<Item> beachBall;
 
     @SerializedName("Turkey_Day_casserole")
-    private List<Misc> turkeyDayCasserole;
+    private List<Item> turkeyDayCasserole;
 
     @SerializedName("pro_tape_recorder")
-    private List<Misc> proTapeRecorder;
+    private List<Item> proTapeRecorder;
 
     @SerializedName("laptop")
-    private List<Misc> laptop;
+    private List<Item> laptop;
 
     @SerializedName("kettle")
-    private List<Misc> kettle;
+    private List<Item> kettle;
 
     @SerializedName("bingo_wheel")
-    private List<Misc> bingoWheel;
+    private List<Item> bingoWheel;
 
     @SerializedName("cyclommatus_stag_model")
-    private List<Misc> cyclommatusStagModel;
+    private List<Item> cyclommatusStagModel;
 
     @SerializedName("barred_knifejaw_model")
-    private List<Misc> barredKnifejawModel;
+    private List<Item> barredKnifejawModel;
 
     @SerializedName("great_purple_emperor_model")
-    private List<Misc> greatPurpleEmperorModel;
+    private List<Item> greatPurpleEmperorModel;
 
     @SerializedName("koi_model")
-    private List<Misc> koiModel;
+    private List<Item> koiModel;
 
     @SerializedName("hourglass")
-    private List<Misc> hourglass;
+    private List<Item> hourglass;
 
     @SerializedName("giant_water_bug_model")
-    private List<Misc> giantWaterBugModel;
+    private List<Item> giantWaterBugModel;
 
     @SerializedName("robust_cicada_model")
-    private List<Misc> robustCicadaModel;
+    private List<Item> robustCicadaModel;
 
     @SerializedName("festive_top_set")
-    private List<Misc> festiveTopSet;
+    private List<Item> festiveTopSet;
 
     @SerializedName("loach_model")
-    private List<Misc> loachModel;
+    private List<Item> loachModel;
 
     @SerializedName("garden_gnome")
-    private List<Misc> gardenGnome;
+    private List<Item> gardenGnome;
 
     @SerializedName("horse_mackerel_model")
-    private List<Misc> horseMackerelModel;
+    private List<Item> horseMackerelModel;
 
     @SerializedName("stovetop_espresso_maker")
-    private List<Misc> stovetopEspressoMaker;
+    private List<Item> stovetopEspressoMaker;
 
     @SerializedName("Super_Mushroom")
-    private List<Misc> superMushroom;
+    private List<Item> superMushroom;
 
     @SerializedName("cartoonist's_set")
-    private List<Misc> cartoonistSSet;
+    private List<Item> cartoonistSSet;
 
     @SerializedName("life_ring")
-    private List<Misc> lifeRing;
+    private List<Item> lifeRing;
 
     @SerializedName("Pocket_modern_camper")
-    private List<Misc> pocketModernCamper;
+    private List<Item> pocketModernCamper;
 
     @SerializedName("earth-boring_dung_b._model")
-    private List<Misc> earthBoringDungBModel;
+    private List<Item> earthBoringDungBModel;
 
     @SerializedName("globe")
-    private List<Misc> globe;
+    private List<Item> globe;
 
     @SerializedName("blossom_lantern")
-    private List<Misc> blossomLantern;
+    private List<Item> blossomLantern;
 
     @SerializedName("sea_globe")
-    private List<Misc> seaGlobe;
+    private List<Item> seaGlobe;
 
     @SerializedName("crawfish_model")
-    private List<Misc> crawfishModel;
+    private List<Item> crawfishModel;
 
     @SerializedName("bamboo-shoot_lamp")
-    private List<Misc> bambooShootLamp;
+    private List<Item> bambooShootLamp;
 
     @SerializedName("snow_globe")
-    private List<Misc> snowGlobe;
+    private List<Item> snowGlobe;
 
     @SerializedName("giant_trevally_model")
-    private List<Misc> giantTrevallyModel;
+    private List<Item> giantTrevallyModel;
 
     @SerializedName("moss_ball")
-    private List<Misc> mossBall;
+    private List<Item> mossBall;
 
     @SerializedName("migratory_locust_model")
-    private List<Misc> migratoryLocustModel;
+    private List<Item> migratoryLocustModel;
 
     @SerializedName("gold_fish_trophy")
-    private List<Misc> goldFishTrophy;
+    private List<Item> goldFishTrophy;
 
     @SerializedName("bell_cricket_model")
-    private List<Misc> bellCricketModel;
+    private List<Item> bellCricketModel;
 
     @SerializedName("blue_marlin_model")
-    private List<Misc> blueMarlinModel;
+    private List<Item> blueMarlinModel;
 
     @SerializedName("tadpole_model")
-    private List<Misc> tadpoleModel;
+    private List<Item> tadpoleModel;
 
     @SerializedName("centipede_model")
-    private List<Misc> centipedeModel;
+    private List<Item> centipedeModel;
 
     @SerializedName("tiger_beetle_model")
-    private List<Misc> tigerBeetleModel;
+    private List<Item> tigerBeetleModel;
 
     @SerializedName("cricket_model")
-    private List<Misc> cricketModel;
+    private List<Item> cricketModel;
 
     @SerializedName("humidifier")
-    private List<Misc> humidifier;
+    private List<Item> humidifier;
 
     @SerializedName("blowfish_model")
-    private List<Misc> blowfishModel;
+    private List<Item> blowfishModel;
 
     @SerializedName("red_dragonfly_model")
-    private List<Misc> redDragonflyModel;
+    private List<Item> redDragonflyModel;
 
     @SerializedName("coffee_grinder")
-    private List<Misc> coffeeGrinder;
+    private List<Item> coffeeGrinder;
 
     @SerializedName("gold_bars")
-    private List<Misc> goldBars;
+    private List<Item> goldBars;
 
     @SerializedName("zebra_turkeyfish_model")
-    private List<Misc> zebraTurkeyfishModel;
+    private List<Item> zebraTurkeyfishModel;
 
     @SerializedName("New_Year's_noodles")
-    private List<Misc> newYearSNoodles;
+    private List<Item> newYearSNoodles;
 
     @SerializedName("terrarium")
-    private List<Misc> terrarium;
+    private List<Item> terrarium;
 
     @SerializedName("trash_bags")
-    private List<Misc> trashBags;
+    private List<Item> trashBags;
 
     @SerializedName("cute_music_player")
-    private List<Misc> cuteMusicPlayer;
+    private List<Item> cuteMusicPlayer;
 
     @SerializedName("tape_deck")
-    private List<Misc> tapeDeck;
+    private List<Item> tapeDeck;
 
     @SerializedName("drone_beetle_model")
-    private List<Misc> droneBeetleModel;
+    private List<Item> droneBeetleModel;
 
     @SerializedName("dinosaur_toy")
-    private List<Misc> dinosaurToy;
+    private List<Item> dinosaurToy;
 
     @SerializedName("berliner")
-    private List<Misc> berliner;
+    private List<Item> berliner;
 
     @SerializedName("fancy_violin")
-    private List<Misc> fancyViolin;
+    private List<Item> fancyViolin;
 
     @SerializedName("horned_atlas_model")
-    private List<Misc> hornedAtlasModel;
+    private List<Item> hornedAtlasModel;
 
     @SerializedName("rainbow_stag_model")
-    private List<Misc> rainbowStagModel;
+    private List<Item> rainbowStagModel;
 
     @SerializedName("camp_stove")
-    private List<Misc> campStove;
+    private List<Item> campStove;
 
     @SerializedName("recycled-can_thumb_piano")
-    private List<Misc> recycledCanThumbPiano;
+    private List<Item> recycledCanThumbPiano;
 
     @SerializedName("olive_flounder_model")
-    private List<Misc> oliveFlounderModel;
+    private List<Item> oliveFlounderModel;
 
     @SerializedName("Super_Star")
-    private List<Misc> superStar;
+    private List<Item> superStar;
 
     @SerializedName("revolving_spice_rack")
-    private List<Misc> revolvingSpiceRack;
+    private List<Item> revolvingSpiceRack;
 
     @SerializedName("stand_mixer")
-    private List<Misc> standMixer;
+    private List<Item> standMixer;
 
     @SerializedName("sturgeon_model")
-    private List<Misc> sturgeonModel;
+    private List<Item> sturgeonModel;
 
     @SerializedName("Turkey_Day_table_setting")
-    private List<Misc> turkeyDayTableSetting;
+    private List<Item> turkeyDayTableSetting;
 
     @SerializedName("Turkey_Day_wheat_decor")
-    private List<Misc> turkeyDayWheatDecor;
+    private List<Item> turkeyDayWheatDecor;
 
     @SerializedName("espresso_maker")
-    private List<Misc> espressoMaker;
+    private List<Item> espressoMaker;
 
     @SerializedName("horned_dynastid_model")
-    private List<Misc> hornedDynastidModel;
+    private List<Item> hornedDynastidModel;
 
     @SerializedName("pop-eyed_goldfish_model")
-    private List<Misc> popEyedGoldfishModel;
+    private List<Item> popEyedGoldfishModel;
 
     @SerializedName("Baby_bear")
-    private List<Misc> babyBear;
+    private List<Item> babyBear;
 
     @SerializedName("Festivale_lamp")
-    private List<Misc> festivaleLamp;
+    private List<Item> festivaleLamp;
 
     @SerializedName("fragrance_diffuser")
-    private List<Misc> fragranceDiffuser;
+    private List<Item> fragranceDiffuser;
 
     @SerializedName("dinnerware")
-    private List<Misc> dinnerware;
+    private List<Item> dinnerware;
 
     @SerializedName("paper_tiger")
-    private List<Misc> paperTiger;
+    private List<Item> paperTiger;
 
     @SerializedName("typewriter")
-    private List<Misc> typewriter;
+    private List<Item> typewriter;
 
     @SerializedName("thank-you_Mom_mug")
-    private List<Misc> thankYouMomMug;
+    private List<Item> thankYouMomMug;
 
     @SerializedName("dung_beetle_model")
-    private List<Misc> dungBeetleModel;
+    private List<Item> dungBeetleModel;
 
     @SerializedName("firefly_model")
-    private List<Misc> fireflyModel;
+    private List<Item> fireflyModel;
 
     @SerializedName("thank-you_Dad_mug")
-    private List<Misc> thankYouDadMug;
+    private List<Item> thankYouDadMug;
 
     @SerializedName("modeling_clay")
-    private List<Misc> modelingClay;
+    private List<Item> modelingClay;
 
     @SerializedName("pop-up_book")
-    private List<Misc> popUpBook;
+    private List<Item> popUpBook;
 
     @SerializedName("silver_bug_trophy")
-    private List<Misc> silverBugTrophy;
+    private List<Item> silverBugTrophy;
 
     @SerializedName("rainbowfish_model")
-    private List<Misc> rainbowfishModel;
+    private List<Item> rainbowfishModel;
 
     @SerializedName("bluegill_model")
-    private List<Misc> bluegillModel;
+    private List<Item> bluegillModel;
 
     @SerializedName("lucky_cat")
-    private List<Misc> luckyCat;
+    private List<Item> luckyCat;
 
     @SerializedName("plastic_canister")
-    private List<Misc> plasticCanister;
+    private List<Item> plasticCanister;
 
     @SerializedName("sea_bass_model")
-    private List<Misc> seaBassModel;
+    private List<Item> seaBassModel;
 
     @SerializedName("sturdy_sewing_box")
-    private List<Misc> sturdySewingBox;
+    private List<Item> sturdySewingBox;
 
     @SerializedName("coffee_cup")
-    private List<Misc> coffeeCup;
+    private List<Item> coffeeCup;
 
     @SerializedName("decoy_duck")
-    private List<Misc> decoyDuck;
+    private List<Item> decoyDuck;
 
     @SerializedName("fruit_basket")
-    private List<Misc> fruitBasket;
+    private List<Item> fruitBasket;
 
     @SerializedName("lucky_gold_cat")
-    private List<Misc> luckyGoldCat;
+    private List<Item> luckyGoldCat;
 
     @SerializedName("wasp_model")
-    private List<Misc> waspModel;
+    private List<Item> waspModel;
 
     @SerializedName("peach_surprise_box")
-    private List<Misc> peachSurpriseBox;
+    private List<Item> peachSurpriseBox;
 
     @SerializedName("sewing_project")
-    private List<Misc> sewingProject;
+    private List<Item> sewingProject;
 
     @SerializedName("portable_radio")
-    private List<Misc> portableRadio;
+    private List<Item> portableRadio;
 
     @SerializedName("football")
-    private List<Misc> football;
+    private List<Item> football;
 
     @SerializedName("nibble_fish_model")
-    private List<Misc> nibbleFishModel;
+    private List<Item> nibbleFishModel;
 
     @SerializedName("walker_cicada_model")
-    private List<Misc> walkerCicadaModel;
+    private List<Item> walkerCicadaModel;
 
     @SerializedName("blue_weevil_beetle_model")
-    private List<Misc> blueWeevilBeetleModel;
+    private List<Item> blueWeevilBeetleModel;
 
     @SerializedName("surgeonfish_model")
-    private List<Misc> surgeonfishModel;
+    private List<Item> surgeonfishModel;
 
     @SerializedName("stack_of_books")
-    private List<Misc> stackOfBooks;
+    private List<Item> stackOfBooks;
 
     @SerializedName("table_setting")
-    private List<Misc> tableSetting;
+    private List<Item> tableSetting;
 
     @SerializedName("magazine")
-    private List<Misc> magazine;
+    private List<Item> magazine;
 
     @SerializedName("aluminum_briefcase")
-    private List<Misc> aluminumBriefcase;
+    private List<Item> aluminumBriefcase;
 
     @SerializedName("throwback_gothic_mirror")
-    private List<Misc> throwbackGothicMirror;
+    private List<Item> throwbackGothicMirror;
 
     @SerializedName("ACNH_Nintendo_Switch")
-    private List<Misc> aCNHNintendoSwitch;
+    private List<Item> aCNHNintendoSwitch;
 
     @SerializedName("peacock_butterfly_model")
-    private List<Misc> peacockButterflyModel;
+    private List<Item> peacockButterflyModel;
 
     @SerializedName("1-Up_Mushroom")
-    private List<Misc> jsonMember1UpMushroom;
+    private List<Item> jsonMember1UpMushroom;
 
     @SerializedName("cicada_shell_model")
-    private List<Misc> cicadaShellModel;
+    private List<Item> cicadaShellModel;
 
     @SerializedName("giant_cicada_model")
-    private List<Misc> giantCicadaModel;
+    private List<Item> giantCicadaModel;
 
     @SerializedName("flea_model")
-    private List<Misc> fleaModel;
+    private List<Item> fleaModel;
 
     @SerializedName("portable_record_player")
-    private List<Misc> portableRecordPlayer;
+    private List<Item> portableRecordPlayer;
 
     @SerializedName("arowana_model")
-    private List<Misc> arowanaModel;
+    private List<Item> arowanaModel;
 
     @SerializedName("honeybee_model")
-    private List<Misc> honeybeeModel;
+    private List<Item> honeybeeModel;
 
     @SerializedName("Scorpio_lamp")
-    private List<Misc> scorpioLamp;
+    private List<Item> scorpioLamp;
 
     @SerializedName("ant_farm")
-    private List<Misc> antFarm;
+    private List<Item> antFarm;
 
     @SerializedName("rice_grasshopper_model")
-    private List<Misc> riceGrasshopperModel;
+    private List<Item> riceGrasshopperModel;
 
     @SerializedName("arapaima_model")
-    private List<Misc> arapaimaModel;
+    private List<Item> arapaimaModel;
 
     @SerializedName("infused-water_dispenser")
-    private List<Misc> infusedWaterDispenser;
+    private List<Item> infusedWaterDispenser;
 
     @SerializedName("board_game")
-    private List<Misc> boardGame;
+    private List<Item> boardGame;
 
     @SerializedName("book_stands")
-    private List<Misc> bookStands;
+    private List<Item> bookStands;
 
     @SerializedName("bottled_ship")
-    private List<Misc> bottledShip;
+    private List<Item> bottledShip;
 
     @SerializedName("digital_alarm_clock")
-    private List<Misc> digitalAlarmClock;
+    private List<Item> digitalAlarmClock;
 
     @SerializedName("grand_giraffe_stag_model")
-    private List<Misc> grandGiraffeStagModel;
+    private List<Item> grandGiraffeStagModel;
 
     @SerializedName("hyacinth_lamp")
-    private List<Misc> hyacinthLamp;
+    private List<Item> hyacinthLamp;
 
     @SerializedName("windflower_fan")
-    private List<Misc> windflowerFan;
+    private List<Item> windflowerFan;
 
     @SerializedName("damselfly_model")
-    private List<Misc> damselflyModel;
+    private List<Item> damselflyModel;
 
     @SerializedName("catfish_model")
-    private List<Misc> catfishModel;
+    private List<Item> catfishModel;
 
     @SerializedName("mitten_crab_model")
-    private List<Misc> mittenCrabModel;
+    private List<Item> mittenCrabModel;
 
     @SerializedName("Newton's_cradle")
-    private List<Misc> newtonSCradle;
+    private List<Item> newtonSCradle;
 
     @SerializedName("puffer_fish_model")
-    private List<Misc> pufferFishModel;
+    private List<Item> pufferFishModel;
 
     @SerializedName("nail-art_set")
-    private List<Misc> nailArtSet;
+    private List<Item> nailArtSet;
 
     @SerializedName("spider_model")
-    private List<Misc> spiderModel;
+    private List<Item> spiderModel;
 
     @SerializedName("coelacanth_model")
-    private List<Misc> coelacanthModel;
+    private List<Item> coelacanthModel;
 
     @SerializedName("Yule_log")
-    private List<Misc> yuleLog;
+    private List<Item> yuleLog;
 
     @SerializedName("bamboo_sphere")
-    private List<Misc> bambooSphere;
+    private List<Item> bambooSphere;
 
     @SerializedName("cassette_player")
-    private List<Misc> cassettePlayer;
+    private List<Item> cassettePlayer;
 
     @SerializedName("butterfly_fish_model")
-    private List<Misc> butterflyFishModel;
+    private List<Item> butterflyFishModel;
 
     @SerializedName("toolbox")
-    private List<Misc> toolbox;
+    private List<Item> toolbox;
 
     @SerializedName("ray_model")
-    private List<Misc> rayModel;
+    private List<Item> rayModel;
 
     @SerializedName("Mom's_tissue_box")
-    private List<Misc> momSTissueBox;
+    private List<Item> momSTissueBox;
 
     @SerializedName("Olivier_salad")
-    private List<Misc> olivierSalad;
+    private List<Item> olivierSalad;
 
     @SerializedName("old-fashioned_washtub")
-    private List<Misc> oldFashionedWashtub;
+    private List<Item> oldFashionedWashtub;
 
     @SerializedName("spooky_candy_set")
-    private List<Misc> spookyCandySet;
+    private List<Item> spookyCandySet;
 
     @SerializedName("silver_fish_trophy")
-    private List<Misc> silverFishTrophy;
+    private List<Item> silverFishTrophy;
 
     @SerializedName("cherry_salmon_model")
-    private List<Misc> cherrySalmonModel;
+    private List<Item> cherrySalmonModel;
 
     @SerializedName("neon_tetra_model")
-    private List<Misc> neonTetraModel;
+    private List<Item> neonTetraModel;
 
     @SerializedName("Reese_&_Cyrus_photo_plate")
-    private List<Misc> reeseCyrusPhotoPlate;
+    private List<Item> reeseCyrusPhotoPlate;
 
     @SerializedName("holiday_candle")
-    private List<Misc> holidayCandle;
+    private List<Item> holidayCandle;
 
     @SerializedName("wooden_toolbox")
-    private List<Misc> woodenToolbox;
+    private List<Item> woodenToolbox;
 
     @SerializedName("giant_stag_model")
-    private List<Misc> giantStagModel;
+    private List<Item> giantStagModel;
 
     @SerializedName("bamboo_drum")
-    private List<Misc> bambooDrum;
+    private List<Item> bambooDrum;
 
     @SerializedName("essay_set")
-    private List<Misc> essaySet;
+    private List<Item> essaySet;
 
     @SerializedName("dace_model")
-    private List<Misc> daceModel;
+    private List<Item> daceModel;
 
     @SerializedName("moray_eel_model")
-    private List<Misc> morayEelModel;
+    private List<Item> morayEelModel;
 
     @SerializedName("ranchu_goldfish_model")
-    private List<Misc> ranchuGoldfishModel;
+    private List<Item> ranchuGoldfishModel;
 
     @SerializedName("common_butterfly_model")
-    private List<Misc> commonButterflyModel;
+    private List<Item> commonButterflyModel;
 
     @SerializedName("soft-shelled_turtle_model")
-    private List<Misc> softShelledTurtleModel;
+    private List<Item> softShelledTurtleModel;
 
     @SerializedName("Festivale_confetti_machine")
-    private List<Misc> festivaleConfettiMachine;
+    private List<Item> festivaleConfettiMachine;
 
     @SerializedName("lab-experiments_set")
-    private List<Misc> labExperimentsSet;
+    private List<Item> labExperimentsSet;
 
     @SerializedName("lantern")
-    private List<Misc> lantern;
+    private List<Item> lantern;
 
     @SerializedName("old-fashioned_alarm_clock")
-    private List<Misc> oldFashionedAlarmClock;
+    private List<Item> oldFashionedAlarmClock;
 
     @SerializedName("bronze_HHA_trophy")
-    private List<Misc> bronzeHHATrophy;
+    private List<Item> bronzeHHATrophy;
 
     @SerializedName("pop-up_toaster")
-    private List<Misc> popUpToaster;
+    private List<Item> popUpToaster;
 
     @SerializedName("stringfish_model")
-    private List<Misc> stringfishModel;
+    private List<Item> stringfishModel;
 
     @SerializedName("wharf_roach_model")
-    private List<Misc> wharfRoachModel;
+    private List<Item> wharfRoachModel;
 
     @SerializedName("bronze_fish_trophy")
-    private List<Misc> bronzeFishTrophy;
+    private List<Item> bronzeFishTrophy;
 
     @SerializedName("snail_model")
-    private List<Misc> snailModel;
+    private List<Item> snailModel;
 
     @SerializedName("candle")
-    private List<Misc> candle;
+    private List<Item> candle;
 
     @SerializedName("classic_pitcher")
-    private List<Misc> classicPitcher;
+    private List<Item> classicPitcher;
 
     @SerializedName("throwback_wrestling_figure")
-    private List<Misc> throwbackWrestlingFigure;
+    private List<Item> throwbackWrestlingFigure;
 
     @SerializedName("star_clock")
-    private List<Misc> starClock;
+    private List<Item> starClock;
 
     @SerializedName("long_locust_model")
-    private List<Misc> longLocustModel;
+    private List<Item> longLocustModel;
 
     @SerializedName("sea_horse_model")
-    private List<Misc> seaHorseModel;
+    private List<Item> seaHorseModel;
 
     @SerializedName("agrias_butterfly_model")
-    private List<Misc> agriasButterflyModel;
+    private List<Item> agriasButterflyModel;
 
     @SerializedName("Resetti_model")
-    private List<Misc> resettiModel;
+    private List<Item> resettiModel;
 
     @SerializedName("tea_set")
-    private List<Misc> teaSet;
+    private List<Item> teaSet;
 
     @SerializedName("incense_burner")
-    private List<Misc> incenseBurner;
+    private List<Item> incenseBurner;
 
     @SerializedName("succulent_plant")
-    private List<Misc> succulentPlant;
+    private List<Item> succulentPlant;
 
     @SerializedName("π_pie")
-    private List<Misc> pie;
+    private List<Item> pie;
 
     @SerializedName("killifish_model")
-    private List<Misc> killifishModel;
+    private List<Item> killifishModel;
 
     @SerializedName("mole_cricket_model")
-    private List<Misc> moleCricketModel;
+    private List<Item> moleCricketModel;
 
     @SerializedName("painting_set")
-    private List<Misc> paintingSet;
+    private List<Item> paintingSet;
 
     @SerializedName("spooky_table_setting")
-    private List<Misc> spookyTableSetting;
+    private List<Item> spookyTableSetting;
 
     @SerializedName("moth_model")
-    private List<Misc> mothModel;
+    private List<Item> mothModel;
 
     @SerializedName("metronome")
-    private List<Misc> metronome;
+    private List<Item> metronome;
 
     @SerializedName("heart-shaped_bouquet")
-    private List<Misc> heartShapedBouquet;
+    private List<Item> heartShapedBouquet;
 
     @SerializedName("film_projector")
-    private List<Misc> filmProjector;
+    private List<Item> filmProjector;
 
     @SerializedName("coconut_juice")
-    private List<Misc> coconutJuice;
+    private List<Item> coconutJuice;
 
     @SerializedName("shaved-ice_maker")
-    private List<Misc> shavedIceMaker;
+    private List<Item> shavedIceMaker;
 
     @SerializedName("frog_model")
-    private List<Misc> frogModel;
+    private List<Item> frogModel;
 
     @SerializedName("monarch_butterfly_model")
-    private List<Misc> monarchButterflyModel;
+    private List<Item> monarchButterflyModel;
 
     @SerializedName("suckerfish_model")
-    private List<Misc> suckerfishModel;
+    private List<Item> suckerfishModel;
 
     @SerializedName("king_salmon_model")
-    private List<Misc> kingSalmonModel;
+    private List<Item> kingSalmonModel;
 
     @SerializedName("soup_kettle")
-    private List<Misc> soupKettle;
+    private List<Item> soupKettle;
 
     @SerializedName("gar_model")
-    private List<Misc> garModel;
+    private List<Item> garModel;
 
     @SerializedName("mosquito_model")
-    private List<Misc> mosquitoModel;
+    private List<Item> mosquitoModel;
 
     @SerializedName("desk_mirror")
-    private List<Misc> deskMirror;
+    private List<Item> deskMirror;
 
     @SerializedName("evening_cicada_model")
-    private List<Misc> eveningCicadaModel;
+    private List<Item> eveningCicadaModel;
 
     @SerializedName("nova_light")
-    private List<Misc> novaLight;
+    private List<Item> novaLight;
 
     @SerializedName("tuna_model")
-    private List<Misc> tunaModel;
+    private List<Item> tunaModel;
 
     @SerializedName("kettlebell")
-    private List<Misc> kettlebell;
+    private List<Item> kettlebell;
 
     @SerializedName("amp")
-    private List<Misc> amp;
+    private List<Item> amp;
 
     @SerializedName("toy_cockroach")
-    private List<Misc> toyCockroach;
+    private List<Item> toyCockroach;
 
     @SerializedName("jewel_beetle_model")
-    private List<Misc> jewelBeetleModel;
+    private List<Item> jewelBeetleModel;
 
     @SerializedName("ball")
-    private List<Misc> ball;
+    private List<Item> ball;
 
     @SerializedName("darner_dragonfly_model")
-    private List<Misc> darnerDragonflyModel;
+    private List<Item> darnerDragonflyModel;
 
     @SerializedName("squid_model")
-    private List<Misc> squidModel;
+    private List<Item> squidModel;
 
     @SerializedName("frying_pan")
-    private List<Misc> fryingPan;
+    private List<Item> fryingPan;
 
     @SerializedName("cream_and_sugar")
-    private List<Misc> creamAndSugar;
+    private List<Item> creamAndSugar;
 
     @SerializedName("spooky_lantern")
-    private List<Misc> spookyLantern;
+    private List<Item> spookyLantern;
 
     @SerializedName("hamster_cage")
-    private List<Misc> hamsterCage;
+    private List<Item> hamsterCage;
 
     @SerializedName("microwave")
-    private List<Misc> microwave;
+    private List<Item> microwave;
 
     @SerializedName("diving_beetle_model")
-    private List<Misc> divingBeetleModel;
+    private List<Item> divingBeetleModel;
 
     @SerializedName("carp_model")
-    private List<Misc> carpModel;
+    private List<Item> carpModel;
 
     @SerializedName("handy_water_cooler")
-    private List<Misc> handyWaterCooler;
+    private List<Item> handyWaterCooler;
 
     @SerializedName("judge's_bell")
-    private List<Misc> judgeSBell;
+    private List<Item> judgeSBell;
 
     @SerializedName("whale_shark_model")
-    private List<Misc> whaleSharkModel;
+    private List<Item> whaleSharkModel;
 
     @SerializedName("sewing_machine")
-    private List<Misc> sewingMachine;
+    private List<Item> sewingMachine;
 
     @SerializedName("Nintendo_Switch")
-    private List<Misc> nintendoSwitch;
+    private List<Item> nintendoSwitch;
 
     @SerializedName("bagworm_model")
-    private List<Misc> bagwormModel;
+    private List<Item> bagwormModel;
 
     @SerializedName("walking_leaf_model")
-    private List<Misc> walkingLeafModel;
+    private List<Item> walkingLeafModel;
 
     @SerializedName("fax_machine")
-    private List<Misc> faxMachine;
+    private List<Item> faxMachine;
 
     @SerializedName("barreleye_model")
-    private List<Misc> barreleyeModel;
+    private List<Item> barreleyeModel;
 
     @SerializedName("table_lamp")
-    private List<Misc> tableLamp;
+    private List<Item> tableLamp;
 
     @SerializedName("shell_lamp")
-    private List<Misc> shellLamp;
+    private List<Item> shellLamp;
 
     @SerializedName("tiger_butterfly_model")
-    private List<Misc> tigerButterflyModel;
+    private List<Item> tigerButterflyModel;
 
     @SerializedName("ringtoss")
-    private List<Misc> ringtoss;
+    private List<Item> ringtoss;
 
     @SerializedName("stacked_magazines")
-    private List<Misc> stackedMagazines;
+    private List<Item> stackedMagazines;
 
     @SerializedName("dollhouse")
-    private List<Misc> dollhouse;
+    private List<Item> dollhouse;
 
     @SerializedName("golden_dishes")
-    private List<Misc> goldenDishes;
+    private List<Item> goldenDishes;
 
     @SerializedName("red_snapper_model")
-    private List<Misc> redSnapperModel;
+    private List<Item> redSnapperModel;
 
     @SerializedName("floating-biotope_planter")
-    private List<Misc> floatingBiotopePlanter;
+    private List<Item> floatingBiotopePlanter;
 
     @SerializedName("ring")
-    private List<Misc> ring;
+    private List<Item> ring;
 
     @SerializedName("freshwater_goby_model")
-    private List<Misc> freshwaterGobyModel;
+    private List<Item> freshwaterGobyModel;
 
     @SerializedName("LCD_TV_(50_in.)")
-    private List<Misc> lCDTV50In;
+    private List<Item> lCDTV50In;
 
     @SerializedName("sweetfish_model")
-    private List<Misc> sweetfishModel;
+    private List<Item> sweetfishModel;
 
     @SerializedName("ribbon_eel_model")
-    private List<Misc> ribbonEelModel;
+    private List<Item> ribbonEelModel;
 
     @SerializedName("brine-shrimp_aquarium")
-    private List<Misc> brineShrimpAquarium;
+    private List<Item> brineShrimpAquarium;
 
     @SerializedName("phonograph")
-    private List<Misc> phonograph;
+    private List<Item> phonograph;
 
     @SerializedName("black_bass_model")
-    private List<Misc> blackBassModel;
+    private List<Item> blackBassModel;
 
     @SerializedName("wooden_table_mirror")
-    private List<Misc> woodenTableMirror;
+    private List<Item> woodenTableMirror;
 
     @SerializedName("wooden-block_toy")
-    private List<Misc> woodenBlockToy;
+    private List<Item> woodenBlockToy;
 
     @SerializedName("cardboard_box")
-    private List<Misc> cardboardBox;
+    private List<Item> cardboardBox;
 
     @SerializedName("tilapia_model")
-    private List<Misc> tilapiaModel;
+    private List<Item> tilapiaModel;
 
     @SerializedName("grand_h._hercules_model")
-    private List<Misc> grandHHerculesModel;
+    private List<Item> grandHHerculesModel;
 
     @SerializedName("frozen-treat_set")
-    private List<Misc> frozenTreatSet;
+    private List<Item> frozenTreatSet;
 
     @SerializedName("mixer")
-    private List<Misc> mixer;
+    private List<Item> mixer;
 
     @SerializedName("DAL_model_plane")
-    private List<Misc> dALModelPlane;
+    private List<Item> dALModelPlane;
 
     @SerializedName("Mom's_plushie")
-    private List<Misc> momSPlushie;
+    private List<Item> momSPlushie;
 
     @SerializedName("pale_chub_model")
-    private List<Misc> paleChubModel;
+    private List<Item> paleChubModel;
 
     @SerializedName("common_bluebottle_model")
-    private List<Misc> commonBluebottleModel;
+    private List<Item> commonBluebottleModel;
 
     @SerializedName("crucian_carp_model")
-    private List<Misc> crucianCarpModel;
+    private List<Item> crucianCarpModel;
 
     @SerializedName("goldfish_model")
-    private List<Misc> goldfishModel;
+    private List<Item> goldfishModel;
 
     @SerializedName("angelfish_model")
-    private List<Misc> angelfishModel;
+    private List<Item> angelfishModel;
 
     @SerializedName("nutcracker")
-    private List<Misc> nutcracker;
+    private List<Item> nutcracker;
 
     @SerializedName("pot")
-    private List<Misc> pot;
+    private List<Item> pot;
 
     @SerializedName("ironing_set")
-    private List<Misc> ironingSet;
+    private List<Item> ironingSet;
 
     @SerializedName("kagamimochi")
-    private List<Misc> kagamimochi;
+    private List<Item> kagamimochi;
 
     @SerializedName("char_model")
-    private List<Misc> charModel;
+    private List<Item> charModel;
 
     @SerializedName("Ring-Con")
-    private List<Misc> ringCon;
+    private List<Item> ringCon;
 
     @SerializedName("metal_can")
-    private List<Misc> metalCan;
+    private List<Item> metalCan;
 
     @SerializedName("dab_model")
-    private List<Misc> dabModel;
+    private List<Item> dabModel;
 
     @SerializedName("unfinished_puzzle")
-    private List<Misc> unfinishedPuzzle;
+    private List<Item> unfinishedPuzzle;
 
     @SerializedName("giant_snakehead_model")
-    private List<Misc> giantSnakeheadModel;
+    private List<Item> giantSnakeheadModel;
 
     @SerializedName("M._sunset_moth_model")
-    private List<Misc> mSunsetMothModel;
+    private List<Item> mSunsetMothModel;
 
     @SerializedName("pine_bonsai_tree")
-    private List<Misc> pineBonsaiTree;
+    private List<Item> pineBonsaiTree;
 
     @SerializedName("throwback_container")
-    private List<Misc> throwbackContainer;
+    private List<Item> throwbackContainer;
 
     @SerializedName("DAL_mug")
-    private List<Misc> dALMug;
+    private List<Item> dALMug;
 
     @SerializedName("floor_sign")
-    private List<Misc> floorSign;
+    private List<Item> floorSign;
 
     @SerializedName("wobbling_Zipper_toy")
-    private List<Misc> wobblingZipperToy;
+    private List<Item> wobblingZipperToy;
 
     @SerializedName("aroma_pot")
-    private List<Misc> aromaPot;
+    private List<Item> aromaPot;
 
     @SerializedName("Fire_Flower")
-    private List<Misc> fireFlower;
+    private List<Item> fireFlower;
 
     @SerializedName("Napoleonfish_model")
-    private List<Misc> napoleonfishModel;
+    private List<Item> napoleonfishModel;
 
     @SerializedName("bronze_bug_trophy")
-    private List<Misc> bronzeBugTrophy;
+    private List<Item> bronzeBugTrophy;
 
     @SerializedName("pike_model")
-    private List<Misc> pikeModel;
+    private List<Item> pikeModel;
 
     @SerializedName("emperor_butterfly_model")
-    private List<Misc> emperorButterflyModel;
+    private List<Item> emperorButterflyModel;
 
     @SerializedName("rattan_table_lamp")
-    private List<Misc> rattanTableLamp;
+    private List<Item> rattanTableLamp;
 
     @SerializedName("Mom's_homemade_cake")
-    private List<Misc> momSHomemadeCake;
+    private List<Item> momSHomemadeCake;
 
     @SerializedName("pill_bug_model")
-    private List<Misc> pillBugModel;
+    private List<Item> pillBugModel;
 
     @SerializedName("matryoshka")
-    private List<Misc> matryoshka;
+    private List<Item> matryoshka;
 
     @SerializedName("scarab_beetle_model")
-    private List<Misc> scarabBeetleModel;
+    private List<Item> scarabBeetleModel;
 
     @SerializedName("piranha_model")
-    private List<Misc> piranhaModel;
+    private List<Item> piranhaModel;
 
     @SerializedName("ladybug_model")
-    private List<Misc> ladybugModel;
+    private List<Item> ladybugModel;
 
     @SerializedName("tin_robot")
-    private List<Misc> tinRobot;
+    private List<Item> tinRobot;
 
     @SerializedName("horned_elephant_model")
-    private List<Misc> hornedElephantModel;
+    private List<Item> hornedElephantModel;
 
     @SerializedName("chessboard")
-    private List<Misc> chessboard;
+    private List<Item> chessboard;
 
     @SerializedName("twelve-grape_dish")
-    private List<Misc> twelveGrapeDish;
+    private List<Item> twelveGrapeDish;
 
     @SerializedName("bamboo_candleholder")
-    private List<Misc> bambooCandleholder;
+    private List<Item> bambooCandleholder;
 
     @SerializedName("desktop_computer")
-    private List<Misc> desktopComputer;
+    private List<Item> desktopComputer;
 
     @SerializedName("miyama_stag_model")
-    private List<Misc> miyamaStagModel;
+    private List<Item> miyamaStagModel;
 
     @SerializedName("saw_stag_model")
-    private List<Misc> sawStagModel;
+    private List<Item> sawStagModel;
 
     @SerializedName("stinkbug_model")
-    private List<Misc> stinkbugModel;
+    private List<Item> stinkbugModel;
 
     @SerializedName("birthday_cake")
-    private List<Misc> birthdayCake;
+    private List<Item> birthdayCake;
 
     @SerializedName("celebratory_candles")
-    private List<Misc> celebratoryCandles;
+    private List<Item> celebratoryCandles;
 
     @SerializedName("coin")
-    private List<Misc> coin;
+    private List<Item> coin;
 
     @SerializedName("football_fish_model")
-    private List<Misc> footballFishModel;
+    private List<Item> footballFishModel;
 
     @SerializedName("analog_kitchen_scale")
-    private List<Misc> analogKitchenScale;
+    private List<Item> analogKitchenScale;
 
     @SerializedName("book")
-    private List<Misc> book;
+    private List<Item> book;
 
     @SerializedName("Libra_scale")
-    private List<Misc> libraScale;
+    private List<Item> libraScale;
 
     @SerializedName("plasma_ball")
-    private List<Misc> plasmaBall;
+    private List<Item> plasmaBall;
 
     @SerializedName("violin_beetle_model")
-    private List<Misc> violinBeetleModel;
+    private List<Item> violinBeetleModel;
 
     @SerializedName("rattan_towel_basket")
-    private List<Misc> rattanTowelBasket;
+    private List<Item> rattanTowelBasket;
 
     @SerializedName("steamer-basket_set")
-    private List<Misc> steamerBasketSet;
+    private List<Item> steamerBasketSet;
 
     @SerializedName("Shell")
-    private List<Misc> shell;
+    private List<Item> shell;
 
     @SerializedName("mantis_model")
-    private List<Misc> mantisModel;
+    private List<Item> mantisModel;
 
     @SerializedName("throwback_skull_radio")
-    private List<Misc> throwbackSkullRadio;
+    private List<Item> throwbackSkullRadio;
 
     @SerializedName("hermit_crab_model")
-    private List<Misc> hermitCrabModel;
+    private List<Item> hermitCrabModel;
 
     @SerializedName("silver_HHA_trophy")
-    private List<Misc> silverHHATrophy;
+    private List<Item> silverHHATrophy;
 
     @SerializedName("oil_lamp")
-    private List<Misc> oilLamp;
+    private List<Item> oilLamp;
 
     @SerializedName("wedding_cake")
-    private List<Misc> weddingCake;
+    private List<Item> weddingCake;
 
     @SerializedName("rice_cooker")
-    private List<Misc> riceCooker;
+    private List<Item> riceCooker;
 
     @SerializedName("bitterling_model")
-    private List<Misc> bitterlingModel;
+    private List<Item> bitterlingModel;
 
     @SerializedName("puppy_plushie")
-    private List<Misc> puppyPlushie;
+    private List<Item> puppyPlushie;
 
     @SerializedName("cutting_board")
-    private List<Misc> cuttingBoard;
+    private List<Item> cuttingBoard;
 
     @SerializedName("shell_speaker")
-    private List<Misc> shellSpeaker;
+    private List<Item> shellSpeaker;
 
     @SerializedName("Bunny_Day_basket")
-    private List<Misc> bunnyDayBasket;
+    private List<Item> bunnyDayBasket;
 
     @SerializedName("paper_kite_butterfly_model")
-    private List<Misc> paperKiteButterflyModel;
+    private List<Item> paperKiteButterflyModel;
 
     @SerializedName("Baby_panda")
-    private List<Misc> babyPanda;
+    private List<Item> babyPanda;
 
     @SerializedName("pedal_board")
-    private List<Misc> pedalBoard;
+    private List<Item> pedalBoard;
 
     @SerializedName("knife_block")
-    private List<Misc> knifeBlock;
+    private List<Item> knifeBlock;
 
     @SerializedName("scorpion_model")
-    private List<Misc> scorpionModel;
+    private List<Item> scorpionModel;
 
     @SerializedName("hammerhead_shark_model")
-    private List<Misc> hammerheadSharkModel;
+    private List<Item> hammerheadSharkModel;
 
     @SerializedName("tarantula_model")
-    private List<Misc> tarantulaModel;
+    private List<Item> tarantulaModel;
 
     @SerializedName("yellow_butterfly_model")
-    private List<Misc> yellowButterflyModel;
+    private List<Item> yellowButterflyModel;
 
     @SerializedName("record_box")
-    private List<Misc> recordBox;
+    private List<Item> recordBox;
 
     @SerializedName("pet_food_bowl")
-    private List<Misc> petFoodBowl;
+    private List<Item> petFoodBowl;
 
     @SerializedName("traditional_balancing_toy")
-    private List<Misc> traditionalBalancingToy;
+    private List<Item> traditionalBalancingToy;
 
     @SerializedName("Mom's_pen_stand")
-    private List<Misc> momSPenStand;
+    private List<Item> momSPenStand;
 
     @SerializedName("cat_grass")
-    private List<Misc> catGrass;
+    private List<Item> catGrass;
 
     @SerializedName("katana")
-    private List<Misc> katana;
+    private List<Item> katana;
 
     @SerializedName("grasshopper_model")
-    private List<Misc> grasshopperModel;
+    private List<Item> grasshopperModel;
 
     @SerializedName("clown_fish_model")
-    private List<Misc> clownFishModel;
+    private List<Item> clownFishModel;
 
     @SerializedName("mahi-mahi_model")
-    private List<Misc> mahiMahiModel;
+    private List<Item> mahiMahiModel;
 
     @SerializedName("R._Brooke's_birdwing_model")
-    private List<Misc> rBrookeSBirdwingModel;
+    private List<Item> rBrookeSBirdwingModel;
 
     @SerializedName("mini-cactus_set")
-    private List<Misc> miniCactusSet;
+    private List<Item> miniCactusSet;
 
     @SerializedName("bamboo_lunch_box")
-    private List<Misc> bambooLunchBox;
+    private List<Item> bambooLunchBox;
 
     @SerializedName("dorado_model")
-    private List<Misc> doradoModel;
+    private List<Item> doradoModel;
 
     @SerializedName("electronics_kit")
-    private List<Misc> electronicsKit;
+    private List<Item> electronicsKit;
 
     @SerializedName("oarfish_model")
-    private List<Misc> oarfishModel;
+    private List<Item> oarfishModel;
 
     @SerializedName("Yut_Nori")
-    private List<Misc> yutNori;
+    private List<Item> yutNori;
 
     @SerializedName("great_white_shark_model")
-    private List<Misc> greatWhiteSharkModel;
+    private List<Item> greatWhiteSharkModel;
 
     @SerializedName("tin_bucket")
-    private List<Misc> tinBucket;
+    private List<Item> tinBucket;
 
     @SerializedName("fly_model")
-    private List<Misc> flyModel;
+    private List<Item> flyModel;
 
     @SerializedName("Mom's_candle_set")
-    private List<Misc> momSCandleSet;
+    private List<Item> momSCandleSet;
 
     @SerializedName("dolly")
-    private List<Misc> dolly;
+    private List<Item> dolly;
 
     @SerializedName("Pocket_vintage_camper")
-    private List<Misc> pocketVintageCamper;
+    private List<Item> pocketVintageCamper;
 
     @SerializedName("simple_kettle")
-    private List<Misc> simpleKettle;
+    private List<Item> simpleKettle;
 
     @SerializedName("tissue_box")
-    private List<Misc> tissueBox;
+    private List<Item> tissueBox;
 
     @SerializedName("toy_centipede")
-    private List<Misc> toyCentipede;
+    private List<Item> toyCentipede;
 
     @SerializedName("pondskater_model")
-    private List<Misc> pondskaterModel;
+    private List<Item> pondskaterModel;
 
     @SerializedName("cherry_speakers")
-    private List<Misc> cherrySpeakers;
+    private List<Item> cherrySpeakers;
 
     @SerializedName("snapping_turtle_model")
-    private List<Misc> snappingTurtleModel;
+    private List<Item> snappingTurtleModel;
 
     @SerializedName("birthday_candles")
-    private List<Misc> birthdayCandles;
+    private List<Item> birthdayCandles;
 
     @SerializedName("saw_shark_model")
-    private List<Misc> sawSharkModel;
+    private List<Item> sawSharkModel;
 
     @SerializedName("tree's_bounty_little_tree")
-    private List<Misc> treeSBountyLittleTree;
+    private List<Item> treeSBountyLittleTree;
 
     @SerializedName("sea_butterfly_model")
-    private List<Misc> seaButterflyModel;
+    private List<Item> seaButterflyModel;
 
     @SerializedName("mini_circuit")
-    private List<Misc> miniCircuit;
+    private List<Item> miniCircuit;
 
     @SerializedName("walking_stick_model")
-    private List<Misc> walkingStickModel;
+    private List<Item> walkingStickModel;
 
     @SerializedName("pond_smelt_model")
-    private List<Misc> pondSmeltModel;
+    private List<Item> pondSmeltModel;
 
     @SerializedName("gold_bug_trophy")
-    private List<Misc> goldBugTrophy;
+    private List<Item> goldBugTrophy;
 
     @SerializedName("Turkey_Day_decorations")
-    private List<Misc> turkeyDayDecorations;
+    private List<Item> turkeyDayDecorations;
 
     @SerializedName("Mom's_tea_cozy")
-    private List<Misc> momSTeaCozy;
+    private List<Item> momSTeaCozy;
 
     @SerializedName("cushion")
-    private List<Misc> cushion;
+    private List<Item> cushion;
 
     @SerializedName("wooden_fish")
-    private List<Misc> woodenFish;
+    private List<Item> woodenFish;
 
     @SerializedName("cooler_box")
-    private List<Misc> coolerBox;
+    private List<Item> coolerBox;
 
     @SerializedName("tree's_bounty_lamp")
-    private List<Misc> treeSBountyLamp;
+    private List<Item> treeSBountyLamp;
 
     @SerializedName("fragrance_sticks")
-    private List<Misc> fragranceSticks;
+    private List<Item> fragranceSticks;
 
     @SerializedName("traditional_tea_set")
-    private List<Misc> traditionalTeaSet;
+    private List<Item> traditionalTeaSet;
 
     @SerializedName("golden_dung_beetle")
-    private List<Misc> goldenDungBeetle;
+    private List<Item> goldenDungBeetle;
 
     @SerializedName("brown_cicada_model")
-    private List<Misc> brownCicadaModel;
+    private List<Item> brownCicadaModel;
 
     @SerializedName("picnic_basket")
-    private List<Misc> picnicBasket;
+    private List<Item> picnicBasket;
 
     @SerializedName("cordless_phone")
-    private List<Misc> cordlessPhone;
+    private List<Item> cordlessPhone;
 
     @SerializedName("salmon_model")
-    private List<Misc> salmonModel;
+    private List<Item> salmonModel;
 
     @SerializedName("betta_model")
-    private List<Misc> bettaModel;
+    private List<Item> bettaModel;
 
     @SerializedName("protein_shaker_bottle")
-    private List<Misc> proteinShakerBottle;
+    private List<Item> proteinShakerBottle;
 
     @SerializedName("cherry-blossom_bonsai")
-    private List<Misc> cherryBlossomBonsai;
+    private List<Item> cherryBlossomBonsai;
 
     @SerializedName("rosalia_batesi_beetle_model")
-    private List<Misc> rosaliaBatesiBeetleModel;
+    private List<Item> rosaliaBatesiBeetleModel;
 
     @SerializedName("cornucopia")
-    private List<Misc> cornucopia;
+    private List<Item> cornucopia;
 
     @SerializedName("ant_model")
-    private List<Misc> antModel;
+    private List<Item> antModel;
 
     @SerializedName("Dala_horse")
-    private List<Misc> dalaHorse;
+    private List<Item> dalaHorse;
 
     @SerializedName("golden_candlestick")
-    private List<Misc> goldenCandlestick;
+    private List<Item> goldenCandlestick;
 
     @SerializedName("firewood")
-    private List<Misc> firewood;
+    private List<Item> firewood;
 
     @SerializedName("glass_holder_with_candle")
-    private List<Misc> glassHolderWithCandle;
+    private List<Item> glassHolderWithCandle;
 
     @SerializedName("guppy_model")
-    private List<Misc> guppyModel;
+    private List<Item> guppyModel;
 
     @SerializedName("homework_set")
-    private List<Misc> homeworkSet;
+    private List<Item> homeworkSet;
 
     @SerializedName("ukulele")
-    private List<Misc> ukulele;
+    private List<Item> ukulele;
 
     @SerializedName("accessories_stand")
-    private List<Misc> accessoriesStand;
+    private List<Item> accessoriesStand;
 
     @SerializedName("magic_kit")
-    private List<Misc> magicKit;
+    private List<Item> magicKit;
 
     @SerializedName("saddled_bichir_model")
-    private List<Misc> saddledBichirModel;
+    private List<Item> saddledBichirModel;
 
     @SerializedName("citrus_long-horned_b._model")
-    private List<Misc> citrusLongHornedBModel;
+    private List<Item> citrusLongHornedBModel;
 
     @SerializedName("orchid_mantis_model")
-    private List<Misc> orchidMantisModel;
+    private List<Item> orchidMantisModel;
 
     @SerializedName("mug")
-    private List<Misc> mug;
+    private List<Item> mug;
 
     @SerializedName("anthurium_plant")
-    private List<Misc> anthuriumPlant;
+    private List<Item> anthuriumPlant;
 
     @SerializedName("zodiac_ox_figurine")
-    private List<Misc> zodiacOxFigurine;
+    private List<Item> zodiacOxFigurine;
 
     @SerializedName("gold_HHA_trophy")
-    private List<Misc> goldHHATrophy;
+    private List<Item> goldHHATrophy;
 
     @SerializedName("Rover's_briefcase")
-    private List<Misc> roverSBriefcase;
+    private List<Item> roverSBriefcase;
 
     @SerializedName("unglazed_dish_set")
-    private List<Misc> unglazedDishSet;
+    private List<Item> unglazedDishSet;
 
     @SerializedName("Bunny_Day_lamp")
-    private List<Misc> bunnyDayLamp;
+    private List<Item> bunnyDayLamp;
 
     @SerializedName("man-faced_stink_bug_model")
-    private List<Misc> manFacedStinkBugModel;
+    private List<Item> manFacedStinkBugModel;
 
     @SerializedName("microscope")
-    private List<Misc> microscope;
+    private List<Item> microscope;
 
     @SerializedName("document_stack")
-    private List<Misc> documentStack;
+    private List<Item> documentStack;
 
     @SerializedName("anchovy_model")
-    private List<Misc> anchovyModel;
+    private List<Item> anchovyModel;
 
     @SerializedName("golden_stag_model")
-    private List<Misc> goldenStagModel;
+    private List<Item> goldenStagModel;
 
     @SerializedName("wedding_candle_set")
-    private List<Misc> weddingCandleSet;
+    private List<Item> weddingCandleSet;
 
     @SerializedName("yellow_perch_model")
-    private List<Misc> yellowPerchModel;
+    private List<Item> yellowPerchModel;
 
     @SerializedName("golden_arowana_model")
-    private List<Misc> goldenArowanaModel;
+    private List<Item> goldenArowanaModel;
 
     @SerializedName("dish-drying_rack")
-    private List<Misc> dishDryingRack;
+    private List<Item> dishDryingRack;
 
     @SerializedName("grand_goliath_beetle_model")
-    private List<Misc> grandGoliathBeetleModel;
+    private List<Item> grandGoliathBeetleModel;
 
     @SerializedName("golden_trout_model")
-    private List<Misc> goldenTroutModel;
+    private List<Item> goldenTroutModel;
 
     @SerializedName("LCD_TV_(20_in.)")
-    private List<Misc> lCDTV20In;
+    private List<Item> lCDTV20In;
 
     @SerializedName("tabletop_festive_tree")
-    private List<Misc> tabletopFestiveTree;
+    private List<Item> tabletopFestiveTree;
 
     @SerializedName("rotary_phone")
-    private List<Misc> rotaryPhone;
+    private List<Item> rotaryPhone;
 
     @SerializedName("chocolate_heart")
-    private List<Misc> chocolateHeart;
+    private List<Item> chocolateHeart;
 
     @SerializedName("hula_doll")
-    private List<Misc> hulaDoll;
+    private List<Item> hulaDoll;
 
     @SerializedName("toy_box")
-    private List<Misc> toyBox;
+    private List<Item> toyBox;
 
     @SerializedName("Mom's_cushion")
-    private List<Misc> momSCushion;
+    private List<Item> momSCushion;
 
     @SerializedName("fortune-telling_set")
-    private List<Misc> fortuneTellingSet;
+    private List<Item> fortuneTellingSet;
 
-    public List<Misc> getMagazineRack() {
+    public List<Item> getMagazineRack() {
         return magazineRack;
     }
 
-    public List<Misc> getBeachBall() {
+    public List<Item> getBeachBall() {
         return beachBall;
     }
 
-    public List<Misc> getTurkeyDayCasserole() {
+    public List<Item> getTurkeyDayCasserole() {
         return turkeyDayCasserole;
     }
 
-    public List<Misc> getProTapeRecorder() {
+    public List<Item> getProTapeRecorder() {
         return proTapeRecorder;
     }
 
-    public List<Misc> getLaptop() {
+    public List<Item> getLaptop() {
         return laptop;
     }
 
-    public List<Misc> getKettle() {
+    public List<Item> getKettle() {
         return kettle;
     }
 
-    public List<Misc> getBingoWheel() {
+    public List<Item> getBingoWheel() {
         return bingoWheel;
     }
 
-    public List<Misc> getCyclommatusStagModel() {
+    public List<Item> getCyclommatusStagModel() {
         return cyclommatusStagModel;
     }
 
-    public List<Misc> getBarredKnifejawModel() {
+    public List<Item> getBarredKnifejawModel() {
         return barredKnifejawModel;
     }
 
-    public List<Misc> getGreatPurpleEmperorModel() {
+    public List<Item> getGreatPurpleEmperorModel() {
         return greatPurpleEmperorModel;
     }
 
-    public List<Misc> getKoiModel() {
+    public List<Item> getKoiModel() {
         return koiModel;
     }
 
-    public List<Misc> getHourglass() {
+    public List<Item> getHourglass() {
         return hourglass;
     }
 
-    public List<Misc> getGiantWaterBugModel() {
+    public List<Item> getGiantWaterBugModel() {
         return giantWaterBugModel;
     }
 
-    public List<Misc> getRobustCicadaModel() {
+    public List<Item> getRobustCicadaModel() {
         return robustCicadaModel;
     }
 
-    public List<Misc> getFestiveTopSet() {
+    public List<Item> getFestiveTopSet() {
         return festiveTopSet;
     }
 
-    public List<Misc> getLoachModel() {
+    public List<Item> getLoachModel() {
         return loachModel;
     }
 
-    public List<Misc> getGardenGnome() {
+    public List<Item> getGardenGnome() {
         return gardenGnome;
     }
 
-    public List<Misc> getHorseMackerelModel() {
+    public List<Item> getHorseMackerelModel() {
         return horseMackerelModel;
     }
 
-    public List<Misc> getStovetopEspressoMaker() {
+    public List<Item> getStovetopEspressoMaker() {
         return stovetopEspressoMaker;
     }
 
-    public List<Misc> getSuperMushroom() {
+    public List<Item> getSuperMushroom() {
         return superMushroom;
     }
 
-    public List<Misc> getCartoonistSSet() {
+    public List<Item> getCartoonistSSet() {
         return cartoonistSSet;
     }
 
-    public List<Misc> getLifeRing() {
+    public List<Item> getLifeRing() {
         return lifeRing;
     }
 
-    public List<Misc> getPocketModernCamper() {
+    public List<Item> getPocketModernCamper() {
         return pocketModernCamper;
     }
 
-    public List<Misc> getEarthBoringDungBModel() {
+    public List<Item> getEarthBoringDungBModel() {
         return earthBoringDungBModel;
     }
 
-    public List<Misc> getGlobe() {
+    public List<Item> getGlobe() {
         return globe;
     }
 
-    public List<Misc> getBlossomLantern() {
+    public List<Item> getBlossomLantern() {
         return blossomLantern;
     }
 
-    public List<Misc> getSeaGlobe() {
+    public List<Item> getSeaGlobe() {
         return seaGlobe;
     }
 
-    public List<Misc> getCrawfishModel() {
+    public List<Item> getCrawfishModel() {
         return crawfishModel;
     }
 
-    public List<Misc> getBambooShootLamp() {
+    public List<Item> getBambooShootLamp() {
         return bambooShootLamp;
     }
 
-    public List<Misc> getSnowGlobe() {
+    public List<Item> getSnowGlobe() {
         return snowGlobe;
     }
 
-    public List<Misc> getGiantTrevallyModel() {
+    public List<Item> getGiantTrevallyModel() {
         return giantTrevallyModel;
     }
 
-    public List<Misc> getMossBall() {
+    public List<Item> getMossBall() {
         return mossBall;
     }
 
-    public List<Misc> getMigratoryLocustModel() {
+    public List<Item> getMigratoryLocustModel() {
         return migratoryLocustModel;
     }
 
-    public List<Misc> getGoldFishTrophy() {
+    public List<Item> getGoldFishTrophy() {
         return goldFishTrophy;
     }
 
-    public List<Misc> getBellCricketModel() {
+    public List<Item> getBellCricketModel() {
         return bellCricketModel;
     }
 
-    public List<Misc> getBlueMarlinModel() {
+    public List<Item> getBlueMarlinModel() {
         return blueMarlinModel;
     }
 
-    public List<Misc> getTadpoleModel() {
+    public List<Item> getTadpoleModel() {
         return tadpoleModel;
     }
 
-    public List<Misc> getCentipedeModel() {
+    public List<Item> getCentipedeModel() {
         return centipedeModel;
     }
 
-    public List<Misc> getTigerBeetleModel() {
+    public List<Item> getTigerBeetleModel() {
         return tigerBeetleModel;
     }
 
-    public List<Misc> getCricketModel() {
+    public List<Item> getCricketModel() {
         return cricketModel;
     }
 
-    public List<Misc> getHumidifier() {
+    public List<Item> getHumidifier() {
         return humidifier;
     }
 
-    public List<Misc> getBlowfishModel() {
+    public List<Item> getBlowfishModel() {
         return blowfishModel;
     }
 
-    public List<Misc> getRedDragonflyModel() {
+    public List<Item> getRedDragonflyModel() {
         return redDragonflyModel;
     }
 
-    public List<Misc> getCoffeeGrinder() {
+    public List<Item> getCoffeeGrinder() {
         return coffeeGrinder;
     }
 
-    public List<Misc> getGoldBars() {
+    public List<Item> getGoldBars() {
         return goldBars;
     }
 
-    public List<Misc> getZebraTurkeyfishModel() {
+    public List<Item> getZebraTurkeyfishModel() {
         return zebraTurkeyfishModel;
     }
 
-    public List<Misc> getNewYearSNoodles() {
+    public List<Item> getNewYearSNoodles() {
         return newYearSNoodles;
     }
 
-    public List<Misc> getTerrarium() {
+    public List<Item> getTerrarium() {
         return terrarium;
     }
 
-    public List<Misc> getTrashBags() {
+    public List<Item> getTrashBags() {
         return trashBags;
     }
 
-    public List<Misc> getCuteMusicPlayer() {
+    public List<Item> getCuteMusicPlayer() {
         return cuteMusicPlayer;
     }
 
-    public List<Misc> getTapeDeck() {
+    public List<Item> getTapeDeck() {
         return tapeDeck;
     }
 
-    public List<Misc> getDroneBeetleModel() {
+    public List<Item> getDroneBeetleModel() {
         return droneBeetleModel;
     }
 
-    public List<Misc> getDinosaurToy() {
+    public List<Item> getDinosaurToy() {
         return dinosaurToy;
     }
 
-    public List<Misc> getBerliner() {
+    public List<Item> getBerliner() {
         return berliner;
     }
 
-    public List<Misc> getFancyViolin() {
+    public List<Item> getFancyViolin() {
         return fancyViolin;
     }
 
-    public List<Misc> getHornedAtlasModel() {
+    public List<Item> getHornedAtlasModel() {
         return hornedAtlasModel;
     }
 
-    public List<Misc> getRainbowStagModel() {
+    public List<Item> getRainbowStagModel() {
         return rainbowStagModel;
     }
 
-    public List<Misc> getCampStove() {
+    public List<Item> getCampStove() {
         return campStove;
     }
 
-    public List<Misc> getRecycledCanThumbPiano() {
+    public List<Item> getRecycledCanThumbPiano() {
         return recycledCanThumbPiano;
     }
 
-    public List<Misc> getOliveFlounderModel() {
+    public List<Item> getOliveFlounderModel() {
         return oliveFlounderModel;
     }
 
-    public List<Misc> getSuperStar() {
+    public List<Item> getSuperStar() {
         return superStar;
     }
 
-    public List<Misc> getRevolvingSpiceRack() {
+    public List<Item> getRevolvingSpiceRack() {
         return revolvingSpiceRack;
     }
 
-    public List<Misc> getStandMixer() {
+    public List<Item> getStandMixer() {
         return standMixer;
     }
 
-    public List<Misc> getSturgeonModel() {
+    public List<Item> getSturgeonModel() {
         return sturgeonModel;
     }
 
-    public List<Misc> getTurkeyDayTableSetting() {
+    public List<Item> getTurkeyDayTableSetting() {
         return turkeyDayTableSetting;
     }
 
-    public List<Misc> getTurkeyDayWheatDecor() {
+    public List<Item> getTurkeyDayWheatDecor() {
         return turkeyDayWheatDecor;
     }
 
-    public List<Misc> getEspressoMaker() {
+    public List<Item> getEspressoMaker() {
         return espressoMaker;
     }
 
-    public List<Misc> getHornedDynastidModel() {
+    public List<Item> getHornedDynastidModel() {
         return hornedDynastidModel;
     }
 
-    public List<Misc> getPopEyedGoldfishModel() {
+    public List<Item> getPopEyedGoldfishModel() {
         return popEyedGoldfishModel;
     }
 
-    public List<Misc> getBabyBear() {
+    public List<Item> getBabyBear() {
         return babyBear;
     }
 
-    public List<Misc> getFestivaleLamp() {
+    public List<Item> getFestivaleLamp() {
         return festivaleLamp;
     }
 
-    public List<Misc> getFragranceDiffuser() {
+    public List<Item> getFragranceDiffuser() {
         return fragranceDiffuser;
     }
 
-    public List<Misc> getDinnerware() {
+    public List<Item> getDinnerware() {
         return dinnerware;
     }
 
-    public List<Misc> getPaperTiger() {
+    public List<Item> getPaperTiger() {
         return paperTiger;
     }
 
-    public List<Misc> getTypewriter() {
+    public List<Item> getTypewriter() {
         return typewriter;
     }
 
-    public List<Misc> getThankYouMomMug() {
+    public List<Item> getThankYouMomMug() {
         return thankYouMomMug;
     }
 
-    public List<Misc> getDungBeetleModel() {
+    public List<Item> getDungBeetleModel() {
         return dungBeetleModel;
     }
 
-    public List<Misc> getFireflyModel() {
+    public List<Item> getFireflyModel() {
         return fireflyModel;
     }
 
-    public List<Misc> getThankYouDadMug() {
+    public List<Item> getThankYouDadMug() {
         return thankYouDadMug;
     }
 
-    public List<Misc> getModelingClay() {
+    public List<Item> getModelingClay() {
         return modelingClay;
     }
 
-    public List<Misc> getPopUpBook() {
+    public List<Item> getPopUpBook() {
         return popUpBook;
     }
 
-    public List<Misc> getSilverBugTrophy() {
+    public List<Item> getSilverBugTrophy() {
         return silverBugTrophy;
     }
 
-    public List<Misc> getRainbowfishModel() {
+    public List<Item> getRainbowfishModel() {
         return rainbowfishModel;
     }
 
-    public List<Misc> getBluegillModel() {
+    public List<Item> getBluegillModel() {
         return bluegillModel;
     }
 
-    public List<Misc> getLuckyCat() {
+    public List<Item> getLuckyCat() {
         return luckyCat;
     }
 
-    public List<Misc> getPlasticCanister() {
+    public List<Item> getPlasticCanister() {
         return plasticCanister;
     }
 
-    public List<Misc> getSeaBassModel() {
+    public List<Item> getSeaBassModel() {
         return seaBassModel;
     }
 
-    public List<Misc> getSturdySewingBox() {
+    public List<Item> getSturdySewingBox() {
         return sturdySewingBox;
     }
 
-    public List<Misc> getCoffeeCup() {
+    public List<Item> getCoffeeCup() {
         return coffeeCup;
     }
 
-    public List<Misc> getDecoyDuck() {
+    public List<Item> getDecoyDuck() {
         return decoyDuck;
     }
 
-    public List<Misc> getFruitBasket() {
+    public List<Item> getFruitBasket() {
         return fruitBasket;
     }
 
-    public List<Misc> getLuckyGoldCat() {
+    public List<Item> getLuckyGoldCat() {
         return luckyGoldCat;
     }
 
-    public List<Misc> getWaspModel() {
+    public List<Item> getWaspModel() {
         return waspModel;
     }
 
-    public List<Misc> getPeachSurpriseBox() {
+    public List<Item> getPeachSurpriseBox() {
         return peachSurpriseBox;
     }
 
-    public List<Misc> getSewingProject() {
+    public List<Item> getSewingProject() {
         return sewingProject;
     }
 
-    public List<Misc> getPortableRadio() {
+    public List<Item> getPortableRadio() {
         return portableRadio;
     }
 
-    public List<Misc> getFootball() {
+    public List<Item> getFootball() {
         return football;
     }
 
-    public List<Misc> getNibbleFishModel() {
+    public List<Item> getNibbleFishModel() {
         return nibbleFishModel;
     }
 
-    public List<Misc> getWalkerCicadaModel() {
+    public List<Item> getWalkerCicadaModel() {
         return walkerCicadaModel;
     }
 
-    public List<Misc> getBlueWeevilBeetleModel() {
+    public List<Item> getBlueWeevilBeetleModel() {
         return blueWeevilBeetleModel;
     }
 
-    public List<Misc> getSurgeonfishModel() {
+    public List<Item> getSurgeonfishModel() {
         return surgeonfishModel;
     }
 
-    public List<Misc> getStackOfBooks() {
+    public List<Item> getStackOfBooks() {
         return stackOfBooks;
     }
 
-    public List<Misc> getTableSetting() {
+    public List<Item> getTableSetting() {
         return tableSetting;
     }
 
-    public List<Misc> getMagazine() {
+    public List<Item> getMagazine() {
         return magazine;
     }
 
-    public List<Misc> getAluminumBriefcase() {
+    public List<Item> getAluminumBriefcase() {
         return aluminumBriefcase;
     }
 
-    public List<Misc> getThrowbackGothicMirror() {
+    public List<Item> getThrowbackGothicMirror() {
         return throwbackGothicMirror;
     }
 
-    public List<Misc> getACNHNintendoSwitch() {
+    public List<Item> getACNHNintendoSwitch() {
         return aCNHNintendoSwitch;
     }
 
-    public List<Misc> getPeacockButterflyModel() {
+    public List<Item> getPeacockButterflyModel() {
         return peacockButterflyModel;
     }
 
-    public List<Misc> getJsonMember1UpMushroom() {
+    public List<Item> getJsonMember1UpMushroom() {
         return jsonMember1UpMushroom;
     }
 
-    public List<Misc> getCicadaShellModel() {
+    public List<Item> getCicadaShellModel() {
         return cicadaShellModel;
     }
 
-    public List<Misc> getGiantCicadaModel() {
+    public List<Item> getGiantCicadaModel() {
         return giantCicadaModel;
     }
 
-    public List<Misc> getFleaModel() {
+    public List<Item> getFleaModel() {
         return fleaModel;
     }
 
-    public List<Misc> getPortableRecordPlayer() {
+    public List<Item> getPortableRecordPlayer() {
         return portableRecordPlayer;
     }
 
-    public List<Misc> getArowanaModel() {
+    public List<Item> getArowanaModel() {
         return arowanaModel;
     }
 
-    public List<Misc> getHoneybeeModel() {
+    public List<Item> getHoneybeeModel() {
         return honeybeeModel;
     }
 
-    public List<Misc> getScorpioLamp() {
+    public List<Item> getScorpioLamp() {
         return scorpioLamp;
     }
 
-    public List<Misc> getAntFarm() {
+    public List<Item> getAntFarm() {
         return antFarm;
     }
 
-    public List<Misc> getRiceGrasshopperModel() {
+    public List<Item> getRiceGrasshopperModel() {
         return riceGrasshopperModel;
     }
 
-    public List<Misc> getArapaimaModel() {
+    public List<Item> getArapaimaModel() {
         return arapaimaModel;
     }
 
-    public List<Misc> getInfusedWaterDispenser() {
+    public List<Item> getInfusedWaterDispenser() {
         return infusedWaterDispenser;
     }
 
-    public List<Misc> getBoardGame() {
+    public List<Item> getBoardGame() {
         return boardGame;
     }
 
-    public List<Misc> getBookStands() {
+    public List<Item> getBookStands() {
         return bookStands;
     }
 
-    public List<Misc> getBottledShip() {
+    public List<Item> getBottledShip() {
         return bottledShip;
     }
 
-    public List<Misc> getDigitalAlarmClock() {
+    public List<Item> getDigitalAlarmClock() {
         return digitalAlarmClock;
     }
 
-    public List<Misc> getGrandGiraffeStagModel() {
+    public List<Item> getGrandGiraffeStagModel() {
         return grandGiraffeStagModel;
     }
 
-    public List<Misc> getHyacinthLamp() {
+    public List<Item> getHyacinthLamp() {
         return hyacinthLamp;
     }
 
-    public List<Misc> getWindflowerFan() {
+    public List<Item> getWindflowerFan() {
         return windflowerFan;
     }
 
-    public List<Misc> getDamselflyModel() {
+    public List<Item> getDamselflyModel() {
         return damselflyModel;
     }
 
-    public List<Misc> getCatfishModel() {
+    public List<Item> getCatfishModel() {
         return catfishModel;
     }
 
-    public List<Misc> getMittenCrabModel() {
+    public List<Item> getMittenCrabModel() {
         return mittenCrabModel;
     }
 
-    public List<Misc> getNewtonSCradle() {
+    public List<Item> getNewtonSCradle() {
         return newtonSCradle;
     }
 
-    public List<Misc> getPufferFishModel() {
+    public List<Item> getPufferFishModel() {
         return pufferFishModel;
     }
 
-    public List<Misc> getNailArtSet() {
+    public List<Item> getNailArtSet() {
         return nailArtSet;
     }
 
-    public List<Misc> getSpiderModel() {
+    public List<Item> getSpiderModel() {
         return spiderModel;
     }
 
-    public List<Misc> getCoelacanthModel() {
+    public List<Item> getCoelacanthModel() {
         return coelacanthModel;
     }
 
-    public List<Misc> getYuleLog() {
+    public List<Item> getYuleLog() {
         return yuleLog;
     }
 
-    public List<Misc> getBambooSphere() {
+    public List<Item> getBambooSphere() {
         return bambooSphere;
     }
 
-    public List<Misc> getCassettePlayer() {
+    public List<Item> getCassettePlayer() {
         return cassettePlayer;
     }
 
-    public List<Misc> getButterflyFishModel() {
+    public List<Item> getButterflyFishModel() {
         return butterflyFishModel;
     }
 
-    public List<Misc> getToolbox() {
+    public List<Item> getToolbox() {
         return toolbox;
     }
 
-    public List<Misc> getRayModel() {
+    public List<Item> getRayModel() {
         return rayModel;
     }
 
-    public List<Misc> getMomSTissueBox() {
+    public List<Item> getMomSTissueBox() {
         return momSTissueBox;
     }
 
-    public List<Misc> getOlivierSalad() {
+    public List<Item> getOlivierSalad() {
         return olivierSalad;
     }
 
-    public List<Misc> getOldFashionedWashtub() {
+    public List<Item> getOldFashionedWashtub() {
         return oldFashionedWashtub;
     }
 
-    public List<Misc> getSpookyCandySet() {
+    public List<Item> getSpookyCandySet() {
         return spookyCandySet;
     }
 
-    public List<Misc> getSilverFishTrophy() {
+    public List<Item> getSilverFishTrophy() {
         return silverFishTrophy;
     }
 
-    public List<Misc> getCherrySalmonModel() {
+    public List<Item> getCherrySalmonModel() {
         return cherrySalmonModel;
     }
 
-    public List<Misc> getNeonTetraModel() {
+    public List<Item> getNeonTetraModel() {
         return neonTetraModel;
     }
 
-    public List<Misc> getReeseCyrusPhotoPlate() {
+    public List<Item> getReeseCyrusPhotoPlate() {
         return reeseCyrusPhotoPlate;
     }
 
-    public List<Misc> getHolidayCandle() {
+    public List<Item> getHolidayCandle() {
         return holidayCandle;
     }
 
-    public List<Misc> getWoodenToolbox() {
+    public List<Item> getWoodenToolbox() {
         return woodenToolbox;
     }
 
-    public List<Misc> getGiantStagModel() {
+    public List<Item> getGiantStagModel() {
         return giantStagModel;
     }
 
-    public List<Misc> getBambooDrum() {
+    public List<Item> getBambooDrum() {
         return bambooDrum;
     }
 
-    public List<Misc> getEssaySet() {
+    public List<Item> getEssaySet() {
         return essaySet;
     }
 
-    public List<Misc> getDaceModel() {
+    public List<Item> getDaceModel() {
         return daceModel;
     }
 
-    public List<Misc> getMorayEelModel() {
+    public List<Item> getMorayEelModel() {
         return morayEelModel;
     }
 
-    public List<Misc> getRanchuGoldfishModel() {
+    public List<Item> getRanchuGoldfishModel() {
         return ranchuGoldfishModel;
     }
 
-    public List<Misc> getCommonButterflyModel() {
+    public List<Item> getCommonButterflyModel() {
         return commonButterflyModel;
     }
 
-    public List<Misc> getSoftShelledTurtleModel() {
+    public List<Item> getSoftShelledTurtleModel() {
         return softShelledTurtleModel;
     }
 
-    public List<Misc> getFestivaleConfettiMachine() {
+    public List<Item> getFestivaleConfettiMachine() {
         return festivaleConfettiMachine;
     }
 
-    public List<Misc> getLabExperimentsSet() {
+    public List<Item> getLabExperimentsSet() {
         return labExperimentsSet;
     }
 
-    public List<Misc> getLantern() {
+    public List<Item> getLantern() {
         return lantern;
     }
 
-    public List<Misc> getOldFashionedAlarmClock() {
+    public List<Item> getOldFashionedAlarmClock() {
         return oldFashionedAlarmClock;
     }
 
-    public List<Misc> getBronzeHHATrophy() {
+    public List<Item> getBronzeHHATrophy() {
         return bronzeHHATrophy;
     }
 
-    public List<Misc> getPopUpToaster() {
+    public List<Item> getPopUpToaster() {
         return popUpToaster;
     }
 
-    public List<Misc> getStringfishModel() {
+    public List<Item> getStringfishModel() {
         return stringfishModel;
     }
 
-    public List<Misc> getWharfRoachModel() {
+    public List<Item> getWharfRoachModel() {
         return wharfRoachModel;
     }
 
-    public List<Misc> getBronzeFishTrophy() {
+    public List<Item> getBronzeFishTrophy() {
         return bronzeFishTrophy;
     }
 
-    public List<Misc> getSnailModel() {
+    public List<Item> getSnailModel() {
         return snailModel;
     }
 
-    public List<Misc> getCandle() {
+    public List<Item> getCandle() {
         return candle;
     }
 
-    public List<Misc> getClassicPitcher() {
+    public List<Item> getClassicPitcher() {
         return classicPitcher;
     }
 
-    public List<Misc> getThrowbackWrestlingFigure() {
+    public List<Item> getThrowbackWrestlingFigure() {
         return throwbackWrestlingFigure;
     }
 
-    public List<Misc> getStarClock() {
+    public List<Item> getStarClock() {
         return starClock;
     }
 
-    public List<Misc> getLongLocustModel() {
+    public List<Item> getLongLocustModel() {
         return longLocustModel;
     }
 
-    public List<Misc> getSeaHorseModel() {
+    public List<Item> getSeaHorseModel() {
         return seaHorseModel;
     }
 
-    public List<Misc> getAgriasButterflyModel() {
+    public List<Item> getAgriasButterflyModel() {
         return agriasButterflyModel;
     }
 
-    public List<Misc> getResettiModel() {
+    public List<Item> getResettiModel() {
         return resettiModel;
     }
 
-    public List<Misc> getTeaSet() {
+    public List<Item> getTeaSet() {
         return teaSet;
     }
 
-    public List<Misc> getIncenseBurner() {
+    public List<Item> getIncenseBurner() {
         return incenseBurner;
     }
 
-    public List<Misc> getSucculentPlant() {
+    public List<Item> getSucculentPlant() {
         return succulentPlant;
     }
 
-    public List<Misc> getPie() {
+    public List<Item> getPie() {
         return pie;
     }
 
-    public List<Misc> getKillifishModel() {
+    public List<Item> getKillifishModel() {
         return killifishModel;
     }
 
-    public List<Misc> getMoleCricketModel() {
+    public List<Item> getMoleCricketModel() {
         return moleCricketModel;
     }
 
-    public List<Misc> getPaintingSet() {
+    public List<Item> getPaintingSet() {
         return paintingSet;
     }
 
-    public List<Misc> getSpookyTableSetting() {
+    public List<Item> getSpookyTableSetting() {
         return spookyTableSetting;
     }
 
-    public List<Misc> getMothModel() {
+    public List<Item> getMothModel() {
         return mothModel;
     }
 
-    public List<Misc> getMetronome() {
+    public List<Item> getMetronome() {
         return metronome;
     }
 
-    public List<Misc> getHeartShapedBouquet() {
+    public List<Item> getHeartShapedBouquet() {
         return heartShapedBouquet;
     }
 
-    public List<Misc> getFilmProjector() {
+    public List<Item> getFilmProjector() {
         return filmProjector;
     }
 
-    public List<Misc> getCoconutJuice() {
+    public List<Item> getCoconutJuice() {
         return coconutJuice;
     }
 
-    public List<Misc> getShavedIceMaker() {
+    public List<Item> getShavedIceMaker() {
         return shavedIceMaker;
     }
 
-    public List<Misc> getFrogModel() {
+    public List<Item> getFrogModel() {
         return frogModel;
     }
 
-    public List<Misc> getMonarchButterflyModel() {
+    public List<Item> getMonarchButterflyModel() {
         return monarchButterflyModel;
     }
 
-    public List<Misc> getSuckerfishModel() {
+    public List<Item> getSuckerfishModel() {
         return suckerfishModel;
     }
 
-    public List<Misc> getKingSalmonModel() {
+    public List<Item> getKingSalmonModel() {
         return kingSalmonModel;
     }
 
-    public List<Misc> getSoupKettle() {
+    public List<Item> getSoupKettle() {
         return soupKettle;
     }
 
-    public List<Misc> getGarModel() {
+    public List<Item> getGarModel() {
         return garModel;
     }
 
-    public List<Misc> getMosquitoModel() {
+    public List<Item> getMosquitoModel() {
         return mosquitoModel;
     }
 
-    public List<Misc> getDeskMirror() {
+    public List<Item> getDeskMirror() {
         return deskMirror;
     }
 
-    public List<Misc> getEveningCicadaModel() {
+    public List<Item> getEveningCicadaModel() {
         return eveningCicadaModel;
     }
 
-    public List<Misc> getNovaLight() {
+    public List<Item> getNovaLight() {
         return novaLight;
     }
 
-    public List<Misc> getTunaModel() {
+    public List<Item> getTunaModel() {
         return tunaModel;
     }
 
-    public List<Misc> getKettlebell() {
+    public List<Item> getKettlebell() {
         return kettlebell;
     }
 
-    public List<Misc> getAmp() {
+    public List<Item> getAmp() {
         return amp;
     }
 
-    public List<Misc> getToyCockroach() {
+    public List<Item> getToyCockroach() {
         return toyCockroach;
     }
 
-    public List<Misc> getJewelBeetleModel() {
+    public List<Item> getJewelBeetleModel() {
         return jewelBeetleModel;
     }
 
-    public List<Misc> getBall() {
+    public List<Item> getBall() {
         return ball;
     }
 
-    public List<Misc> getDarnerDragonflyModel() {
+    public List<Item> getDarnerDragonflyModel() {
         return darnerDragonflyModel;
     }
 
-    public List<Misc> getSquidModel() {
+    public List<Item> getSquidModel() {
         return squidModel;
     }
 
-    public List<Misc> getFryingPan() {
+    public List<Item> getFryingPan() {
         return fryingPan;
     }
 
-    public List<Misc> getCreamAndSugar() {
+    public List<Item> getCreamAndSugar() {
         return creamAndSugar;
     }
 
-    public List<Misc> getSpookyLantern() {
+    public List<Item> getSpookyLantern() {
         return spookyLantern;
     }
 
-    public List<Misc> getHamsterCage() {
+    public List<Item> getHamsterCage() {
         return hamsterCage;
     }
 
-    public List<Misc> getMicrowave() {
+    public List<Item> getMicrowave() {
         return microwave;
     }
 
-    public List<Misc> getDivingBeetleModel() {
+    public List<Item> getDivingBeetleModel() {
         return divingBeetleModel;
     }
 
-    public List<Misc> getCarpModel() {
+    public List<Item> getCarpModel() {
         return carpModel;
     }
 
-    public List<Misc> getHandyWaterCooler() {
+    public List<Item> getHandyWaterCooler() {
         return handyWaterCooler;
     }
 
-    public List<Misc> getJudgeSBell() {
+    public List<Item> getJudgeSBell() {
         return judgeSBell;
     }
 
-    public List<Misc> getWhaleSharkModel() {
+    public List<Item> getWhaleSharkModel() {
         return whaleSharkModel;
     }
 
-    public List<Misc> getSewingMachine() {
+    public List<Item> getSewingMachine() {
         return sewingMachine;
     }
 
-    public List<Misc> getNintendoSwitch() {
+    public List<Item> getNintendoSwitch() {
         return nintendoSwitch;
     }
 
-    public List<Misc> getBagwormModel() {
+    public List<Item> getBagwormModel() {
         return bagwormModel;
     }
 
-    public List<Misc> getWalkingLeafModel() {
+    public List<Item> getWalkingLeafModel() {
         return walkingLeafModel;
     }
 
-    public List<Misc> getFaxMachine() {
+    public List<Item> getFaxMachine() {
         return faxMachine;
     }
 
-    public List<Misc> getBarreleyeModel() {
+    public List<Item> getBarreleyeModel() {
         return barreleyeModel;
     }
 
-    public List<Misc> getTableLamp() {
+    public List<Item> getTableLamp() {
         return tableLamp;
     }
 
-    public List<Misc> getShellLamp() {
+    public List<Item> getShellLamp() {
         return shellLamp;
     }
 
-    public List<Misc> getTigerButterflyModel() {
+    public List<Item> getTigerButterflyModel() {
         return tigerButterflyModel;
     }
 
-    public List<Misc> getRingtoss() {
+    public List<Item> getRingtoss() {
         return ringtoss;
     }
 
-    public List<Misc> getStackedMagazines() {
+    public List<Item> getStackedMagazines() {
         return stackedMagazines;
     }
 
-    public List<Misc> getDollhouse() {
+    public List<Item> getDollhouse() {
         return dollhouse;
     }
 
-    public List<Misc> getGoldenDishes() {
+    public List<Item> getGoldenDishes() {
         return goldenDishes;
     }
 
-    public List<Misc> getRedSnapperModel() {
+    public List<Item> getRedSnapperModel() {
         return redSnapperModel;
     }
 
-    public List<Misc> getFloatingBiotopePlanter() {
+    public List<Item> getFloatingBiotopePlanter() {
         return floatingBiotopePlanter;
     }
 
-    public List<Misc> getRing() {
+    public List<Item> getRing() {
         return ring;
     }
 
-    public List<Misc> getFreshwaterGobyModel() {
+    public List<Item> getFreshwaterGobyModel() {
         return freshwaterGobyModel;
     }
 
-    public List<Misc> getLCDTV50In() {
+    public List<Item> getLCDTV50In() {
         return lCDTV50In;
     }
 
-    public List<Misc> getSweetfishModel() {
+    public List<Item> getSweetfishModel() {
         return sweetfishModel;
     }
 
-    public List<Misc> getRibbonEelModel() {
+    public List<Item> getRibbonEelModel() {
         return ribbonEelModel;
     }
 
-    public List<Misc> getBrineShrimpAquarium() {
+    public List<Item> getBrineShrimpAquarium() {
         return brineShrimpAquarium;
     }
 
-    public List<Misc> getPhonograph() {
+    public List<Item> getPhonograph() {
         return phonograph;
     }
 
-    public List<Misc> getBlackBassModel() {
+    public List<Item> getBlackBassModel() {
         return blackBassModel;
     }
 
-    public List<Misc> getWoodenTableMirror() {
+    public List<Item> getWoodenTableMirror() {
         return woodenTableMirror;
     }
 
-    public List<Misc> getWoodenBlockToy() {
+    public List<Item> getWoodenBlockToy() {
         return woodenBlockToy;
     }
 
-    public List<Misc> getCardboardBox() {
+    public List<Item> getCardboardBox() {
         return cardboardBox;
     }
 
-    public List<Misc> getTilapiaModel() {
+    public List<Item> getTilapiaModel() {
         return tilapiaModel;
     }
 
-    public List<Misc> getGrandHHerculesModel() {
+    public List<Item> getGrandHHerculesModel() {
         return grandHHerculesModel;
     }
 
-    public List<Misc> getFrozenTreatSet() {
+    public List<Item> getFrozenTreatSet() {
         return frozenTreatSet;
     }
 
-    public List<Misc> getMixer() {
+    public List<Item> getMixer() {
         return mixer;
     }
 
-    public List<Misc> getDALModelPlane() {
+    public List<Item> getDALModelPlane() {
         return dALModelPlane;
     }
 
-    public List<Misc> getMomSPlushie() {
+    public List<Item> getMomSPlushie() {
         return momSPlushie;
     }
 
-    public List<Misc> getPaleChubModel() {
+    public List<Item> getPaleChubModel() {
         return paleChubModel;
     }
 
-    public List<Misc> getCommonBluebottleModel() {
+    public List<Item> getCommonBluebottleModel() {
         return commonBluebottleModel;
     }
 
-    public List<Misc> getCrucianCarpModel() {
+    public List<Item> getCrucianCarpModel() {
         return crucianCarpModel;
     }
 
-    public List<Misc> getGoldfishModel() {
+    public List<Item> getGoldfishModel() {
         return goldfishModel;
     }
 
-    public List<Misc> getAngelfishModel() {
+    public List<Item> getAngelfishModel() {
         return angelfishModel;
     }
 
-    public List<Misc> getNutcracker() {
+    public List<Item> getNutcracker() {
         return nutcracker;
     }
 
-    public List<Misc> getPot() {
+    public List<Item> getPot() {
         return pot;
     }
 
-    public List<Misc> getIroningSet() {
+    public List<Item> getIroningSet() {
         return ironingSet;
     }
 
-    public List<Misc> getKagamimochi() {
+    public List<Item> getKagamimochi() {
         return kagamimochi;
     }
 
-    public List<Misc> getCharModel() {
+    public List<Item> getCharModel() {
         return charModel;
     }
 
-    public List<Misc> getRingCon() {
+    public List<Item> getRingCon() {
         return ringCon;
     }
 
-    public List<Misc> getMetalCan() {
+    public List<Item> getMetalCan() {
         return metalCan;
     }
 
-    public List<Misc> getDabModel() {
+    public List<Item> getDabModel() {
         return dabModel;
     }
 
-    public List<Misc> getUnfinishedPuzzle() {
+    public List<Item> getUnfinishedPuzzle() {
         return unfinishedPuzzle;
     }
 
-    public List<Misc> getGiantSnakeheadModel() {
+    public List<Item> getGiantSnakeheadModel() {
         return giantSnakeheadModel;
     }
 
-    public List<Misc> getMSunsetMothModel() {
+    public List<Item> getMSunsetMothModel() {
         return mSunsetMothModel;
     }
 
-    public List<Misc> getPineBonsaiTree() {
+    public List<Item> getPineBonsaiTree() {
         return pineBonsaiTree;
     }
 
-    public List<Misc> getThrowbackContainer() {
+    public List<Item> getThrowbackContainer() {
         return throwbackContainer;
     }
 
-    public List<Misc> getDALMug() {
+    public List<Item> getDALMug() {
         return dALMug;
     }
 
-    public List<Misc> getFloorSign() {
+    public List<Item> getFloorSign() {
         return floorSign;
     }
 
-    public List<Misc> getWobblingZipperToy() {
+    public List<Item> getWobblingZipperToy() {
         return wobblingZipperToy;
     }
 
-    public List<Misc> getAromaPot() {
+    public List<Item> getAromaPot() {
         return aromaPot;
     }
 
-    public List<Misc> getFireFlower() {
+    public List<Item> getFireFlower() {
         return fireFlower;
     }
 
-    public List<Misc> getNapoleonfishModel() {
+    public List<Item> getNapoleonfishModel() {
         return napoleonfishModel;
     }
 
-    public List<Misc> getBronzeBugTrophy() {
+    public List<Item> getBronzeBugTrophy() {
         return bronzeBugTrophy;
     }
 
-    public List<Misc> getPikeModel() {
+    public List<Item> getPikeModel() {
         return pikeModel;
     }
 
-    public List<Misc> getEmperorButterflyModel() {
+    public List<Item> getEmperorButterflyModel() {
         return emperorButterflyModel;
     }
 
-    public List<Misc> getRattanTableLamp() {
+    public List<Item> getRattanTableLamp() {
         return rattanTableLamp;
     }
 
-    public List<Misc> getMomSHomemadeCake() {
+    public List<Item> getMomSHomemadeCake() {
         return momSHomemadeCake;
     }
 
-    public List<Misc> getPillBugModel() {
+    public List<Item> getPillBugModel() {
         return pillBugModel;
     }
 
-    public List<Misc> getMatryoshka() {
+    public List<Item> getMatryoshka() {
         return matryoshka;
     }
 
-    public List<Misc> getScarabBeetleModel() {
+    public List<Item> getScarabBeetleModel() {
         return scarabBeetleModel;
     }
 
-    public List<Misc> getPiranhaModel() {
+    public List<Item> getPiranhaModel() {
         return piranhaModel;
     }
 
-    public List<Misc> getLadybugModel() {
+    public List<Item> getLadybugModel() {
         return ladybugModel;
     }
 
-    public List<Misc> getTinRobot() {
+    public List<Item> getTinRobot() {
         return tinRobot;
     }
 
-    public List<Misc> getHornedElephantModel() {
+    public List<Item> getHornedElephantModel() {
         return hornedElephantModel;
     }
 
-    public List<Misc> getChessboard() {
+    public List<Item> getChessboard() {
         return chessboard;
     }
 
-    public List<Misc> getTwelveGrapeDish() {
+    public List<Item> getTwelveGrapeDish() {
         return twelveGrapeDish;
     }
 
-    public List<Misc> getBambooCandleholder() {
+    public List<Item> getBambooCandleholder() {
         return bambooCandleholder;
     }
 
-    public List<Misc> getDesktopComputer() {
+    public List<Item> getDesktopComputer() {
         return desktopComputer;
     }
 
-    public List<Misc> getMiyamaStagModel() {
+    public List<Item> getMiyamaStagModel() {
         return miyamaStagModel;
     }
 
-    public List<Misc> getSawStagModel() {
+    public List<Item> getSawStagModel() {
         return sawStagModel;
     }
 
-    public List<Misc> getStinkbugModel() {
+    public List<Item> getStinkbugModel() {
         return stinkbugModel;
     }
 
-    public List<Misc> getBirthdayCake() {
+    public List<Item> getBirthdayCake() {
         return birthdayCake;
     }
 
-    public List<Misc> getCelebratoryCandles() {
+    public List<Item> getCelebratoryCandles() {
         return celebratoryCandles;
     }
 
-    public List<Misc> getCoin() {
+    public List<Item> getCoin() {
         return coin;
     }
 
-    public List<Misc> getFootballFishModel() {
+    public List<Item> getFootballFishModel() {
         return footballFishModel;
     }
 
-    public List<Misc> getAnalogKitchenScale() {
+    public List<Item> getAnalogKitchenScale() {
         return analogKitchenScale;
     }
 
-    public List<Misc> getBook() {
+    public List<Item> getBook() {
         return book;
     }
 
-    public List<Misc> getLibraScale() {
+    public List<Item> getLibraScale() {
         return libraScale;
     }
 
-    public List<Misc> getPlasmaBall() {
+    public List<Item> getPlasmaBall() {
         return plasmaBall;
     }
 
-    public List<Misc> getViolinBeetleModel() {
+    public List<Item> getViolinBeetleModel() {
         return violinBeetleModel;
     }
 
-    public List<Misc> getRattanTowelBasket() {
+    public List<Item> getRattanTowelBasket() {
         return rattanTowelBasket;
     }
 
-    public List<Misc> getSteamerBasketSet() {
+    public List<Item> getSteamerBasketSet() {
         return steamerBasketSet;
     }
 
-    public List<Misc> getShell() {
+    public List<Item> getShell() {
         return shell;
     }
 
-    public List<Misc> getMantisModel() {
+    public List<Item> getMantisModel() {
         return mantisModel;
     }
 
-    public List<Misc> getThrowbackSkullRadio() {
+    public List<Item> getThrowbackSkullRadio() {
         return throwbackSkullRadio;
     }
 
-    public List<Misc> getHermitCrabModel() {
+    public List<Item> getHermitCrabModel() {
         return hermitCrabModel;
     }
 
-    public List<Misc> getSilverHHATrophy() {
+    public List<Item> getSilverHHATrophy() {
         return silverHHATrophy;
     }
 
-    public List<Misc> getOilLamp() {
+    public List<Item> getOilLamp() {
         return oilLamp;
     }
 
-    public List<Misc> getWeddingCake() {
+    public List<Item> getWeddingCake() {
         return weddingCake;
     }
 
-    public List<Misc> getRiceCooker() {
+    public List<Item> getRiceCooker() {
         return riceCooker;
     }
 
-    public List<Misc> getBitterlingModel() {
+    public List<Item> getBitterlingModel() {
         return bitterlingModel;
     }
 
-    public List<Misc> getPuppyPlushie() {
+    public List<Item> getPuppyPlushie() {
         return puppyPlushie;
     }
 
-    public List<Misc> getCuttingBoard() {
+    public List<Item> getCuttingBoard() {
         return cuttingBoard;
     }
 
-    public List<Misc> getShellSpeaker() {
+    public List<Item> getShellSpeaker() {
         return shellSpeaker;
     }
 
-    public List<Misc> getBunnyDayBasket() {
+    public List<Item> getBunnyDayBasket() {
         return bunnyDayBasket;
     }
 
-    public List<Misc> getPaperKiteButterflyModel() {
+    public List<Item> getPaperKiteButterflyModel() {
         return paperKiteButterflyModel;
     }
 
-    public List<Misc> getBabyPanda() {
+    public List<Item> getBabyPanda() {
         return babyPanda;
     }
 
-    public List<Misc> getPedalBoard() {
+    public List<Item> getPedalBoard() {
         return pedalBoard;
     }
 
-    public List<Misc> getKnifeBlock() {
+    public List<Item> getKnifeBlock() {
         return knifeBlock;
     }
 
-    public List<Misc> getScorpionModel() {
+    public List<Item> getScorpionModel() {
         return scorpionModel;
     }
 
-    public List<Misc> getHammerheadSharkModel() {
+    public List<Item> getHammerheadSharkModel() {
         return hammerheadSharkModel;
     }
 
-    public List<Misc> getTarantulaModel() {
+    public List<Item> getTarantulaModel() {
         return tarantulaModel;
     }
 
-    public List<Misc> getYellowButterflyModel() {
+    public List<Item> getYellowButterflyModel() {
         return yellowButterflyModel;
     }
 
-    public List<Misc> getRecordBox() {
+    public List<Item> getRecordBox() {
         return recordBox;
     }
 
-    public List<Misc> getPetFoodBowl() {
+    public List<Item> getPetFoodBowl() {
         return petFoodBowl;
     }
 
-    public List<Misc> getTraditionalBalancingToy() {
+    public List<Item> getTraditionalBalancingToy() {
         return traditionalBalancingToy;
     }
 
-    public List<Misc> getMomSPenStand() {
+    public List<Item> getMomSPenStand() {
         return momSPenStand;
     }
 
-    public List<Misc> getCatGrass() {
+    public List<Item> getCatGrass() {
         return catGrass;
     }
 
-    public List<Misc> getKatana() {
+    public List<Item> getKatana() {
         return katana;
     }
 
-    public List<Misc> getGrasshopperModel() {
+    public List<Item> getGrasshopperModel() {
         return grasshopperModel;
     }
 
-    public List<Misc> getClownFishModel() {
+    public List<Item> getClownFishModel() {
         return clownFishModel;
     }
 
-    public List<Misc> getMahiMahiModel() {
+    public List<Item> getMahiMahiModel() {
         return mahiMahiModel;
     }
 
-    public List<Misc> getRBrookeSBirdwingModel() {
+    public List<Item> getRBrookeSBirdwingModel() {
         return rBrookeSBirdwingModel;
     }
 
-    public List<Misc> getMiniCactusSet() {
+    public List<Item> getMiniCactusSet() {
         return miniCactusSet;
     }
 
-    public List<Misc> getBambooLunchBox() {
+    public List<Item> getBambooLunchBox() {
         return bambooLunchBox;
     }
 
-    public List<Misc> getDoradoModel() {
+    public List<Item> getDoradoModel() {
         return doradoModel;
     }
 
-    public List<Misc> getElectronicsKit() {
+    public List<Item> getElectronicsKit() {
         return electronicsKit;
     }
 
-    public List<Misc> getOarfishModel() {
+    public List<Item> getOarfishModel() {
         return oarfishModel;
     }
 
-    public List<Misc> getYutNori() {
+    public List<Item> getYutNori() {
         return yutNori;
     }
 
-    public List<Misc> getGreatWhiteSharkModel() {
+    public List<Item> getGreatWhiteSharkModel() {
         return greatWhiteSharkModel;
     }
 
-    public List<Misc> getTinBucket() {
+    public List<Item> getTinBucket() {
         return tinBucket;
     }
 
-    public List<Misc> getFlyModel() {
+    public List<Item> getFlyModel() {
         return flyModel;
     }
 
-    public List<Misc> getMomSCandleSet() {
+    public List<Item> getMomSCandleSet() {
         return momSCandleSet;
     }
 
-    public List<Misc> getDolly() {
+    public List<Item> getDolly() {
         return dolly;
     }
 
-    public List<Misc> getPocketVintageCamper() {
+    public List<Item> getPocketVintageCamper() {
         return pocketVintageCamper;
     }
 
-    public List<Misc> getSimpleKettle() {
+    public List<Item> getSimpleKettle() {
         return simpleKettle;
     }
 
-    public List<Misc> getTissueBox() {
+    public List<Item> getTissueBox() {
         return tissueBox;
     }
 
-    public List<Misc> getToyCentipede() {
+    public List<Item> getToyCentipede() {
         return toyCentipede;
     }
 
-    public List<Misc> getPondskaterModel() {
+    public List<Item> getPondskaterModel() {
         return pondskaterModel;
     }
 
-    public List<Misc> getCherrySpeakers() {
+    public List<Item> getCherrySpeakers() {
         return cherrySpeakers;
     }
 
-    public List<Misc> getSnappingTurtleModel() {
+    public List<Item> getSnappingTurtleModel() {
         return snappingTurtleModel;
     }
 
-    public List<Misc> getBirthdayCandles() {
+    public List<Item> getBirthdayCandles() {
         return birthdayCandles;
     }
 
-    public List<Misc> getSawSharkModel() {
+    public List<Item> getSawSharkModel() {
         return sawSharkModel;
     }
 
-    public List<Misc> getTreeSBountyLittleTree() {
+    public List<Item> getTreeSBountyLittleTree() {
         return treeSBountyLittleTree;
     }
 
-    public List<Misc> getSeaButterflyModel() {
+    public List<Item> getSeaButterflyModel() {
         return seaButterflyModel;
     }
 
-    public List<Misc> getMiniCircuit() {
+    public List<Item> getMiniCircuit() {
         return miniCircuit;
     }
 
-    public List<Misc> getWalkingStickModel() {
+    public List<Item> getWalkingStickModel() {
         return walkingStickModel;
     }
 
-    public List<Misc> getPondSmeltModel() {
+    public List<Item> getPondSmeltModel() {
         return pondSmeltModel;
     }
 
-    public List<Misc> getGoldBugTrophy() {
+    public List<Item> getGoldBugTrophy() {
         return goldBugTrophy;
     }
 
-    public List<Misc> getTurkeyDayDecorations() {
+    public List<Item> getTurkeyDayDecorations() {
         return turkeyDayDecorations;
     }
 
-    public List<Misc> getMomSTeaCozy() {
+    public List<Item> getMomSTeaCozy() {
         return momSTeaCozy;
     }
 
-    public List<Misc> getCushion() {
+    public List<Item> getCushion() {
         return cushion;
     }
 
-    public List<Misc> getWoodenFish() {
+    public List<Item> getWoodenFish() {
         return woodenFish;
     }
 
-    public List<Misc> getCoolerBox() {
+    public List<Item> getCoolerBox() {
         return coolerBox;
     }
 
-    public List<Misc> getTreeSBountyLamp() {
+    public List<Item> getTreeSBountyLamp() {
         return treeSBountyLamp;
     }
 
-    public List<Misc> getFragranceSticks() {
+    public List<Item> getFragranceSticks() {
         return fragranceSticks;
     }
 
-    public List<Misc> getTraditionalTeaSet() {
+    public List<Item> getTraditionalTeaSet() {
         return traditionalTeaSet;
     }
 
-    public List<Misc> getGoldenDungBeetle() {
+    public List<Item> getGoldenDungBeetle() {
         return goldenDungBeetle;
     }
 
-    public List<Misc> getBrownCicadaModel() {
+    public List<Item> getBrownCicadaModel() {
         return brownCicadaModel;
     }
 
-    public List<Misc> getPicnicBasket() {
+    public List<Item> getPicnicBasket() {
         return picnicBasket;
     }
 
-    public List<Misc> getCordlessPhone() {
+    public List<Item> getCordlessPhone() {
         return cordlessPhone;
     }
 
-    public List<Misc> getSalmonModel() {
+    public List<Item> getSalmonModel() {
         return salmonModel;
     }
 
-    public List<Misc> getBettaModel() {
+    public List<Item> getBettaModel() {
         return bettaModel;
     }
 
-    public List<Misc> getProteinShakerBottle() {
+    public List<Item> getProteinShakerBottle() {
         return proteinShakerBottle;
     }
 
-    public List<Misc> getCherryBlossomBonsai() {
+    public List<Item> getCherryBlossomBonsai() {
         return cherryBlossomBonsai;
     }
 
-    public List<Misc> getRosaliaBatesiBeetleModel() {
+    public List<Item> getRosaliaBatesiBeetleModel() {
         return rosaliaBatesiBeetleModel;
     }
 
-    public List<Misc> getCornucopia() {
+    public List<Item> getCornucopia() {
         return cornucopia;
     }
 
-    public List<Misc> getAntModel() {
+    public List<Item> getAntModel() {
         return antModel;
     }
 
-    public List<Misc> getDalaHorse() {
+    public List<Item> getDalaHorse() {
         return dalaHorse;
     }
 
-    public List<Misc> getGoldenCandlestick() {
+    public List<Item> getGoldenCandlestick() {
         return goldenCandlestick;
     }
 
-    public List<Misc> getFirewood() {
+    public List<Item> getFirewood() {
         return firewood;
     }
 
-    public List<Misc> getGlassHolderWithCandle() {
+    public List<Item> getGlassHolderWithCandle() {
         return glassHolderWithCandle;
     }
 
-    public List<Misc> getGuppyModel() {
+    public List<Item> getGuppyModel() {
         return guppyModel;
     }
 
-    public List<Misc> getHomeworkSet() {
+    public List<Item> getHomeworkSet() {
         return homeworkSet;
     }
 
-    public List<Misc> getUkulele() {
+    public List<Item> getUkulele() {
         return ukulele;
     }
 
-    public List<Misc> getAccessoriesStand() {
+    public List<Item> getAccessoriesStand() {
         return accessoriesStand;
     }
 
-    public List<Misc> getMagicKit() {
+    public List<Item> getMagicKit() {
         return magicKit;
     }
 
-    public List<Misc> getSaddledBichirModel() {
+    public List<Item> getSaddledBichirModel() {
         return saddledBichirModel;
     }
 
-    public List<Misc> getCitrusLongHornedBModel() {
+    public List<Item> getCitrusLongHornedBModel() {
         return citrusLongHornedBModel;
     }
 
-    public List<Misc> getOrchidMantisModel() {
+    public List<Item> getOrchidMantisModel() {
         return orchidMantisModel;
     }
 
-    public List<Misc> getMug() {
+    public List<Item> getMug() {
         return mug;
     }
 
-    public List<Misc> getAnthuriumPlant() {
+    public List<Item> getAnthuriumPlant() {
         return anthuriumPlant;
     }
 
-    public List<Misc> getZodiacOxFigurine() {
+    public List<Item> getZodiacOxFigurine() {
         return zodiacOxFigurine;
     }
 
-    public List<Misc> getGoldHHATrophy() {
+    public List<Item> getGoldHHATrophy() {
         return goldHHATrophy;
     }
 
-    public List<Misc> getRoverSBriefcase() {
+    public List<Item> getRoverSBriefcase() {
         return roverSBriefcase;
     }
 
-    public List<Misc> getUnglazedDishSet() {
+    public List<Item> getUnglazedDishSet() {
         return unglazedDishSet;
     }
 
-    public List<Misc> getBunnyDayLamp() {
+    public List<Item> getBunnyDayLamp() {
         return bunnyDayLamp;
     }
 
-    public List<Misc> getManFacedStinkBugModel() {
+    public List<Item> getManFacedStinkBugModel() {
         return manFacedStinkBugModel;
     }
 
-    public List<Misc> getMicroscope() {
+    public List<Item> getMicroscope() {
         return microscope;
     }
 
-    public List<Misc> getDocumentStack() {
+    public List<Item> getDocumentStack() {
         return documentStack;
     }
 
-    public List<Misc> getAnchovyModel() {
+    public List<Item> getAnchovyModel() {
         return anchovyModel;
     }
 
-    public List<Misc> getGoldenStagModel() {
+    public List<Item> getGoldenStagModel() {
         return goldenStagModel;
     }
 
-    public List<Misc> getWeddingCandleSet() {
+    public List<Item> getWeddingCandleSet() {
         return weddingCandleSet;
     }
 
-    public List<Misc> getYellowPerchModel() {
+    public List<Item> getYellowPerchModel() {
         return yellowPerchModel;
     }
 
-    public List<Misc> getGoldenArowanaModel() {
+    public List<Item> getGoldenArowanaModel() {
         return goldenArowanaModel;
     }
 
-    public List<Misc> getDishDryingRack() {
+    public List<Item> getDishDryingRack() {
         return dishDryingRack;
     }
 
-    public List<Misc> getGrandGoliathBeetleModel() {
+    public List<Item> getGrandGoliathBeetleModel() {
         return grandGoliathBeetleModel;
     }
 
-    public List<Misc> getGoldenTroutModel() {
+    public List<Item> getGoldenTroutModel() {
         return goldenTroutModel;
     }
 
-    public List<Misc> getLCDTV20In() {
+    public List<Item> getLCDTV20In() {
         return lCDTV20In;
     }
 
-    public List<Misc> getTabletopFestiveTree() {
+    public List<Item> getTabletopFestiveTree() {
         return tabletopFestiveTree;
     }
 
-    public List<Misc> getRotaryPhone() {
+    public List<Item> getRotaryPhone() {
         return rotaryPhone;
     }
 
-    public List<Misc> getChocolateHeart() {
+    public List<Item> getChocolateHeart() {
         return chocolateHeart;
     }
 
-    public List<Misc> getHulaDoll() {
+    public List<Item> getHulaDoll() {
         return hulaDoll;
     }
 
-    public List<Misc> getToyBox() {
+    public List<Item> getToyBox() {
         return toyBox;
     }
 
-    public List<Misc> getMomSCushion() {
+    public List<Item> getMomSCushion() {
         return momSCushion;
     }
 
-    public List<Misc> getFortuneTellingSet() {
+    public List<Item> getFortuneTellingSet() {
         return fortuneTellingSet;
     }
 
-    public List<Misc> getRandomType() {
-        List<List<Misc>> miscs = Arrays.asList(magazineRack, beachBall, turkeyDayCasserole, proTapeRecorder, laptop, kettle, bingoWheel, cyclommatusStagModel, barredKnifejawModel, greatPurpleEmperorModel, koiModel, hourglass, giantWaterBugModel, robustCicadaModel, festiveTopSet, loachModel, gardenGnome, horseMackerelModel, stovetopEspressoMaker, superMushroom, cartoonistSSet, lifeRing, pocketModernCamper, earthBoringDungBModel, globe, blossomLantern, seaGlobe, crawfishModel, bambooShootLamp, snowGlobe, giantTrevallyModel, mossBall, migratoryLocustModel, goldFishTrophy, bellCricketModel, blueMarlinModel, tadpoleModel, centipedeModel, tigerBeetleModel, cricketModel, humidifier, blowfishModel, redDragonflyModel, coffeeGrinder, goldBars, zebraTurkeyfishModel, newYearSNoodles, terrarium, trashBags, cuteMusicPlayer, tapeDeck, droneBeetleModel, dinosaurToy, berliner, fancyViolin, hornedAtlasModel, rainbowStagModel, campStove, recycledCanThumbPiano, oliveFlounderModel, superStar, revolvingSpiceRack, standMixer, sturgeonModel, turkeyDayTableSetting, turkeyDayWheatDecor, espressoMaker, hornedDynastidModel, popEyedGoldfishModel, babyBear, festivaleLamp, fragranceDiffuser, dinnerware, paperTiger, typewriter, thankYouMomMug, dungBeetleModel, fireflyModel, thankYouDadMug, modelingClay, popUpBook, silverBugTrophy, rainbowfishModel, bluegillModel, luckyCat, plasticCanister, seaBassModel, sturdySewingBox, coffeeCup, decoyDuck, fruitBasket, luckyGoldCat, waspModel, peachSurpriseBox, sewingProject, portableRadio, football, nibbleFishModel, walkerCicadaModel, blueWeevilBeetleModel, surgeonfishModel, stackOfBooks, tableSetting, magazine, aluminumBriefcase, throwbackGothicMirror, aCNHNintendoSwitch, peacockButterflyModel, jsonMember1UpMushroom, cicadaShellModel, giantCicadaModel, fleaModel, portableRecordPlayer, arowanaModel, honeybeeModel, scorpioLamp, antFarm, riceGrasshopperModel, arapaimaModel, infusedWaterDispenser, boardGame, bookStands, bottledShip, digitalAlarmClock, grandGiraffeStagModel, hyacinthLamp, windflowerFan, damselflyModel, catfishModel, mittenCrabModel, newtonSCradle, pufferFishModel, nailArtSet, spiderModel, coelacanthModel, yuleLog, bambooSphere, cassettePlayer, butterflyFishModel, toolbox, rayModel, momSTissueBox, olivierSalad, oldFashionedWashtub, spookyCandySet, silverFishTrophy, cherrySalmonModel, neonTetraModel, reeseCyrusPhotoPlate, holidayCandle, woodenToolbox, giantStagModel, bambooDrum, essaySet, daceModel, morayEelModel, ranchuGoldfishModel, commonButterflyModel, softShelledTurtleModel, festivaleConfettiMachine, labExperimentsSet, lantern, oldFashionedAlarmClock, bronzeHHATrophy, popUpToaster, stringfishModel, wharfRoachModel, bronzeFishTrophy, snailModel, candle, classicPitcher, throwbackWrestlingFigure, starClock, longLocustModel, seaHorseModel, agriasButterflyModel, resettiModel, teaSet, incenseBurner, succulentPlant, pie, killifishModel, moleCricketModel, paintingSet, spookyTableSetting, mothModel, metronome, heartShapedBouquet, filmProjector, coconutJuice, shavedIceMaker, frogModel, monarchButterflyModel, suckerfishModel, kingSalmonModel, soupKettle, garModel, mosquitoModel, deskMirror, eveningCicadaModel, novaLight, tunaModel, kettlebell, amp, toyCockroach, jewelBeetleModel, ball, darnerDragonflyModel, squidModel, fryingPan, creamAndSugar, spookyLantern, hamsterCage, microwave, divingBeetleModel, carpModel, handyWaterCooler, judgeSBell, whaleSharkModel, sewingMachine, nintendoSwitch, bagwormModel, walkingLeafModel, faxMachine, barreleyeModel, tableLamp, shellLamp, tigerButterflyModel, ringtoss, stackedMagazines, dollhouse, goldenDishes, redSnapperModel, floatingBiotopePlanter, ring, freshwaterGobyModel, lCDTV50In, sweetfishModel, ribbonEelModel, brineShrimpAquarium, phonograph, blackBassModel, woodenTableMirror, woodenBlockToy, cardboardBox, tilapiaModel, grandHHerculesModel, frozenTreatSet, mixer, dALModelPlane, momSPlushie, paleChubModel, commonBluebottleModel, crucianCarpModel, goldfishModel, angelfishModel, nutcracker, pot, ironingSet, kagamimochi, charModel, ringCon, metalCan, dabModel, unfinishedPuzzle, giantSnakeheadModel, mSunsetMothModel, pineBonsaiTree, throwbackContainer, dALMug, floorSign, wobblingZipperToy, aromaPot, fireFlower, napoleonfishModel, bronzeBugTrophy, pikeModel, emperorButterflyModel, rattanTableLamp, momSHomemadeCake, pillBugModel, matryoshka, scarabBeetleModel, piranhaModel, ladybugModel, tinRobot, hornedElephantModel, chessboard, twelveGrapeDish, bambooCandleholder, desktopComputer, miyamaStagModel, sawStagModel, stinkbugModel, birthdayCake, celebratoryCandles, coin, footballFishModel, analogKitchenScale, book, libraScale, plasmaBall, violinBeetleModel, rattanTowelBasket, steamerBasketSet, shell, mantisModel, throwbackSkullRadio, hermitCrabModel, silverHHATrophy, oilLamp, weddingCake, riceCooker, bitterlingModel, puppyPlushie, cuttingBoard, shellSpeaker, bunnyDayBasket, paperKiteButterflyModel, babyPanda, pedalBoard, knifeBlock, scorpionModel, hammerheadSharkModel, tarantulaModel, yellowButterflyModel, recordBox, petFoodBowl, traditionalBalancingToy, momSPenStand, catGrass, katana, grasshopperModel, clownFishModel, mahiMahiModel, rBrookeSBirdwingModel, miniCactusSet, bambooLunchBox, doradoModel, electronicsKit, oarfishModel, yutNori, greatWhiteSharkModel, tinBucket, flyModel, momSCandleSet, dolly, pocketVintageCamper, simpleKettle, tissueBox, toyCentipede, pondskaterModel, cherrySpeakers, snappingTurtleModel, birthdayCandles, sawSharkModel, treeSBountyLittleTree, seaButterflyModel, miniCircuit, walkingStickModel, pondSmeltModel, goldBugTrophy, turkeyDayDecorations, momSTeaCozy, cushion, woodenFish, coolerBox, treeSBountyLamp, fragranceSticks, traditionalTeaSet, goldenDungBeetle, brownCicadaModel, picnicBasket, cordlessPhone, salmonModel, bettaModel, proteinShakerBottle, cherryBlossomBonsai, rosaliaBatesiBeetleModel, cornucopia, antModel, dalaHorse, goldenCandlestick, firewood, glassHolderWithCandle, guppyModel, homeworkSet, ukulele, accessoriesStand, magicKit, saddledBichirModel, citrusLongHornedBModel, orchidMantisModel, mug, anthuriumPlant, zodiacOxFigurine, goldHHATrophy, roverSBriefcase, unglazedDishSet, bunnyDayLamp, manFacedStinkBugModel, microscope, documentStack, anchovyModel, goldenStagModel, weddingCandleSet, yellowPerchModel, goldenArowanaModel, dishDryingRack, grandGoliathBeetleModel, goldenTroutModel, lCDTV20In, tabletopFestiveTree, rotaryPhone, chocolateHeart, hulaDoll, toyBox, momSCushion, fortuneTellingSet);
+    public List<Item> getRandomType() {
+        List<List<Item>> miscs = Arrays.asList(magazineRack, beachBall, turkeyDayCasserole, proTapeRecorder, laptop, kettle, bingoWheel, cyclommatusStagModel, barredKnifejawModel, greatPurpleEmperorModel, koiModel, hourglass, giantWaterBugModel, robustCicadaModel, festiveTopSet, loachModel, gardenGnome, horseMackerelModel, stovetopEspressoMaker, superMushroom, cartoonistSSet, lifeRing, pocketModernCamper, earthBoringDungBModel, globe, blossomLantern, seaGlobe, crawfishModel, bambooShootLamp, snowGlobe, giantTrevallyModel, mossBall, migratoryLocustModel, goldFishTrophy, bellCricketModel, blueMarlinModel, tadpoleModel, centipedeModel, tigerBeetleModel, cricketModel, humidifier, blowfishModel, redDragonflyModel, coffeeGrinder, goldBars, zebraTurkeyfishModel, newYearSNoodles, terrarium, trashBags, cuteMusicPlayer, tapeDeck, droneBeetleModel, dinosaurToy, berliner, fancyViolin, hornedAtlasModel, rainbowStagModel, campStove, recycledCanThumbPiano, oliveFlounderModel, superStar, revolvingSpiceRack, standMixer, sturgeonModel, turkeyDayTableSetting, turkeyDayWheatDecor, espressoMaker, hornedDynastidModel, popEyedGoldfishModel, babyBear, festivaleLamp, fragranceDiffuser, dinnerware, paperTiger, typewriter, thankYouMomMug, dungBeetleModel, fireflyModel, thankYouDadMug, modelingClay, popUpBook, silverBugTrophy, rainbowfishModel, bluegillModel, luckyCat, plasticCanister, seaBassModel, sturdySewingBox, coffeeCup, decoyDuck, fruitBasket, luckyGoldCat, waspModel, peachSurpriseBox, sewingProject, portableRadio, football, nibbleFishModel, walkerCicadaModel, blueWeevilBeetleModel, surgeonfishModel, stackOfBooks, tableSetting, magazine, aluminumBriefcase, throwbackGothicMirror, aCNHNintendoSwitch, peacockButterflyModel, jsonMember1UpMushroom, cicadaShellModel, giantCicadaModel, fleaModel, portableRecordPlayer, arowanaModel, honeybeeModel, scorpioLamp, antFarm, riceGrasshopperModel, arapaimaModel, infusedWaterDispenser, boardGame, bookStands, bottledShip, digitalAlarmClock, grandGiraffeStagModel, hyacinthLamp, windflowerFan, damselflyModel, catfishModel, mittenCrabModel, newtonSCradle, pufferFishModel, nailArtSet, spiderModel, coelacanthModel, yuleLog, bambooSphere, cassettePlayer, butterflyFishModel, toolbox, rayModel, momSTissueBox, olivierSalad, oldFashionedWashtub, spookyCandySet, silverFishTrophy, cherrySalmonModel, neonTetraModel, reeseCyrusPhotoPlate, holidayCandle, woodenToolbox, giantStagModel, bambooDrum, essaySet, daceModel, morayEelModel, ranchuGoldfishModel, commonButterflyModel, softShelledTurtleModel, festivaleConfettiMachine, labExperimentsSet, lantern, oldFashionedAlarmClock, bronzeHHATrophy, popUpToaster, stringfishModel, wharfRoachModel, bronzeFishTrophy, snailModel, candle, classicPitcher, throwbackWrestlingFigure, starClock, longLocustModel, seaHorseModel, agriasButterflyModel, resettiModel, teaSet, incenseBurner, succulentPlant, pie, killifishModel, moleCricketModel, paintingSet, spookyTableSetting, mothModel, metronome, heartShapedBouquet, filmProjector, coconutJuice, shavedIceMaker, frogModel, monarchButterflyModel, suckerfishModel, kingSalmonModel, soupKettle, garModel, mosquitoModel, deskMirror, eveningCicadaModel, novaLight, tunaModel, kettlebell, amp, toyCockroach, jewelBeetleModel, ball, darnerDragonflyModel, squidModel, fryingPan, creamAndSugar, spookyLantern, hamsterCage, microwave, divingBeetleModel, carpModel, handyWaterCooler, judgeSBell, whaleSharkModel, sewingMachine, nintendoSwitch, bagwormModel, walkingLeafModel, faxMachine, barreleyeModel, tableLamp, shellLamp, tigerButterflyModel, ringtoss, stackedMagazines, dollhouse, goldenDishes, redSnapperModel, floatingBiotopePlanter, ring, freshwaterGobyModel, lCDTV50In, sweetfishModel, ribbonEelModel, brineShrimpAquarium, phonograph, blackBassModel, woodenTableMirror, woodenBlockToy, cardboardBox, tilapiaModel, grandHHerculesModel, frozenTreatSet, mixer, dALModelPlane, momSPlushie, paleChubModel, commonBluebottleModel, crucianCarpModel, goldfishModel, angelfishModel, nutcracker, pot, ironingSet, kagamimochi, charModel, ringCon, metalCan, dabModel, unfinishedPuzzle, giantSnakeheadModel, mSunsetMothModel, pineBonsaiTree, throwbackContainer, dALMug, floorSign, wobblingZipperToy, aromaPot, fireFlower, napoleonfishModel, bronzeBugTrophy, pikeModel, emperorButterflyModel, rattanTableLamp, momSHomemadeCake, pillBugModel, matryoshka, scarabBeetleModel, piranhaModel, ladybugModel, tinRobot, hornedElephantModel, chessboard, twelveGrapeDish, bambooCandleholder, desktopComputer, miyamaStagModel, sawStagModel, stinkbugModel, birthdayCake, celebratoryCandles, coin, footballFishModel, analogKitchenScale, book, libraScale, plasmaBall, violinBeetleModel, rattanTowelBasket, steamerBasketSet, shell, mantisModel, throwbackSkullRadio, hermitCrabModel, silverHHATrophy, oilLamp, weddingCake, riceCooker, bitterlingModel, puppyPlushie, cuttingBoard, shellSpeaker, bunnyDayBasket, paperKiteButterflyModel, babyPanda, pedalBoard, knifeBlock, scorpionModel, hammerheadSharkModel, tarantulaModel, yellowButterflyModel, recordBox, petFoodBowl, traditionalBalancingToy, momSPenStand, catGrass, katana, grasshopperModel, clownFishModel, mahiMahiModel, rBrookeSBirdwingModel, miniCactusSet, bambooLunchBox, doradoModel, electronicsKit, oarfishModel, yutNori, greatWhiteSharkModel, tinBucket, flyModel, momSCandleSet, dolly, pocketVintageCamper, simpleKettle, tissueBox, toyCentipede, pondskaterModel, cherrySpeakers, snappingTurtleModel, birthdayCandles, sawSharkModel, treeSBountyLittleTree, seaButterflyModel, miniCircuit, walkingStickModel, pondSmeltModel, goldBugTrophy, turkeyDayDecorations, momSTeaCozy, cushion, woodenFish, coolerBox, treeSBountyLamp, fragranceSticks, traditionalTeaSet, goldenDungBeetle, brownCicadaModel, picnicBasket, cordlessPhone, salmonModel, bettaModel, proteinShakerBottle, cherryBlossomBonsai, rosaliaBatesiBeetleModel, cornucopia, antModel, dalaHorse, goldenCandlestick, firewood, glassHolderWithCandle, guppyModel, homeworkSet, ukulele, accessoriesStand, magicKit, saddledBichirModel, citrusLongHornedBModel, orchidMantisModel, mug, anthuriumPlant, zodiacOxFigurine, goldHHATrophy, roverSBriefcase, unglazedDishSet, bunnyDayLamp, manFacedStinkBugModel, microscope, documentStack, anchovyModel, goldenStagModel, weddingCandleSet, yellowPerchModel, goldenArowanaModel, dishDryingRack, grandGoliathBeetleModel, goldenTroutModel, lCDTV20In, tabletopFestiveTree, rotaryPhone, chocolateHeart, hulaDoll, toyBox, momSCushion, fortuneTellingSet);
         return getRandomValue(miscs);
     }
 
-    private List<Misc> getRandomValue(List<List<Misc>> miscs) {
+    private List<Item> getRandomValue(List<List<Item>> miscs) {
         int index = new Random().nextInt(miscs.size());
         return miscs.get(index);
     }

@@ -15,4110 +15,4111 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import io.github.jisungbin.acnhapi.models.items.ItemWrapper;
+import io.github.jisungbin.acnhapi.models.items.common.Item;
+import io.github.jisungbin.acnhapi.models.items.common.ItemWrapper;
 
 public class Housewares implements ItemWrapper {
     @SerializedName("sleigh")
-    private List<Houseware> sleigh;
+    private List<Item> sleigh;
 
     @SerializedName("artisanal_bug_cage")
-    private List<Houseware> artisanalBugCage;
+    private List<Item> artisanalBugCage;
 
     @SerializedName("drum_set")
-    private List<Houseware> drumSet;
+    private List<Item> drumSet;
 
     @SerializedName("electric_kick_scooter")
-    private List<Houseware> electricKickScooter;
+    private List<Item> electricKickScooter;
 
     @SerializedName("Papa_panda")
-    private List<Houseware> papaPanda;
+    private List<Item> papaPanda;
 
     @SerializedName("kitchen_island")
-    private List<Houseware> kitchenIsland;
+    private List<Item> kitchenIsland;
 
     @SerializedName("mermaid_closet")
-    private List<Houseware> mermaidCloset;
+    private List<Item> mermaidCloset;
 
     @SerializedName("large_Mushroom_Platform")
-    private List<Houseware> largeMushroomPlatform;
+    private List<Item> largeMushroomPlatform;
 
     @SerializedName("handcart")
-    private List<Houseware> handcart;
+    private List<Item> handcart;
 
     @SerializedName("anatomical_model")
-    private List<Houseware> anatomicalModel;
+    private List<Item> anatomicalModel;
 
     @SerializedName("Bunny_Day_merry_balloons")
-    private List<Houseware> bunnyDayMerryBalloons;
+    private List<Item> bunnyDayMerryBalloons;
 
     @SerializedName("rattan_stool")
-    private List<Houseware> rattanStool;
+    private List<Item> rattanStool;
 
     @SerializedName("tea_table")
-    private List<Houseware> teaTable;
+    private List<Item> teaTable;
 
     @SerializedName("imperial_dining_table")
-    private List<Houseware> imperialDiningTable;
+    private List<Item> imperialDiningTable;
 
     @SerializedName("drinking_fountain")
-    private List<Houseware> drinkingFountain;
+    private List<Item> drinkingFountain;
 
     @SerializedName("outdoor_air_conditioner")
-    private List<Houseware> outdoorAirConditioner;
+    private List<Item> outdoorAirConditioner;
 
     @SerializedName("spinning_wheel")
-    private List<Houseware> spinningWheel;
+    private List<Item> spinningWheel;
 
     @SerializedName("medium_cardboard_boxes")
-    private List<Houseware> mediumCardboardBoxes;
+    private List<Item> mediumCardboardBoxes;
 
     @SerializedName("bamboo_shelf")
-    private List<Houseware> bambooShelf;
+    private List<Item> bambooShelf;
 
     @SerializedName("mush_partition")
-    private List<Houseware> mushPartition;
+    private List<Item> mushPartition;
 
     @SerializedName("pool")
-    private List<Houseware> pool;
+    private List<Item> pool;
 
     @SerializedName("mermaid_screen")
-    private List<Houseware> mermaidScreen;
+    private List<Item> mermaidScreen;
 
     @SerializedName("Stonehenge")
-    private List<Houseware> stonehenge;
+    private List<Item> stonehenge;
 
     @SerializedName("simple_DIY_workbench")
-    private List<Houseware> simpleDIYWorkbench;
+    private List<Item> simpleDIYWorkbench;
 
     @SerializedName("box_sofa")
-    private List<Houseware> boxSofa;
+    private List<Item> boxSofa;
 
     @SerializedName("bamboo_grass")
-    private List<Houseware> bambooGrass;
+    private List<Item> bambooGrass;
 
     @SerializedName("outdoor_generator")
-    private List<Houseware> outdoorGenerator;
+    private List<Item> outdoorGenerator;
 
     @SerializedName("Toy_Day_sleigh")
-    private List<Houseware> toyDaySleigh;
+    private List<Item> toyDaySleigh;
 
     @SerializedName("imperial_dining_chair")
-    private List<Houseware> imperialDiningChair;
+    private List<Item> imperialDiningChair;
 
     @SerializedName("mush_log")
-    private List<Houseware> mushLog;
+    private List<Item> mushLog;
 
     @SerializedName("festive_tree")
-    private List<Houseware> festiveTree;
+    private List<Item> festiveTree;
 
     @SerializedName("zen-style_stone")
-    private List<Houseware> zenStyleStone;
+    private List<Item> zenStyleStone;
 
     @SerializedName("tankless_toilet")
-    private List<Houseware> tanklessToilet;
+    private List<Item> tanklessToilet;
 
     @SerializedName("loft_bed_with_desk")
-    private List<Houseware> loftBedWithDesk;
+    private List<Item> loftBedWithDesk;
 
     @SerializedName("train_set")
-    private List<Houseware> trainSet;
+    private List<Item> trainSet;
 
     @SerializedName("mermaid_lamp")
-    private List<Houseware> mermaidLamp;
+    private List<Item> mermaidLamp;
 
     @SerializedName("alto_saxophone")
-    private List<Houseware> altoSaxophone;
+    private List<Item> altoSaxophone;
 
     @SerializedName("cypress_plant")
-    private List<Houseware> cypressPlant;
+    private List<Item> cypressPlant;
 
     @SerializedName("ironwood_cart")
-    private List<Houseware> ironwoodCart;
+    private List<Item> ironwoodCart;
 
     @SerializedName("tennis_table")
-    private List<Houseware> tennisTable;
+    private List<Item> tennisTable;
 
     @SerializedName("imperial_chest")
-    private List<Houseware> imperialChest;
+    private List<Item> imperialChest;
 
     @SerializedName("streetlamp")
-    private List<Houseware> streetlamp;
+    private List<Item> streetlamp;
 
     @SerializedName("astronaut_suit")
-    private List<Houseware> astronautSuit;
+    private List<Item> astronautSuit;
 
     @SerializedName("wooden_bookshelf")
-    private List<Houseware> woodenBookshelf;
+    private List<Item> woodenBookshelf;
 
     @SerializedName("yellow-leaf_pile")
-    private List<Houseware> yellowLeafPile;
+    private List<Item> yellowLeafPile;
 
     @SerializedName("log_extra-long_sofa")
-    private List<Houseware> logExtraLongSofa;
+    private List<Item> logExtraLongSofa;
 
     @SerializedName("simple_well")
-    private List<Houseware> simpleWell;
+    private List<Item> simpleWell;
 
     @SerializedName("blossom-viewing_lantern")
-    private List<Houseware> blossomViewingLantern;
+    private List<Item> blossomViewingLantern;
 
     @SerializedName("double_sofa")
-    private List<Houseware> doubleSofa;
+    private List<Item> doubleSofa;
 
     @SerializedName("frozen_arch")
-    private List<Houseware> frozenArch;
+    private List<Item> frozenArch;
 
     @SerializedName("mush_parasol")
-    private List<Houseware> mushParasol;
+    private List<Item> mushParasol;
 
     @SerializedName("diner_dining_table")
-    private List<Houseware> dinerDiningTable;
+    private List<Item> dinerDiningTable;
 
     @SerializedName("garbage_pail")
-    private List<Houseware> garbagePail;
+    private List<Item> garbagePail;
 
     @SerializedName("wooden_waste_bin")
-    private List<Houseware> woodenWasteBin;
+    private List<Item> woodenWasteBin;
 
     @SerializedName("cute_bed")
-    private List<Houseware> cuteBed;
+    private List<Item> cuteBed;
 
     @SerializedName("arcade_combat_game")
-    private List<Houseware> arcadeCombatGame;
+    private List<Item> arcadeCombatGame;
 
     @SerializedName("basketball_hoop")
-    private List<Houseware> basketballHoop;
+    private List<Item> basketballHoop;
 
     @SerializedName("wooden-block_bench")
-    private List<Houseware> woodenBlockBench;
+    private List<Item> woodenBlockBench;
 
     @SerializedName("acoustic_guitar")
-    private List<Houseware> acousticGuitar;
+    private List<Item> acousticGuitar;
 
     @SerializedName("den_desk")
-    private List<Houseware> denDesk;
+    private List<Item> denDesk;
 
     @SerializedName("large_cardboard_boxes")
-    private List<Houseware> largeCardboardBoxes;
+    private List<Item> largeCardboardBoxes;
 
     @SerializedName("clothes_closet")
-    private List<Houseware> clothesCloset;
+    private List<Item> clothesCloset;
 
     @SerializedName("arcade_fighting_game")
-    private List<Houseware> arcadeFightingGame;
+    private List<Item> arcadeFightingGame;
 
     @SerializedName("Pisces_lamp")
-    private List<Houseware> piscesLamp;
+    private List<Item> piscesLamp;
 
     @SerializedName("angled_signpost")
-    private List<Houseware> angledSignpost;
+    private List<Item> angledSignpost;
 
     @SerializedName("pagoda")
-    private List<Houseware> pagoda;
+    private List<Item> pagoda;
 
     @SerializedName("round_space_heater")
-    private List<Houseware> roundSpaceHeater;
+    private List<Item> roundSpaceHeater;
 
     @SerializedName("water_pump")
-    private List<Houseware> waterPump;
+    private List<Item> waterPump;
 
     @SerializedName("rattan_vanity")
-    private List<Houseware> rattanVanity;
+    private List<Item> rattanVanity;
 
     @SerializedName("rocking_horse")
-    private List<Houseware> rockingHorse;
+    private List<Item> rockingHorse;
 
     @SerializedName("wedding_welcome_board")
-    private List<Houseware> weddingWelcomeBoard;
+    private List<Item> weddingWelcomeBoard;
 
     @SerializedName("treadmill")
-    private List<Houseware> treadmill;
+    private List<Item> treadmill;
 
     @SerializedName("video_camera")
-    private List<Houseware> videoCamera;
+    private List<Item> videoCamera;
 
     @SerializedName("stone_table")
-    private List<Houseware> stoneTable;
+    private List<Item> stoneTable;
 
     @SerializedName("cherry-blossom_pond_stone")
-    private List<Houseware> cherryBlossomPondStone;
+    private List<Item> cherryBlossomPondStone;
 
     @SerializedName("Bunny_Day_stool")
-    private List<Houseware> bunnyDayStool;
+    private List<Item> bunnyDayStool;
 
     @SerializedName("gong")
-    private List<Houseware> gong;
+    private List<Item> gong;
 
     @SerializedName("skeleton")
-    private List<Houseware> skeleton;
+    private List<Item> skeleton;
 
     @SerializedName("mountain_bike")
-    private List<Houseware> mountainBike;
+    private List<Item> mountainBike;
 
     @SerializedName("Bunny_Day_wardrobe")
-    private List<Houseware> bunnyDayWardrobe;
+    private List<Item> bunnyDayWardrobe;
 
     @SerializedName("frozen_counter")
-    private List<Houseware> frozenCounter;
+    private List<Item> frozenCounter;
 
     @SerializedName("shell_table")
-    private List<Houseware> shellTable;
+    private List<Item> shellTable;
 
     @SerializedName("stone_arch")
-    private List<Houseware> stoneArch;
+    private List<Item> stoneArch;
 
     @SerializedName("water_cooler")
-    private List<Houseware> waterCooler;
+    private List<Item> waterCooler;
 
     @SerializedName("stadiometer")
-    private List<Houseware> stadiometer;
+    private List<Item> stadiometer;
 
     @SerializedName("tulip_surprise_box")
-    private List<Houseware> tulipSurpriseBox;
+    private List<Item> tulipSurpriseBox;
 
     @SerializedName("ironwood_cupboard")
-    private List<Houseware> ironwoodCupboard;
+    private List<Item> ironwoodCupboard;
 
     @SerializedName("bamboo_floor_lamp")
-    private List<Houseware> bambooFloorLamp;
+    private List<Item> bambooFloorLamp;
 
     @SerializedName("clackercart")
-    private List<Houseware> clackercart;
+    private List<Item> clackercart;
 
     @SerializedName("sleeping_bag")
-    private List<Houseware> sleepingBag;
+    private List<Item> sleepingBag;
 
     @SerializedName("upright_piano")
-    private List<Houseware> uprightPiano;
+    private List<Item> uprightPiano;
 
     @SerializedName("freezer")
-    private List<Houseware> freezer;
+    private List<Item> freezer;
 
     @SerializedName("solar_panel")
-    private List<Houseware> solarPanel;
+    private List<Item> solarPanel;
 
     @SerializedName("tire_toy")
-    private List<Houseware> tireToy;
+    private List<Item> tireToy;
 
     @SerializedName("bonfire")
-    private List<Houseware> bonfire;
+    private List<Item> bonfire;
 
     @SerializedName("pansy_table")
-    private List<Houseware> pansyTable;
+    private List<Item> pansyTable;
 
     @SerializedName("refrigerator")
-    private List<Houseware> refrigerator;
+    private List<Item> refrigerator;
 
     @SerializedName("double-door_refrigerator")
-    private List<Houseware> doubleDoorRefrigerator;
+    private List<Item> doubleDoorRefrigerator;
 
     @SerializedName("pond_stone")
-    private List<Houseware> pondStone;
+    private List<Item> pondStone;
 
     @SerializedName("Bunny_Day_vanity")
-    private List<Houseware> bunnyDayVanity;
+    private List<Item> bunnyDayVanity;
 
     @SerializedName("grass_standee")
-    private List<Houseware> grassStandee;
+    private List<Item> grassStandee;
 
     @SerializedName("synthesizer")
-    private List<Houseware> synthesizer;
+    private List<Item> synthesizer;
 
     @SerializedName("wooden_end_table")
-    private List<Houseware> woodenEndTable;
+    private List<Item> woodenEndTable;
 
     @SerializedName("grand_Atlas_moth_model")
-    private List<Houseware> grandAtlasMothModel;
+    private List<Item> grandAtlasMothModel;
 
     @SerializedName("marimba")
-    private List<Houseware> marimba;
+    private List<Item> marimba;
 
     @SerializedName("fan_palm")
-    private List<Houseware> fanPalm;
+    private List<Item> fanPalm;
 
     @SerializedName("harp")
-    private List<Houseware> harp;
+    private List<Item> harp;
 
     @SerializedName("tiki_torch")
-    private List<Houseware> tikiTorch;
+    private List<Item> tikiTorch;
 
     @SerializedName("frozen_bed")
-    private List<Houseware> frozenBed;
+    private List<Item> frozenBed;
 
     @SerializedName("antique_chair")
-    private List<Houseware> antiqueChair;
+    private List<Item> antiqueChair;
 
     @SerializedName("imperial_bed")
-    private List<Houseware> imperialBed;
+    private List<Item> imperialBed;
 
     @SerializedName("baby_chair")
-    private List<Houseware> babyChair;
+    private List<Item> babyChair;
 
     @SerializedName("Capricorn_ornament")
-    private List<Houseware> capricornOrnament;
+    private List<Item> capricornOrnament;
 
     @SerializedName("utility_pole")
-    private List<Houseware> utilityPole;
+    private List<Item> utilityPole;
 
     @SerializedName("scarecrow")
-    private List<Houseware> scarecrow;
+    private List<Item> scarecrow;
 
     @SerializedName("frozen_partition")
-    private List<Houseware> frozenPartition;
+    private List<Item> frozenPartition;
 
     @SerializedName("juicy-apple_TV")
-    private List<Houseware> juicyAppleTV;
+    private List<Item> juicyAppleTV;
 
     @SerializedName("wedding_arch")
-    private List<Houseware> weddingArch;
+    private List<Item> weddingArch;
 
     @SerializedName("shower_booth")
-    private List<Houseware> showerBooth;
+    private List<Item> showerBooth;
 
     @SerializedName("Festivale_garland")
-    private List<Houseware> festivaleGarland;
+    private List<Item> festivaleGarland;
 
     @SerializedName("mini_DIY_workbench")
-    private List<Houseware> miniDIYWorkbench;
+    private List<Item> miniDIYWorkbench;
 
     @SerializedName("rocking_chair")
-    private List<Houseware> rockingChair;
+    private List<Item> rockingChair;
 
     @SerializedName("mini_fridge")
-    private List<Houseware> miniFridge;
+    private List<Item> miniFridge;
 
     @SerializedName("fish-drying_rack")
-    private List<Houseware> fishDryingRack;
+    private List<Item> fishDryingRack;
 
     @SerializedName("illuminated_present")
-    private List<Houseware> illuminatedPresent;
+    private List<Item> illuminatedPresent;
 
     @SerializedName("satellite")
-    private List<Houseware> satellite;
+    private List<Item> satellite;
 
     @SerializedName("cherry-blossom-petal_pile")
-    private List<Houseware> cherryBlossomPetalPile;
+    private List<Item> cherryBlossomPetalPile;
 
     @SerializedName("garden_wagon")
-    private List<Houseware> gardenWagon;
+    private List<Item> gardenWagon;
 
     @SerializedName("anchor_statue")
-    private List<Houseware> anchorStatue;
+    private List<Item> anchorStatue;
 
     @SerializedName("gift_pile")
-    private List<Houseware> giftPile;
+    private List<Item> giftPile;
 
     @SerializedName("billiard_table")
-    private List<Houseware> billiardTable;
+    private List<Item> billiardTable;
 
     @SerializedName("pirate-ship_helm")
-    private List<Houseware> pirateShipHelm;
+    private List<Item> pirateShipHelm;
 
     @SerializedName("hi-fi_stereo")
-    private List<Houseware> hiFiStereo;
+    private List<Item> hiFiStereo;
 
     @SerializedName("diner_mini_table")
-    private List<Houseware> dinerMiniTable;
+    private List<Item> dinerMiniTable;
 
     @SerializedName("sphinx")
-    private List<Houseware> sphinx;
+    private List<Item> sphinx;
 
     @SerializedName("study_desk")
-    private List<Houseware> studyDesk;
+    private List<Item> studyDesk;
 
     @SerializedName("rodeo-style_springy_ride-on")
-    private List<Houseware> rodeoStyleSpringyRideOn;
+    private List<Item> rodeoStyleSpringyRideOn;
 
     @SerializedName("antique_table")
-    private List<Houseware> antiqueTable;
+    private List<Item> antiqueTable;
 
     @SerializedName("destinations_signpost")
-    private List<Houseware> destinationsSignpost;
+    private List<Item> destinationsSignpost;
 
     @SerializedName("pyramid")
-    private List<Houseware> pyramid;
+    private List<Item> pyramid;
 
     @SerializedName("pear_bed")
-    private List<Houseware> pearBed;
+    private List<Item> pearBed;
 
     @SerializedName("velvet_stool")
-    private List<Houseware> velvetStool;
+    private List<Item> velvetStool;
 
     @SerializedName("fountain")
-    private List<Houseware> fountain;
+    private List<Item> fountain;
 
     @SerializedName("fishing-rod_stand")
-    private List<Houseware> fishingRodStand;
+    private List<Item> fishingRodStand;
 
     @SerializedName("cherry-blossom_branches")
-    private List<Houseware> cherryBlossomBranches;
+    private List<Item> cherryBlossomBranches;
 
     @SerializedName("bamboo_basket")
-    private List<Houseware> bambooBasket;
+    private List<Item> bambooBasket;
 
     @SerializedName("brick_oven")
-    private List<Houseware> brickOven;
+    private List<Item> brickOven;
 
     @SerializedName("brick_well")
-    private List<Houseware> brickWell;
+    private List<Item> brickWell;
 
     @SerializedName("wedding_pipe_organ")
-    private List<Houseware> weddingPipeOrgan;
+    private List<Item> weddingPipeOrgan;
 
     @SerializedName("giant_teddy_bear")
-    private List<Houseware> giantTeddyBear;
+    private List<Item> giantTeddyBear;
 
     @SerializedName("tatami_bed")
-    private List<Houseware> tatamiBed;
+    private List<Item> tatamiBed;
 
     @SerializedName("elaborate_kimono_stand")
-    private List<Houseware> elaborateKimonoStand;
+    private List<Item> elaborateKimonoStand;
 
     @SerializedName("pants_press")
-    private List<Houseware> pantsPress;
+    private List<Item> pantsPress;
 
     @SerializedName("rocket_lamp")
-    private List<Houseware> rocketLamp;
+    private List<Item> rocketLamp;
 
     @SerializedName("block")
-    private List<Houseware> block;
+    private List<Item> block;
 
     @SerializedName("iron_frame")
-    private List<Houseware> ironFrame;
+    private List<Item> ironFrame;
 
     @SerializedName("wedding_chair")
-    private List<Houseware> weddingChair;
+    private List<Item> weddingChair;
 
     @SerializedName("cacao_tree")
-    private List<Houseware> cacaoTree;
+    private List<Item> cacaoTree;
 
     @SerializedName("DJ's_turntable")
-    private List<Houseware> dJSTurntable;
+    private List<Item> dJSTurntable;
 
     @SerializedName("stall")
-    private List<Houseware> stall;
+    private List<Item> stall;
 
     @SerializedName("den_chair")
-    private List<Houseware> denChair;
+    private List<Item> denChair;
 
     @SerializedName("flat_garden_rock")
-    private List<Houseware> flatGardenRock;
+    private List<Item> flatGardenRock;
 
     @SerializedName("ironwood_table")
-    private List<Houseware> ironwoodTable;
+    private List<Item> ironwoodTable;
 
     @SerializedName("wooden-block_chest")
-    private List<Houseware> woodenBlockChest;
+    private List<Item> woodenBlockChest;
 
     @SerializedName("2021_celebratory_arch")
-    private List<Houseware> jsonMember2021CelebratoryArch;
+    private List<Item> jsonMember2021CelebratoryArch;
 
     @SerializedName("spooky_lantern_set")
-    private List<Houseware> spookyLanternSet;
+    private List<Item> spookyLanternSet;
 
     @SerializedName("cute_vanity")
-    private List<Houseware> cuteVanity;
+    private List<Item> cuteVanity;
 
     @SerializedName("podium")
-    private List<Houseware> podium;
+    private List<Item> podium;
 
     @SerializedName("rattan_waste_bin")
-    private List<Houseware> rattanWasteBin;
+    private List<Item> rattanWasteBin;
 
     @SerializedName("iron_shelf")
-    private List<Houseware> ironShelf;
+    private List<Item> ironShelf;
 
     @SerializedName("throwback_dino_screen")
-    private List<Houseware> throwbackDinoScreen;
+    private List<Item> throwbackDinoScreen;
 
     @SerializedName("electric_guitar")
-    private List<Houseware> electricGuitar;
+    private List<Item> electricGuitar;
 
     @SerializedName("soft-serve_lamp")
-    private List<Houseware> softServeLamp;
+    private List<Item> softServeLamp;
 
     @SerializedName("retro_stereo")
-    private List<Houseware> retroStereo;
+    private List<Item> retroStereo;
 
     @SerializedName("server")
-    private List<Houseware> server;
+    private List<Item> server;
 
     @SerializedName("lily_record_player")
-    private List<Houseware> lilyRecordPlayer;
+    private List<Item> lilyRecordPlayer;
 
     @SerializedName("Festivale_stall")
-    private List<Houseware> festivaleStall;
+    private List<Item> festivaleStall;
 
     @SerializedName("Bunny_Day_arch")
-    private List<Houseware> bunnyDayArch;
+    private List<Item> bunnyDayArch;
 
     @SerializedName("signpost")
-    private List<Houseware> signpost;
+    private List<Item> signpost;
 
     @SerializedName("grand_b._dragonfly_model")
-    private List<Houseware> grandBDragonflyModel;
+    private List<Item> grandBDragonflyModel;
 
     @SerializedName("antique_vanity")
-    private List<Houseware> antiqueVanity;
+    private List<Item> antiqueVanity;
 
     @SerializedName("shaded_floor_lamp")
-    private List<Houseware> shadedFloorLamp;
+    private List<Item> shadedFloorLamp;
 
     @SerializedName("springy_ride-on")
-    private List<Houseware> springyRideOn;
+    private List<Item> springyRideOn;
 
     @SerializedName("mountain_standee")
-    private List<Houseware> mountainStandee;
+    private List<Item> mountainStandee;
 
     @SerializedName("paper_lantern")
-    private List<Houseware> paperLantern;
+    private List<Item> paperLantern;
 
     @SerializedName("kotatsu")
-    private List<Houseware> kotatsu;
+    private List<Item> kotatsu;
 
     @SerializedName("barbecue")
-    private List<Houseware> barbecue;
+    private List<Item> barbecue;
 
     @SerializedName("Bunny_Day_bed")
-    private List<Houseware> bunnyDayBed;
+    private List<Item> bunnyDayBed;
 
     @SerializedName("vintage_TV_tray")
-    private List<Houseware> vintageTVTray;
+    private List<Item> vintageTVTray;
 
     @SerializedName("sideways_pirate_barrel")
-    private List<Houseware> sidewaysPirateBarrel;
+    private List<Item> sidewaysPirateBarrel;
 
     @SerializedName("bamboo_bench")
-    private List<Houseware> bambooBench;
+    private List<Item> bambooBench;
 
     @SerializedName("lifeguard_chair")
-    private List<Houseware> lifeguardChair;
+    private List<Item> lifeguardChair;
 
     @SerializedName("log_bed")
-    private List<Houseware> logBed;
+    private List<Item> logBed;
 
     @SerializedName("pile_of_zen_cushions")
-    private List<Houseware> pileOfZenCushions;
+    private List<Item> pileOfZenCushions;
 
     @SerializedName("robot_hero")
-    private List<Houseware> robotHero;
+    private List<Item> robotHero;
 
     @SerializedName("mush_low_stool")
-    private List<Houseware> mushLowStool;
+    private List<Item> mushLowStool;
 
     @SerializedName("garden_rock")
-    private List<Houseware> gardenRock;
+    private List<Item> gardenRock;
 
     @SerializedName("foosball_table")
-    private List<Houseware> foosballTable;
+    private List<Item> foosballTable;
 
     @SerializedName("wooden_wardrobe")
-    private List<Houseware> woodenWardrobe;
+    private List<Item> woodenWardrobe;
 
     @SerializedName("hedge_standee")
-    private List<Houseware> hedgeStandee;
+    private List<Item> hedgeStandee;
 
     @SerializedName("effects_rack")
-    private List<Houseware> effectsRack;
+    private List<Item> effectsRack;
 
     @SerializedName("Taurus_bathtub")
-    private List<Houseware> taurusBathtub;
+    private List<Item> taurusBathtub;
 
     @SerializedName("mermaid_table")
-    private List<Houseware> mermaidTable;
+    private List<Item> mermaidTable;
 
     @SerializedName("chalkboard")
-    private List<Houseware> chalkboard;
+    private List<Item> chalkboard;
 
     @SerializedName("RC_helicopter")
-    private List<Houseware> rCHelicopter;
+    private List<Item> rCHelicopter;
 
     @SerializedName("pull-up-bar_stand")
-    private List<Houseware> pullUpBarStand;
+    private List<Item> pullUpBarStand;
 
     @SerializedName("OK_Motors_sign")
-    private List<Houseware> oKMotorsSign;
+    private List<Item> oKMotorsSign;
 
     @SerializedName("automatic_washer")
-    private List<Houseware> automaticWasher;
+    private List<Item> automaticWasher;
 
     @SerializedName("diner_counter_table")
-    private List<Houseware> dinerCounterTable;
+    private List<Item> dinerCounterTable;
 
     @SerializedName("rose_bed")
-    private List<Houseware> roseBed;
+    private List<Item> roseBed;
 
     @SerializedName("mermaid_sofa")
-    private List<Houseware> mermaidSofa;
+    private List<Item> mermaidSofa;
 
     @SerializedName("screen")
-    private List<Houseware> screen;
+    private List<Item> screen;
 
     @SerializedName("three-tiered_snowperson")
-    private List<Houseware> threeTieredSnowperson;
+    private List<Item> threeTieredSnowperson;
 
     @SerializedName("diner_sofa")
-    private List<Houseware> dinerSofa;
+    private List<Item> dinerSofa;
 
     @SerializedName("electric_bass")
-    private List<Houseware> electricBass;
+    private List<Item> electricBass;
 
     @SerializedName("table_with_cloth")
-    private List<Houseware> tableWithCloth;
+    private List<Item> tableWithCloth;
 
     @SerializedName("menu_chalkboard")
-    private List<Houseware> menuChalkboard;
+    private List<Item> menuChalkboard;
 
     @SerializedName("iron_garden_chair")
-    private List<Houseware> ironGardenChair;
+    private List<Item> ironGardenChair;
 
     @SerializedName("maple-leaf_pond_stone")
-    private List<Houseware> mapleLeafPondStone;
+    private List<Item> mapleLeafPondStone;
 
     @SerializedName("red_corner")
-    private List<Houseware> redCorner;
+    private List<Item> redCorner;
 
     @SerializedName("pipe")
-    private List<Houseware> pipe;
+    private List<Item> pipe;
 
     @SerializedName("ironwood_kitchenette")
-    private List<Houseware> ironwoodKitchenette;
+    private List<Item> ironwoodKitchenette;
 
     @SerializedName("antique_clock")
-    private List<Houseware> antiqueClock;
+    private List<Item> antiqueClock;
 
     @SerializedName("cute_floor_lamp")
-    private List<Houseware> cuteFloorLamp;
+    private List<Item> cuteFloorLamp;
 
     @SerializedName("outdoor_bath")
-    private List<Houseware> outdoorBath;
+    private List<Item> outdoorBath;
 
     @SerializedName("cute_chair")
-    private List<Houseware> cuteChair;
+    private List<Item> cuteChair;
 
     @SerializedName("outdoor_picnic_set")
-    private List<Houseware> outdoorPicnicSet;
+    private List<Item> outdoorPicnicSet;
 
     @SerializedName("natural_garden_chair")
-    private List<Houseware> naturalGardenChair;
+    private List<Item> naturalGardenChair;
 
     @SerializedName("natural_square_table")
-    private List<Houseware> naturalSquareTable;
+    private List<Item> naturalSquareTable;
 
     @SerializedName("open-frame_kitchen")
-    private List<Houseware> openFrameKitchen;
+    private List<Item> openFrameKitchen;
 
     @SerializedName("Festivale_parasol")
-    private List<Houseware> festivaleParasol;
+    private List<Item> festivaleParasol;
 
     @SerializedName("throwback_mitt_chair")
-    private List<Houseware> throwbackMittChair;
+    private List<Item> throwbackMittChair;
 
     @SerializedName("claw-foot_tub")
-    private List<Houseware> clawFootTub;
+    private List<Item> clawFootTub;
 
     @SerializedName("wooden_full-length_mirror")
-    private List<Houseware> woodenFullLengthMirror;
+    private List<Item> woodenFullLengthMirror;
 
     @SerializedName("wooden_simple_bed")
-    private List<Houseware> woodenSimpleBed;
+    private List<Item> woodenSimpleBed;
 
     @SerializedName("Market_Place_decoration")
-    private List<Houseware> marketPlaceDecoration;
+    private List<Item> marketPlaceDecoration;
 
     @SerializedName("South_Pole")
-    private List<Houseware> southPole;
+    private List<Item> southPole;
 
     @SerializedName("yucca")
-    private List<Houseware> yucca;
+    private List<Item> yucca;
 
     @SerializedName("clay_furnace")
-    private List<Houseware> clayFurnace;
+    private List<Item> clayFurnace;
 
     @SerializedName("wooden_mini_table")
-    private List<Houseware> woodenMiniTable;
+    private List<Item> woodenMiniTable;
 
     @SerializedName("rock_guitar")
-    private List<Houseware> rockGuitar;
+    private List<Item> rockGuitar;
 
     @SerializedName("plastic_pool")
-    private List<Houseware> plasticPool;
+    private List<Item> plasticPool;
 
     @SerializedName("Aries_rocking_chair")
-    private List<Houseware> ariesRockingChair;
+    private List<Item> ariesRockingChair;
 
     @SerializedName("sauna_heater")
-    private List<Houseware> saunaHeater;
+    private List<Item> saunaHeater;
 
     @SerializedName("illuminated_snowflakes")
-    private List<Houseware> illuminatedSnowflakes;
+    private List<Item> illuminatedSnowflakes;
 
     @SerializedName("golden_casket")
-    private List<Houseware> goldenCasket;
+    private List<Item> goldenCasket;
 
     @SerializedName("snack_machine")
-    private List<Houseware> snackMachine;
+    private List<Item> snackMachine;
 
     @SerializedName("serving_cart")
-    private List<Houseware> servingCart;
+    private List<Item> servingCart;
 
     @SerializedName("campfire_cookware")
-    private List<Houseware> campfireCookware;
+    private List<Item> campfireCookware;
 
     @SerializedName("iron_hanger_stand")
-    private List<Houseware> ironHangerStand;
+    private List<Item> ironHangerStand;
 
     @SerializedName("parabolic_antenna")
-    private List<Houseware> parabolicAntenna;
+    private List<Item> parabolicAntenna;
 
     @SerializedName("phone_box")
-    private List<Houseware> phoneBox;
+    private List<Item> phoneBox;
 
     @SerializedName("floating_block")
-    private List<Houseware> floatingBlock;
+    private List<Item> floatingBlock;
 
     @SerializedName("folding_floor_lamp")
-    private List<Houseware> foldingFloorLamp;
+    private List<Item> foldingFloorLamp;
 
     @SerializedName("spooky_carriage")
-    private List<Houseware> spookyCarriage;
+    private List<Item> spookyCarriage;
 
     @SerializedName("piano_bench")
-    private List<Houseware> pianoBench;
+    private List<Item> pianoBench;
 
     @SerializedName("oil-barrel_bathtub")
-    private List<Houseware> oilBarrelBathtub;
+    private List<Item> oilBarrelBathtub;
 
     @SerializedName("deer_scare")
-    private List<Houseware> deerScare;
+    private List<Item> deerScare;
 
     @SerializedName("antique_wardrobe")
-    private List<Houseware> antiqueWardrobe;
+    private List<Item> antiqueWardrobe;
 
     @SerializedName("beach_towel")
-    private List<Houseware> beachTowel;
+    private List<Item> beachTowel;
 
     @SerializedName("tree's_bounty_arch")
-    private List<Houseware> treeSBountyArch;
+    private List<Item> treeSBountyArch;
 
     @SerializedName("shell_stool")
-    private List<Houseware> shellStool;
+    private List<Item> shellStool;
 
     @SerializedName("zen_cushion")
-    private List<Houseware> zenCushion;
+    private List<Item> zenCushion;
 
     @SerializedName("Festivale_stage")
-    private List<Houseware> festivaleStage;
+    private List<Item> festivaleStage;
 
     @SerializedName("sandbox")
-    private List<Houseware> sandbox;
+    private List<Item> sandbox;
 
     @SerializedName("log_chair")
-    private List<Houseware> logChair;
+    private List<Item> logChair;
 
     @SerializedName("spooky_scarecrow")
-    private List<Houseware> spookyScarecrow;
+    private List<Item> spookyScarecrow;
 
     @SerializedName("log_stakes")
-    private List<Houseware> logStakes;
+    private List<Item> logStakes;
 
     @SerializedName("tire_stack")
-    private List<Houseware> tireStack;
+    private List<Item> tireStack;
 
     @SerializedName("mush_table")
-    private List<Houseware> mushTable;
+    private List<Item> mushTable;
 
     @SerializedName("stone_tablet")
-    private List<Houseware> stoneTablet;
+    private List<Item> stoneTablet;
 
     @SerializedName("wooden-block_chair")
-    private List<Houseware> woodenBlockChair;
+    private List<Item> woodenBlockChair;
 
     @SerializedName("wooden-block_bookshelf")
-    private List<Houseware> woodenBlockBookshelf;
+    private List<Item> woodenBlockBookshelf;
 
     @SerializedName("camping_cot")
-    private List<Houseware> campingCot;
+    private List<Item> campingCot;
 
     @SerializedName("director's_chair")
-    private List<Houseware> directorSChair;
+    private List<Item> directorSChair;
 
     @SerializedName("mic_stand")
-    private List<Houseware> micStand;
+    private List<Item> micStand;
 
     @SerializedName("monster_statue")
-    private List<Houseware> monsterStatue;
+    private List<Item> monsterStatue;
 
     @SerializedName("birdbath")
-    private List<Houseware> birdbath;
+    private List<Item> birdbath;
 
     @SerializedName("outdoor_bench")
-    private List<Houseware> outdoorBench;
+    private List<Item> outdoorBench;
 
     @SerializedName("frozen_chair")
-    private List<Houseware> frozenChair;
+    private List<Item> frozenChair;
 
     @SerializedName("rattan_low_table")
-    private List<Houseware> rattanLowTable;
+    private List<Item> rattanLowTable;
 
     @SerializedName("mermaid_bed")
-    private List<Houseware> mermaidBed;
+    private List<Item> mermaidBed;
 
     @SerializedName("Turkey_Day_table")
-    private List<Houseware> turkeyDayTable;
+    private List<Item> turkeyDayTable;
 
     @SerializedName("retro_gas_pump")
-    private List<Houseware> retroGasPump;
+    private List<Item> retroGasPump;
 
     @SerializedName("ironwood_DIY_workbench")
-    private List<Houseware> ironwoodDIYWorkbench;
+    private List<Item> ironwoodDIYWorkbench;
 
     @SerializedName("rocket")
-    private List<Houseware> rocket;
+    private List<Item> rocket;
 
     @SerializedName("swinging_bench")
-    private List<Houseware> swingingBench;
+    private List<Item> swingingBench;
 
     @SerializedName("arcade_seat")
-    private List<Houseware> arcadeSeat;
+    private List<Item> arcadeSeat;
 
     @SerializedName("iron_garden_bench")
-    private List<Houseware> ironGardenBench;
+    private List<Item> ironGardenBench;
 
     @SerializedName("floor_light")
-    private List<Houseware> floorLight;
+    private List<Item> floorLight;
 
     @SerializedName("teacup_ride")
-    private List<Houseware> teacupRide;
+    private List<Item> teacupRide;
 
     @SerializedName("cute_sofa")
-    private List<Houseware> cuteSofa;
+    private List<Item> cuteSofa;
 
     @SerializedName("kettle_bathtub")
-    private List<Houseware> kettleBathtub;
+    private List<Item> kettleBathtub;
 
     @SerializedName("speed_bag")
-    private List<Houseware> speedBag;
+    private List<Item> speedBag;
 
     @SerializedName("beekeeper's_hive")
-    private List<Houseware> beekeeperSHive;
+    private List<Item> beekeeperSHive;
 
     @SerializedName("air_circulator")
-    private List<Houseware> airCirculator;
+    private List<Item> airCirculator;
 
     @SerializedName("cute_wardrobe")
-    private List<Houseware> cuteWardrobe;
+    private List<Item> cuteWardrobe;
 
     @SerializedName("diner_neon_sign")
-    private List<Houseware> dinerNeonSign;
+    private List<Item> dinerNeonSign;
 
     @SerializedName("doghouse")
-    private List<Houseware> doghouse;
+    private List<Item> doghouse;
 
     @SerializedName("garden_faucet")
-    private List<Houseware> gardenFaucet;
+    private List<Item> gardenFaucet;
 
     @SerializedName("low_screen")
-    private List<Houseware> lowScreen;
+    private List<Item> lowScreen;
 
     @SerializedName("digital_scale")
-    private List<Houseware> digitalScale;
+    private List<Item> digitalScale;
 
     @SerializedName("high-end_stereo")
-    private List<Houseware> highEndStereo;
+    private List<Item> highEndStereo;
 
     @SerializedName("bunk_bed")
-    private List<Houseware> bunkBed;
+    private List<Item> bunkBed;
 
     @SerializedName("plain_wooden_shop_sign")
-    private List<Houseware> plainWoodenShopSign;
+    private List<Item> plainWoodenShopSign;
 
     @SerializedName("fortune-cookie_cart")
-    private List<Houseware> fortuneCookieCart;
+    private List<Item> fortuneCookieCart;
 
     @SerializedName("red-leaf_pile")
-    private List<Houseware> redLeafPile;
+    private List<Item> redLeafPile;
 
     @SerializedName("trophy_case")
-    private List<Houseware> trophyCase;
+    private List<Item> trophyCase;
 
     @SerializedName("birthday_sign")
-    private List<Houseware> birthdaySign;
+    private List<Item> birthdaySign;
 
     @SerializedName("wind_turbine")
-    private List<Houseware> windTurbine;
+    private List<Item> windTurbine;
 
     @SerializedName("toilet")
-    private List<Houseware> toilet;
+    private List<Item> toilet;
 
     @SerializedName("system_kitchen")
-    private List<Houseware> systemKitchen;
+    private List<Item> systemKitchen;
 
     @SerializedName("ironing_board")
-    private List<Houseware> ironingBoard;
+    private List<Item> ironingBoard;
 
     @SerializedName("telescope")
-    private List<Houseware> telescope;
+    private List<Item> telescope;
 
     @SerializedName("Turkey_Day_chair")
-    private List<Houseware> turkeyDayChair;
+    private List<Item> turkeyDayChair;
 
     @SerializedName("cosmos_shower")
-    private List<Houseware> cosmosShower;
+    private List<Item> cosmosShower;
 
     @SerializedName("illuminated_tree")
-    private List<Houseware> illuminatedTree;
+    private List<Item> illuminatedTree;
 
     @SerializedName("mum_cushion")
-    private List<Houseware> mumCushion;
+    private List<Item> mumCushion;
 
     @SerializedName("space_shuttle")
-    private List<Houseware> spaceShuttle;
+    private List<Item> spaceShuttle;
 
     @SerializedName("vacuum_cleaner")
-    private List<Houseware> vacuumCleaner;
+    private List<Item> vacuumCleaner;
 
     @SerializedName("raccoon_figurine")
-    private List<Houseware> raccoonFigurine;
+    private List<Item> raccoonFigurine;
 
     @SerializedName("surfboard")
-    private List<Houseware> surfboard;
+    private List<Item> surfboard;
 
     @SerializedName("ironwood_dresser")
-    private List<Houseware> ironwoodDresser;
+    private List<Item> ironwoodDresser;
 
     @SerializedName("Thwomp")
-    private List<Houseware> thwomp;
+    private List<Item> thwomp;
 
     @SerializedName("arcade_mahjong_game")
-    private List<Houseware> arcadeMahjongGame;
+    private List<Item> arcadeMahjongGame;
 
     @SerializedName("tool_cart")
-    private List<Houseware> toolCart;
+    private List<Item> toolCart;
 
     @SerializedName("wedding_flower_stand")
-    private List<Houseware> weddingFlowerStand;
+    private List<Item> weddingFlowerStand;
 
     @SerializedName("wooden_chest")
-    private List<Houseware> woodenChest;
+    private List<Item> woodenChest;
 
     @SerializedName("birthday_table")
-    private List<Houseware> birthdayTable;
+    private List<Item> birthdayTable;
 
     @SerializedName("scattered_papers")
-    private List<Houseware> scatteredPapers;
+    private List<Item> scatteredPapers;
 
     @SerializedName("Brake_Tapper")
-    private List<Houseware> brakeTapper;
+    private List<Item> brakeTapper;
 
     @SerializedName("green-leaf_pile")
-    private List<Houseware> greenLeafPile;
+    private List<Item> greenLeafPile;
 
     @SerializedName("Cancer_table")
-    private List<Houseware> cancerTable;
+    private List<Item> cancerTable;
 
     @SerializedName("Festivale_float")
-    private List<Houseware> festivaleFloat;
+    private List<Item> festivaleFloat;
 
     @SerializedName("portable_toilet")
-    private List<Houseware> portableToilet;
+    private List<Item> portableToilet;
 
     @SerializedName("lawn_mower")
-    private List<Houseware> lawnMower;
+    private List<Item> lawnMower;
 
     @SerializedName("Mrs._Flamingo")
-    private List<Houseware> mrsFlamingo;
+    private List<Item> mrsFlamingo;
 
     @SerializedName("rattan_wardrobe")
-    private List<Houseware> rattanWardrobe;
+    private List<Item> rattanWardrobe;
 
     @SerializedName("drying_rack")
-    private List<Houseware> dryingRack;
+    private List<Item> dryingRack;
 
     @SerializedName("kimono_stand")
-    private List<Houseware> kimonoStand;
+    private List<Item> kimonoStand;
 
     @SerializedName("ironwood_low_table")
-    private List<Houseware> ironwoodLowTable;
+    private List<Item> ironwoodLowTable;
 
     @SerializedName("candy_machine")
-    private List<Houseware> candyMachine;
+    private List<Item> candyMachine;
 
     @SerializedName("wooden-block_stereo")
-    private List<Houseware> woodenBlockStereo;
+    private List<Item> woodenBlockStereo;
 
     @SerializedName("frozen_pillar")
-    private List<Houseware> frozenPillar;
+    private List<Item> frozenPillar;
 
     @SerializedName("silo")
-    private List<Houseware> silo;
+    private List<Item> silo;
 
     @SerializedName("street_organ")
-    private List<Houseware> streetOrgan;
+    private List<Item> streetOrgan;
 
     @SerializedName("kadomatsu")
-    private List<Houseware> kadomatsu;
+    private List<Item> kadomatsu;
 
     @SerializedName("shell_arch")
-    private List<Houseware> shellArch;
+    private List<Item> shellArch;
 
     @SerializedName("wild_log_bench")
-    private List<Houseware> wildLogBench;
+    private List<Item> wildLogBench;
 
     @SerializedName("fire_pit")
-    private List<Houseware> firePit;
+    private List<Item> firePit;
 
     @SerializedName("school_chair")
-    private List<Houseware> schoolChair;
+    private List<Item> schoolChair;
 
     @SerializedName("ocean_sunfish_model")
-    private List<Houseware> oceanSunfishModel;
+    private List<Item> oceanSunfishModel;
 
     @SerializedName("punching_bag")
-    private List<Houseware> punchingBag;
+    private List<Item> punchingBag;
 
     @SerializedName("shell_bed")
-    private List<Houseware> shellBed;
+    private List<Item> shellBed;
 
     @SerializedName("retro_fan")
-    private List<Houseware> retroFan;
+    private List<Item> retroFan;
 
     @SerializedName("wooden_chair")
-    private List<Houseware> woodenChair;
+    private List<Item> woodenChair;
 
     @SerializedName("log_dining_table")
-    private List<Houseware> logDiningTable;
+    private List<Item> logDiningTable;
 
     @SerializedName("basic_teacher's_desk")
-    private List<Houseware> basicTeacherSDesk;
+    private List<Item> basicTeacherSDesk;
 
     @SerializedName("lawn_chair")
-    private List<Houseware> lawnChair;
+    private List<Item> lawnChair;
 
     @SerializedName("smoker")
-    private List<Houseware> smoker;
+    private List<Item> smoker;
 
     @SerializedName("Gemini_closet")
-    private List<Houseware> geminiCloset;
+    private List<Item> geminiCloset;
 
     @SerializedName("loom")
-    private List<Houseware> loom;
+    private List<Item> loom;
 
     @SerializedName("long_bathtub")
-    private List<Houseware> longBathtub;
+    private List<Item> longBathtub;
 
     @SerializedName("Mama_bear")
-    private List<Houseware> mamaBear;
+    private List<Item> mamaBear;
 
     @SerializedName("pinball_machine")
-    private List<Houseware> pinballMachine;
+    private List<Item> pinballMachine;
 
     @SerializedName("Mr._Flamingo")
-    private List<Houseware> mrFlamingo;
+    private List<Item> mrFlamingo;
 
     @SerializedName("tree_standee")
-    private List<Houseware> treeStandee;
+    private List<Item> treeStandee;
 
     @SerializedName("wedding_head_table")
-    private List<Houseware> weddingHeadTable;
+    private List<Item> weddingHeadTable;
 
     @SerializedName("box_corner_sofa")
-    private List<Houseware> boxCornerSofa;
+    private List<Item> boxCornerSofa;
 
     @SerializedName("garden_bench")
-    private List<Houseware> gardenBench;
+    private List<Item> gardenBench;
 
     @SerializedName("leaf_campfire")
-    private List<Houseware> leafCampfire;
+    private List<Item> leafCampfire;
 
     @SerializedName("lecture-hall_bench")
-    private List<Houseware> lectureHallBench;
+    private List<Item> lectureHallBench;
 
     @SerializedName("Tower_of_Pisa")
-    private List<Houseware> towerOfPisa;
+    private List<Item> towerOfPisa;
 
     @SerializedName("birdhouse")
-    private List<Houseware> birdhouse;
+    private List<Item> birdhouse;
 
     @SerializedName("log_bench")
-    private List<Houseware> logBench;
+    private List<Item> logBench;
 
     @SerializedName("old_sewing_machine")
-    private List<Houseware> oldSewingMachine;
+    private List<Item> oldSewingMachine;
 
     @SerializedName("pear_wardrobe")
-    private List<Houseware> pearWardrobe;
+    private List<Item> pearWardrobe;
 
     @SerializedName("wooden_table")
-    private List<Houseware> woodenTable;
+    private List<Item> woodenTable;
 
     @SerializedName("hose_reel")
-    private List<Houseware> hoseReel;
+    private List<Item> hoseReel;
 
     @SerializedName("floor_lamp")
-    private List<Houseware> floorLamp;
+    private List<Item> floorLamp;
 
     @SerializedName("wave_breaker")
-    private List<Houseware> waveBreaker;
+    private List<Item> waveBreaker;
 
     @SerializedName("bamboo_speaker")
-    private List<Houseware> bambooSpeaker;
+    private List<Item> bambooSpeaker;
 
     @SerializedName("wedding_bench")
-    private List<Houseware> weddingBench;
+    private List<Item> weddingBench;
 
     @SerializedName("cat_tower")
-    private List<Houseware> catTower;
+    private List<Item> catTower;
 
     @SerializedName("popcorn_machine")
-    private List<Houseware> popcornMachine;
+    private List<Item> popcornMachine;
 
     @SerializedName("upright_locker")
-    private List<Houseware> uprightLocker;
+    private List<Item> uprightLocker;
 
     @SerializedName("small_cardboard_boxes")
-    private List<Houseware> smallCardboardBoxes;
+    private List<Item> smallCardboardBoxes;
 
     @SerializedName("wooden-block_stool")
-    private List<Houseware> woodenBlockStool;
+    private List<Item> woodenBlockStool;
 
     @SerializedName("bamboo_stool")
-    private List<Houseware> bambooStool;
+    private List<Item> bambooStool;
 
     @SerializedName("spooky_chair")
-    private List<Houseware> spookyChair;
+    private List<Item> spookyChair;
 
     @SerializedName("wheelchair")
-    private List<Houseware> wheelchair;
+    private List<Item> wheelchair;
 
     @SerializedName("garbage_bin")
-    private List<Houseware> garbageBin;
+    private List<Item> garbageBin;
 
     @SerializedName("pet_bed")
-    private List<Houseware> petBed;
+    private List<Item> petBed;
 
     @SerializedName("diner_chair")
-    private List<Houseware> dinerChair;
+    private List<Item> dinerChair;
 
     @SerializedName("moai_statue")
-    private List<Houseware> moaiStatue;
+    private List<Item> moaiStatue;
 
     @SerializedName("jukebox")
-    private List<Houseware> jukebox;
+    private List<Item> jukebox;
 
     @SerializedName("floor_seat")
-    private List<Houseware> floorSeat;
+    private List<Item> floorSeat;
 
     @SerializedName("sand_castle")
-    private List<Houseware> sandCastle;
+    private List<Item> sandCastle;
 
     @SerializedName("playground_gym")
-    private List<Houseware> playgroundGym;
+    private List<Item> playgroundGym;
 
     @SerializedName("Turkey_Day_hearth")
-    private List<Houseware> turkeyDayHearth;
+    private List<Item> turkeyDayHearth;
 
     @SerializedName("street_piano")
-    private List<Houseware> streetPiano;
+    private List<Item> streetPiano;
 
     @SerializedName("log_round_table")
-    private List<Houseware> logRoundTable;
+    private List<Item> logRoundTable;
 
     @SerializedName("tiny_library")
-    private List<Houseware> tinyLibrary;
+    private List<Item> tinyLibrary;
 
     @SerializedName("leaf_stool")
-    private List<Houseware> leafStool;
+    private List<Item> leafStool;
 
     @SerializedName("modern_office_chair")
-    private List<Houseware> modernOfficeChair;
+    private List<Item> modernOfficeChair;
 
     @SerializedName("studio_spotlight")
-    private List<Houseware> studioSpotlight;
+    private List<Item> studioSpotlight;
 
     @SerializedName("tall_garden_rock")
-    private List<Houseware> tallGardenRock;
+    private List<Item> tallGardenRock;
 
     @SerializedName("deluxe_washer")
-    private List<Houseware> deluxeWasher;
+    private List<Item> deluxeWasher;
 
     @SerializedName("antique_bureau")
-    private List<Houseware> antiqueBureau;
+    private List<Item> antiqueBureau;
 
     @SerializedName("exercise_ball")
-    private List<Houseware> exerciseBall;
+    private List<Item> exerciseBall;
 
     @SerializedName("Statue_of_Liberty")
-    private List<Houseware> statueOfLiberty;
+    private List<Item> statueOfLiberty;
 
     @SerializedName("log_decorative_shelves")
-    private List<Houseware> logDecorativeShelves;
+    private List<Item> logDecorativeShelves;
 
     @SerializedName("campsite_sign")
-    private List<Houseware> campsiteSign;
+    private List<Item> campsiteSign;
 
     @SerializedName("shell_fountain")
-    private List<Houseware> shellFountain;
+    private List<Item> shellFountain;
 
     @SerializedName("bamboo_doll")
-    private List<Houseware> bambooDoll;
+    private List<Item> bambooDoll;
 
     @SerializedName("antique_console_table")
-    private List<Houseware> antiqueConsoleTable;
+    private List<Item> antiqueConsoleTable;
 
     @SerializedName("mermaid_vanity")
-    private List<Houseware> mermaidVanity;
+    private List<Item> mermaidVanity;
 
     @SerializedName("small_Mushroom_Platform")
-    private List<Houseware> smallMushroomPlatform;
+    private List<Item> smallMushroomPlatform;
 
     @SerializedName("cello")
-    private List<Houseware> cello;
+    private List<Item> cello;
 
     @SerializedName("neutral_corner")
-    private List<Houseware> neutralCorner;
+    private List<Item> neutralCorner;
 
     @SerializedName("silver_mic")
-    private List<Houseware> silverMic;
+    private List<Item> silverMic;
 
     @SerializedName("cardboard_table")
-    private List<Houseware> cardboardTable;
+    private List<Item> cardboardTable;
 
     @SerializedName("cardboard_chair")
-    private List<Houseware> cardboardChair;
+    private List<Item> cardboardChair;
 
     @SerializedName("?_Block")
-    private List<Houseware> unknownBlock;
+    private List<Item> unknownBlock;
 
     @SerializedName("lecture-hall_desk")
-    private List<Houseware> lectureHallDesk;
+    private List<Item> lectureHallDesk;
 
     @SerializedName("bonsai_shelf")
-    private List<Houseware> bonsaiShelf;
+    private List<Item> bonsaiShelf;
 
     @SerializedName("pirate-ship_cannon")
-    private List<Houseware> pirateShipCannon;
+    private List<Item> pirateShipCannon;
 
     @SerializedName("butter_churn")
-    private List<Houseware> butterChurn;
+    private List<Item> butterChurn;
 
     @SerializedName("stone_lion-dog")
-    private List<Houseware> stoneLionDog;
+    private List<Item> stoneLionDog;
 
     @SerializedName("orange_end_table")
-    private List<Houseware> orangeEndTable;
+    private List<Item> orangeEndTable;
 
     @SerializedName("wedding_table")
-    private List<Houseware> weddingTable;
+    private List<Item> weddingTable;
 
     @SerializedName("bamboo_noodle_slide")
-    private List<Houseware> bambooNoodleSlide;
+    private List<Item> bambooNoodleSlide;
 
     @SerializedName("clothesline_pole")
-    private List<Houseware> clotheslinePole;
+    private List<Item> clotheslinePole;
 
     @SerializedName("cone")
-    private List<Houseware> cone;
+    private List<Item> cone;
 
     @SerializedName("plain_sink")
-    private List<Houseware> plainSink;
+    private List<Item> plainSink;
 
     @SerializedName("exercise_bike")
-    private List<Houseware> exerciseBike;
+    private List<Item> exerciseBike;
 
     @SerializedName("fan")
-    private List<Houseware> fan;
+    private List<Item> fan;
 
     @SerializedName("inflatable_sofa")
-    private List<Houseware> inflatableSofa;
+    private List<Item> inflatableSofa;
 
     @SerializedName("bamboo_stopblock")
-    private List<Houseware> bambooStopblock;
+    private List<Item> bambooStopblock;
 
     @SerializedName("log_garden_lounge")
-    private List<Houseware> logGardenLounge;
+    private List<Item> logGardenLounge;
 
     @SerializedName("frozen_tree")
-    private List<Houseware> frozenTree;
+    private List<Item> frozenTree;
 
     @SerializedName("outdoor_table")
-    private List<Houseware> outdoorTable;
+    private List<Item> outdoorTable;
 
     @SerializedName("log_stool")
-    private List<Houseware> logStool;
+    private List<Item> logStool;
 
     @SerializedName("big_festive_tree")
-    private List<Houseware> bigFestiveTree;
+    private List<Item> bigFestiveTree;
 
     @SerializedName("flower_stand")
-    private List<Houseware> flowerStand;
+    private List<Item> flowerStand;
 
     @SerializedName("study_chair")
-    private List<Houseware> studyChair;
+    private List<Item> studyChair;
 
     @SerializedName("throwback_rocket")
-    private List<Houseware> throwbackRocket;
+    private List<Item> throwbackRocket;
 
     @SerializedName("Festivale_balloon_lamp")
-    private List<Houseware> festivaleBalloonLamp;
+    private List<Item> festivaleBalloonLamp;
 
     @SerializedName("upright_vacuum")
-    private List<Houseware> uprightVacuum;
+    private List<Item> uprightVacuum;
 
     @SerializedName("flying_saucer")
-    private List<Houseware> flyingSaucer;
+    private List<Item> flyingSaucer;
 
     @SerializedName("mermaid_shelf")
-    private List<Houseware> mermaidShelf;
+    private List<Item> mermaidShelf;
 
     @SerializedName("wooden_low_table")
-    private List<Houseware> woodenLowTable;
+    private List<Item> woodenLowTable;
 
     @SerializedName("peach_chair")
-    private List<Houseware> peachChair;
+    private List<Item> peachChair;
 
     @SerializedName("standard_umbrella_stand")
-    private List<Houseware> standardUmbrellaStand;
+    private List<Item> standardUmbrellaStand;
 
     @SerializedName("cotton-candy_stall")
-    private List<Houseware> cottonCandyStall;
+    private List<Item> cottonCandyStall;
 
     @SerializedName("golf_bag")
-    private List<Houseware> golfBag;
+    private List<Item> golfBag;
 
     @SerializedName("Luna's_bed")
-    private List<Houseware> lunaSBed;
+    private List<Item> lunaSBed;
 
     @SerializedName("manhole_cover")
-    private List<Houseware> manholeCover;
+    private List<Item> manholeCover;
 
     @SerializedName("park_clock")
-    private List<Houseware> parkClock;
+    private List<Item> parkClock;
 
     @SerializedName("birdcage")
-    private List<Houseware> birdcage;
+    private List<Item> birdcage;
 
     @SerializedName("simple_panel")
-    private List<Houseware> simplePanel;
+    private List<Item> simplePanel;
 
     @SerializedName("Turkey_Day_garden_stand")
-    private List<Houseware> turkeyDayGardenStand;
+    private List<Item> turkeyDayGardenStand;
 
     @SerializedName("spooky_standing_lamp")
-    private List<Houseware> spookyStandingLamp;
+    private List<Item> spookyStandingLamp;
 
     @SerializedName("moon")
-    private List<Houseware> moon;
+    private List<Item> moon;
 
     @SerializedName("palm-tree_lamp")
-    private List<Houseware> palmTreeLamp;
+    private List<Item> palmTreeLamp;
 
     @SerializedName("monstera")
-    private List<Houseware> monstera;
+    private List<Item> monstera;
 
     @SerializedName("imperial_partition")
-    private List<Houseware> imperialPartition;
+    private List<Item> imperialPartition;
 
     @SerializedName("Festivale_flag")
-    private List<Houseware> festivaleFlag;
+    private List<Item> festivaleFlag;
 
     @SerializedName("pile_of_leaves")
-    private List<Houseware> pileOfLeaves;
+    private List<Item> pileOfLeaves;
 
     @SerializedName("beach_chair")
-    private List<Houseware> beachChair;
+    private List<Item> beachChair;
 
     @SerializedName("poolside_bed")
-    private List<Houseware> poolsideBed;
+    private List<Item> poolsideBed;
 
     @SerializedName("ironwood_bed")
-    private List<Houseware> ironwoodBed;
+    private List<Item> ironwoodBed;
 
     @SerializedName("illuminated_reindeer")
-    private List<Houseware> illuminatedReindeer;
+    private List<Item> illuminatedReindeer;
 
     @SerializedName("lunar_lander")
-    private List<Houseware> lunarLander;
+    private List<Item> lunarLander;
 
     @SerializedName("spooky_table")
-    private List<Houseware> spookyTable;
+    private List<Item> spookyTable;
 
     @SerializedName("Aquarius_urn")
-    private List<Houseware> aquariusUrn;
+    private List<Item> aquariusUrn;
 
     @SerializedName("toilet-cleaning_set")
-    private List<Houseware> toiletCleaningSet;
+    private List<Item> toiletCleaningSet;
 
     @SerializedName("wooden-block_bed")
-    private List<Houseware> woodenBlockBed;
+    private List<Item> woodenBlockBed;
 
     @SerializedName("antique_mini_table")
-    private List<Houseware> antiqueMiniTable;
+    private List<Item> antiqueMiniTable;
 
     @SerializedName("Papa_bear")
-    private List<Houseware> papaBear;
+    private List<Item> papaBear;
 
     @SerializedName("fireplace")
-    private List<Houseware> fireplace;
+    private List<Item> fireplace;
 
     @SerializedName("crescent-moon_chair")
-    private List<Houseware> crescentMoonChair;
+    private List<Item> crescentMoonChair;
 
     @SerializedName("standing_toilet")
-    private List<Houseware> standingToilet;
+    private List<Item> standingToilet;
 
     @SerializedName("cardboard_bed")
-    private List<Houseware> cardboardBed;
+    private List<Item> cardboardBed;
 
     @SerializedName("garden_lantern")
-    private List<Houseware> gardenLantern;
+    private List<Item> gardenLantern;
 
     @SerializedName("imperial_low_table")
-    private List<Houseware> imperialLowTable;
+    private List<Item> imperialLowTable;
 
     @SerializedName("squat_toilet")
-    private List<Houseware> squatToilet;
+    private List<Item> squatToilet;
 
     @SerializedName("Bunny_Day_table")
-    private List<Houseware> bunnyDayTable;
+    private List<Item> bunnyDayTable;
 
     @SerializedName("mermaid_dresser")
-    private List<Houseware> mermaidDresser;
+    private List<Item> mermaidDresser;
 
     @SerializedName("shell_partition")
-    private List<Houseware> shellPartition;
+    private List<Item> shellPartition;
 
     @SerializedName("golden_toilet")
-    private List<Houseware> goldenToilet;
+    private List<Item> goldenToilet;
 
     @SerializedName("iron_worktable")
-    private List<Houseware> ironWorktable;
+    private List<Item> ironWorktable;
 
     @SerializedName("pirate-treasure_chest")
-    private List<Houseware> pirateTreasureChest;
+    private List<Item> pirateTreasureChest;
 
     @SerializedName("weight_bench")
-    private List<Houseware> weightBench;
+    private List<Item> weightBench;
 
     @SerializedName("lunar_rover")
-    private List<Houseware> lunarRover;
+    private List<Item> lunarRover;
 
     @SerializedName("hammock")
-    private List<Houseware> hammock;
+    private List<Item> hammock;
 
     @SerializedName("cute_tea_table")
-    private List<Houseware> cuteTeaTable;
+    private List<Item> cuteTeaTable;
 
     @SerializedName("barrel")
-    private List<Houseware> barrel;
+    private List<Item> barrel;
 
     @SerializedName("elephant_slide")
-    private List<Houseware> elephantSlide;
+    private List<Item> elephantSlide;
 
     @SerializedName("fresh_cooler")
-    private List<Houseware> freshCooler;
+    private List<Item> freshCooler;
 
     @SerializedName("Bunny_Day_festive_balloons")
-    private List<Houseware> bunnyDayFestiveBalloons;
+    private List<Item> bunnyDayFestiveBalloons;
 
     @SerializedName("champion's_pennant")
-    private List<Houseware> championSPennant;
+    private List<Item> championSPennant;
 
     @SerializedName("rattan_end_table")
-    private List<Houseware> rattanEndTable;
+    private List<Item> rattanEndTable;
 
     @SerializedName("cardboard_sofa")
-    private List<Houseware> cardboardSofa;
+    private List<Item> cardboardSofa;
 
     @SerializedName("throwback_race-car_bed")
-    private List<Houseware> throwbackRaceCarBed;
+    private List<Item> throwbackRaceCarBed;
 
     @SerializedName("Virgo_harp")
-    private List<Houseware> virgoHarp;
+    private List<Item> virgoHarp;
 
     @SerializedName("mermaid_chair")
-    private List<Houseware> mermaidChair;
+    private List<Item> mermaidChair;
 
     @SerializedName("changing_room")
-    private List<Houseware> changingRoom;
+    private List<Item> changingRoom;
 
     @SerializedName("tricycle")
-    private List<Houseware> tricycle;
+    private List<Item> tricycle;
 
     @SerializedName("Festivale_drum")
-    private List<Houseware> festivaleDrum;
+    private List<Item> festivaleDrum;
 
     @SerializedName("gas_range")
-    private List<Houseware> gasRange;
+    private List<Item> gasRange;
 
     @SerializedName("western-style_stone")
-    private List<Houseware> westernStyleStone;
+    private List<Item> westernStyleStone;
 
     @SerializedName("hay_bed")
-    private List<Houseware> hayBed;
+    private List<Item> hayBed;
 
     @SerializedName("TV_camera")
-    private List<Houseware> tVCamera;
+    private List<Item> tVCamera;
 
     @SerializedName("mush_lamp")
-    private List<Houseware> mushLamp;
+    private List<Item> mushLamp;
 
     @SerializedName("music_stand")
-    private List<Houseware> musicStand;
+    private List<Item> musicStand;
 
     @SerializedName("tall_lantern")
-    private List<Houseware> tallLantern;
+    private List<Item> tallLantern;
 
     @SerializedName("barbell")
-    private List<Houseware> barbell;
+    private List<Item> barbell;
 
     @SerializedName("wooden_double_bed")
-    private List<Houseware> woodenDoubleBed;
+    private List<Item> woodenDoubleBed;
 
     @SerializedName("blue_corner")
-    private List<Houseware> blueCorner;
+    private List<Item> blueCorner;
 
     @SerializedName("jail_bars")
-    private List<Houseware> jailBars;
+    private List<Item> jailBars;
 
     @SerializedName("public_bench")
-    private List<Houseware> publicBench;
+    private List<Item> publicBench;
 
     @SerializedName("grand_piano")
-    private List<Houseware> grandPiano;
+    private List<Item> grandPiano;
 
     @SerializedName("whirlpool_bath")
-    private List<Houseware> whirlpoolBath;
+    private List<Item> whirlpoolBath;
 
     @SerializedName("colorful_wheel")
-    private List<Houseware> colorfulWheel;
+    private List<Item> colorfulWheel;
 
     @SerializedName("tool_shelf")
-    private List<Houseware> toolShelf;
+    private List<Item> toolShelf;
 
     @SerializedName("tourist_telescope")
-    private List<Houseware> touristTelescope;
+    private List<Item> touristTelescope;
 
     @SerializedName("campfire")
-    private List<Houseware> campfire;
+    private List<Item> campfire;
 
     @SerializedName("wooden_stool")
-    private List<Houseware> woodenStool;
+    private List<Item> woodenStool;
 
     @SerializedName("kids'_tent")
-    private List<Houseware> kidsTent;
+    private List<Item> kidsTent;
 
     @SerializedName("school_desk")
-    private List<Houseware> schoolDesk;
+    private List<Item> schoolDesk;
 
     @SerializedName("rattan_bed")
-    private List<Houseware> rattanBed;
+    private List<Item> rattanBed;
 
     @SerializedName("spooky_arch")
-    private List<Houseware> spookyArch;
+    private List<Item> spookyArch;
 
     @SerializedName("drink_machine")
-    private List<Houseware> drinkMachine;
+    private List<Item> drinkMachine;
 
     @SerializedName("cypress_bathtub")
-    private List<Houseware> cypressBathtub;
+    private List<Item> cypressBathtub;
 
     @SerializedName("iron_closet")
-    private List<Houseware> ironCloset;
+    private List<Item> ironCloset;
 
     @SerializedName("pirate_barrel")
-    private List<Houseware> pirateBarrel;
+    private List<Item> pirateBarrel;
 
     @SerializedName("throwback_hat_table")
-    private List<Houseware> throwbackHatTable;
+    private List<Item> throwbackHatTable;
 
     @SerializedName("bathroom_sink")
-    private List<Houseware> bathroomSink;
+    private List<Item> bathroomSink;
 
     @SerializedName("hinaningyo")
-    private List<Houseware> hinaningyo;
+    private List<Item> hinaningyo;
 
     @SerializedName("oil_barrel")
-    private List<Houseware> oilBarrel;
+    private List<Item> oilBarrel;
 
     @SerializedName("Mama_panda")
-    private List<Houseware> mamaPanda;
+    private List<Item> mamaPanda;
 
     @SerializedName("clothesline")
-    private List<Houseware> clothesline;
+    private List<Item> clothesline;
 
     @SerializedName("safe")
-    private List<Houseware> safe;
+    private List<Item> safe;
 
     @SerializedName("natural_garden_table")
-    private List<Houseware> naturalGardenTable;
+    private List<Item> naturalGardenTable;
 
     @SerializedName("frozen_sculpture")
-    private List<Houseware> frozenSculpture;
+    private List<Item> frozenSculpture;
 
     @SerializedName("soccer_goal")
-    private List<Houseware> soccerGoal;
+    private List<Item> soccerGoal;
 
     @SerializedName("lighthouse")
-    private List<Houseware> lighthouse;
+    private List<Item> lighthouse;
 
     @SerializedName("kitty_litter_box")
-    private List<Houseware> kittyLitterBox;
+    private List<Item> kittyLitterBox;
 
     @SerializedName("ironwood_chair")
-    private List<Houseware> ironwoodChair;
+    private List<Item> ironwoodChair;
 
     @SerializedName("wooden-block_table")
-    private List<Houseware> woodenBlockTable;
+    private List<Item> woodenBlockTable;
 
     @SerializedName("mossy_garden_rock")
-    private List<Houseware> mossyGardenRock;
+    private List<Item> mossyGardenRock;
 
     @SerializedName("whiteboard")
-    private List<Houseware> whiteboard;
+    private List<Item> whiteboard;
 
     @SerializedName("asteroid")
-    private List<Houseware> asteroid;
+    private List<Item> asteroid;
 
     @SerializedName("golden_seat")
-    private List<Houseware> goldenSeat;
+    private List<Item> goldenSeat;
 
     @SerializedName("hearth")
-    private List<Houseware> hearth;
+    private List<Item> hearth;
 
     @SerializedName("rattan_armchair")
-    private List<Houseware> rattanArmchair;
+    private List<Item> rattanArmchair;
 
     @SerializedName("dartboard")
-    private List<Houseware> dartboard;
+    private List<Item> dartboard;
 
     @SerializedName("climbing_wall")
-    private List<Houseware> climbingWall;
+    private List<Item> climbingWall;
 
     @SerializedName("cute_DIY_table")
-    private List<Houseware> cuteDIYTable;
+    private List<Item> cuteDIYTable;
 
     @SerializedName("folding_chair")
-    private List<Houseware> foldingChair;
+    private List<Item> foldingChair;
 
     @SerializedName("stone_stool")
-    private List<Houseware> stoneStool;
+    private List<Item> stoneStool;
 
     @SerializedName("grand_Q._A._birdwing_model")
-    private List<Houseware> grandQABirdwingModel;
+    private List<Item> grandQABirdwingModel;
 
     @SerializedName("wooden_bucket")
-    private List<Houseware> woodenBucket;
+    private List<Item> woodenBucket;
 
     @SerializedName("Goal_Pole")
-    private List<Houseware> goalPole;
+    private List<Item> goalPole;
 
     @SerializedName("bamboo_partition")
-    private List<Houseware> bambooPartition;
+    private List<Item> bambooPartition;
 
     @SerializedName("office_desk")
-    private List<Houseware> officeDesk;
+    private List<Item> officeDesk;
 
     @SerializedName("crewed_spaceship")
-    private List<Houseware> crewedSpaceship;
+    private List<Item> crewedSpaceship;
 
     @SerializedName("DIY_workbench")
-    private List<Houseware> dIYWorkbench;
+    private List<Item> dIYWorkbench;
 
     @SerializedName("termite_mound")
-    private List<Houseware> termiteMound;
+    private List<Item> termiteMound;
 
     @SerializedName("frozen_table")
-    private List<Houseware> frozenTable;
+    private List<Item> frozenTable;
 
     @SerializedName("iron_garden_table")
-    private List<Houseware> ironGardenTable;
+    private List<Item> ironGardenTable;
 
     @SerializedName("go_board")
-    private List<Houseware> goBoard;
+    private List<Item> goBoard;
 
     @SerializedName("apple_chair")
-    private List<Houseware> appleChair;
+    private List<Item> appleChair;
 
     @SerializedName("diner_counter_chair")
-    private List<Houseware> dinerCounterChair;
+    private List<Item> dinerCounterChair;
 
     @SerializedName("utility_sink")
-    private List<Houseware> utilitySink;
+    private List<Item> utilitySink;
 
     @SerializedName("futon")
-    private List<Houseware> futon;
+    private List<Item> futon;
 
     @SerializedName("wood-burning_stove")
-    private List<Houseware> woodBurningStove;
+    private List<Item> woodBurningStove;
 
     @SerializedName("antique_bed")
-    private List<Houseware> antiqueBed;
+    private List<Item> antiqueBed;
 
     @SerializedName("spooky_tower")
-    private List<Houseware> spookyTower;
+    private List<Item> spookyTower;
 
     @SerializedName("tree's_bounty_big_tree")
-    private List<Houseware> treeSBountyBigTree;
+    private List<Item> treeSBountyBigTree;
 
     @SerializedName("garbage_can")
-    private List<Houseware> garbageCan;
+    private List<Item> garbageCan;
 
     @SerializedName("bidet")
-    private List<Houseware> bidet;
+    private List<Item> bidet;
 
     @SerializedName("construction_sign")
-    private List<Houseware> constructionSign;
+    private List<Item> constructionSign;
 
     @SerializedName("flashy-flower_sign")
-    private List<Houseware> flashyFlowerSign;
+    private List<Item> flashyFlowerSign;
 
-    public List<Houseware> getSleigh() {
+    public List<Item> getSleigh() {
         return sleigh;
     }
 
-    public List<Houseware> getArtisanalBugCage() {
+    public List<Item> getArtisanalBugCage() {
         return artisanalBugCage;
     }
 
-    public List<Houseware> getDrumSet() {
+    public List<Item> getDrumSet() {
         return drumSet;
     }
 
-    public List<Houseware> getElectricKickScooter() {
+    public List<Item> getElectricKickScooter() {
         return electricKickScooter;
     }
 
-    public List<Houseware> getPapaPanda() {
+    public List<Item> getPapaPanda() {
         return papaPanda;
     }
 
-    public List<Houseware> getKitchenIsland() {
+    public List<Item> getKitchenIsland() {
         return kitchenIsland;
     }
 
-    public List<Houseware> getMermaidCloset() {
+    public List<Item> getMermaidCloset() {
         return mermaidCloset;
     }
 
-    public List<Houseware> getLargeMushroomPlatform() {
+    public List<Item> getLargeMushroomPlatform() {
         return largeMushroomPlatform;
     }
 
-    public List<Houseware> getHandcart() {
+    public List<Item> getHandcart() {
         return handcart;
     }
 
-    public List<Houseware> getAnatomicalModel() {
+    public List<Item> getAnatomicalModel() {
         return anatomicalModel;
     }
 
-    public List<Houseware> getBunnyDayMerryBalloons() {
+    public List<Item> getBunnyDayMerryBalloons() {
         return bunnyDayMerryBalloons;
     }
 
-    public List<Houseware> getRattanStool() {
+    public List<Item> getRattanStool() {
         return rattanStool;
     }
 
-    public List<Houseware> getTeaTable() {
+    public List<Item> getTeaTable() {
         return teaTable;
     }
 
-    public List<Houseware> getImperialDiningTable() {
+    public List<Item> getImperialDiningTable() {
         return imperialDiningTable;
     }
 
-    public List<Houseware> getDrinkingFountain() {
+    public List<Item> getDrinkingFountain() {
         return drinkingFountain;
     }
 
-    public List<Houseware> getOutdoorAirConditioner() {
+    public List<Item> getOutdoorAirConditioner() {
         return outdoorAirConditioner;
     }
 
-    public List<Houseware> getSpinningWheel() {
+    public List<Item> getSpinningWheel() {
         return spinningWheel;
     }
 
-    public List<Houseware> getMediumCardboardBoxes() {
+    public List<Item> getMediumCardboardBoxes() {
         return mediumCardboardBoxes;
     }
 
-    public List<Houseware> getBambooShelf() {
+    public List<Item> getBambooShelf() {
         return bambooShelf;
     }
 
-    public List<Houseware> getMushPartition() {
+    public List<Item> getMushPartition() {
         return mushPartition;
     }
 
-    public List<Houseware> getPool() {
+    public List<Item> getPool() {
         return pool;
     }
 
-    public List<Houseware> getMermaidScreen() {
+    public List<Item> getMermaidScreen() {
         return mermaidScreen;
     }
 
-    public List<Houseware> getStonehenge() {
+    public List<Item> getStonehenge() {
         return stonehenge;
     }
 
-    public List<Houseware> getSimpleDIYWorkbench() {
+    public List<Item> getSimpleDIYWorkbench() {
         return simpleDIYWorkbench;
     }
 
-    public List<Houseware> getBoxSofa() {
+    public List<Item> getBoxSofa() {
         return boxSofa;
     }
 
-    public List<Houseware> getBambooGrass() {
+    public List<Item> getBambooGrass() {
         return bambooGrass;
     }
 
-    public List<Houseware> getOutdoorGenerator() {
+    public List<Item> getOutdoorGenerator() {
         return outdoorGenerator;
     }
 
-    public List<Houseware> getToyDaySleigh() {
+    public List<Item> getToyDaySleigh() {
         return toyDaySleigh;
     }
 
-    public List<Houseware> getImperialDiningChair() {
+    public List<Item> getImperialDiningChair() {
         return imperialDiningChair;
     }
 
-    public List<Houseware> getMushLog() {
+    public List<Item> getMushLog() {
         return mushLog;
     }
 
-    public List<Houseware> getFestiveTree() {
+    public List<Item> getFestiveTree() {
         return festiveTree;
     }
 
-    public List<Houseware> getZenStyleStone() {
+    public List<Item> getZenStyleStone() {
         return zenStyleStone;
     }
 
-    public List<Houseware> getTanklessToilet() {
+    public List<Item> getTanklessToilet() {
         return tanklessToilet;
     }
 
-    public List<Houseware> getLoftBedWithDesk() {
+    public List<Item> getLoftBedWithDesk() {
         return loftBedWithDesk;
     }
 
-    public List<Houseware> getTrainSet() {
+    public List<Item> getTrainSet() {
         return trainSet;
     }
 
-    public List<Houseware> getMermaidLamp() {
+    public List<Item> getMermaidLamp() {
         return mermaidLamp;
     }
 
-    public List<Houseware> getAltoSaxophone() {
+    public List<Item> getAltoSaxophone() {
         return altoSaxophone;
     }
 
-    public List<Houseware> getCypressPlant() {
+    public List<Item> getCypressPlant() {
         return cypressPlant;
     }
 
-    public List<Houseware> getIronwoodCart() {
+    public List<Item> getIronwoodCart() {
         return ironwoodCart;
     }
 
-    public List<Houseware> getTennisTable() {
+    public List<Item> getTennisTable() {
         return tennisTable;
     }
 
-    public List<Houseware> getImperialChest() {
+    public List<Item> getImperialChest() {
         return imperialChest;
     }
 
-    public List<Houseware> getStreetlamp() {
+    public List<Item> getStreetlamp() {
         return streetlamp;
     }
 
-    public List<Houseware> getAstronautSuit() {
+    public List<Item> getAstronautSuit() {
         return astronautSuit;
     }
 
-    public List<Houseware> getWoodenBookshelf() {
+    public List<Item> getWoodenBookshelf() {
         return woodenBookshelf;
     }
 
-    public List<Houseware> getYellowLeafPile() {
+    public List<Item> getYellowLeafPile() {
         return yellowLeafPile;
     }
 
-    public List<Houseware> getLogExtraLongSofa() {
+    public List<Item> getLogExtraLongSofa() {
         return logExtraLongSofa;
     }
 
-    public List<Houseware> getSimpleWell() {
+    public List<Item> getSimpleWell() {
         return simpleWell;
     }
 
-    public List<Houseware> getBlossomViewingLantern() {
+    public List<Item> getBlossomViewingLantern() {
         return blossomViewingLantern;
     }
 
-    public List<Houseware> getDoubleSofa() {
+    public List<Item> getDoubleSofa() {
         return doubleSofa;
     }
 
-    public List<Houseware> getFrozenArch() {
+    public List<Item> getFrozenArch() {
         return frozenArch;
     }
 
-    public List<Houseware> getMushParasol() {
+    public List<Item> getMushParasol() {
         return mushParasol;
     }
 
-    public List<Houseware> getDinerDiningTable() {
+    public List<Item> getDinerDiningTable() {
         return dinerDiningTable;
     }
 
-    public List<Houseware> getGarbagePail() {
+    public List<Item> getGarbagePail() {
         return garbagePail;
     }
 
-    public List<Houseware> getWoodenWasteBin() {
+    public List<Item> getWoodenWasteBin() {
         return woodenWasteBin;
     }
 
-    public List<Houseware> getCuteBed() {
+    public List<Item> getCuteBed() {
         return cuteBed;
     }
 
-    public List<Houseware> getArcadeCombatGame() {
+    public List<Item> getArcadeCombatGame() {
         return arcadeCombatGame;
     }
 
-    public List<Houseware> getBasketballHoop() {
+    public List<Item> getBasketballHoop() {
         return basketballHoop;
     }
 
-    public List<Houseware> getWoodenBlockBench() {
+    public List<Item> getWoodenBlockBench() {
         return woodenBlockBench;
     }
 
-    public List<Houseware> getAcousticGuitar() {
+    public List<Item> getAcousticGuitar() {
         return acousticGuitar;
     }
 
-    public List<Houseware> getDenDesk() {
+    public List<Item> getDenDesk() {
         return denDesk;
     }
 
-    public List<Houseware> getLargeCardboardBoxes() {
+    public List<Item> getLargeCardboardBoxes() {
         return largeCardboardBoxes;
     }
 
-    public List<Houseware> getClothesCloset() {
+    public List<Item> getClothesCloset() {
         return clothesCloset;
     }
 
-    public List<Houseware> getArcadeFightingGame() {
+    public List<Item> getArcadeFightingGame() {
         return arcadeFightingGame;
     }
 
-    public List<Houseware> getPiscesLamp() {
+    public List<Item> getPiscesLamp() {
         return piscesLamp;
     }
 
-    public List<Houseware> getAngledSignpost() {
+    public List<Item> getAngledSignpost() {
         return angledSignpost;
     }
 
-    public List<Houseware> getPagoda() {
+    public List<Item> getPagoda() {
         return pagoda;
     }
 
-    public List<Houseware> getRoundSpaceHeater() {
+    public List<Item> getRoundSpaceHeater() {
         return roundSpaceHeater;
     }
 
-    public List<Houseware> getWaterPump() {
+    public List<Item> getWaterPump() {
         return waterPump;
     }
 
-    public List<Houseware> getRattanVanity() {
+    public List<Item> getRattanVanity() {
         return rattanVanity;
     }
 
-    public List<Houseware> getRockingHorse() {
+    public List<Item> getRockingHorse() {
         return rockingHorse;
     }
 
-    public List<Houseware> getWeddingWelcomeBoard() {
+    public List<Item> getWeddingWelcomeBoard() {
         return weddingWelcomeBoard;
     }
 
-    public List<Houseware> getTreadmill() {
+    public List<Item> getTreadmill() {
         return treadmill;
     }
 
-    public List<Houseware> getVideoCamera() {
+    public List<Item> getVideoCamera() {
         return videoCamera;
     }
 
-    public List<Houseware> getStoneTable() {
+    public List<Item> getStoneTable() {
         return stoneTable;
     }
 
-    public List<Houseware> getCherryBlossomPondStone() {
+    public List<Item> getCherryBlossomPondStone() {
         return cherryBlossomPondStone;
     }
 
-    public List<Houseware> getBunnyDayStool() {
+    public List<Item> getBunnyDayStool() {
         return bunnyDayStool;
     }
 
-    public List<Houseware> getGong() {
+    public List<Item> getGong() {
         return gong;
     }
 
-    public List<Houseware> getSkeleton() {
+    public List<Item> getSkeleton() {
         return skeleton;
     }
 
-    public List<Houseware> getMountainBike() {
+    public List<Item> getMountainBike() {
         return mountainBike;
     }
 
-    public List<Houseware> getBunnyDayWardrobe() {
+    public List<Item> getBunnyDayWardrobe() {
         return bunnyDayWardrobe;
     }
 
-    public List<Houseware> getFrozenCounter() {
+    public List<Item> getFrozenCounter() {
         return frozenCounter;
     }
 
-    public List<Houseware> getShellTable() {
+    public List<Item> getShellTable() {
         return shellTable;
     }
 
-    public List<Houseware> getStoneArch() {
+    public List<Item> getStoneArch() {
         return stoneArch;
     }
 
-    public List<Houseware> getWaterCooler() {
+    public List<Item> getWaterCooler() {
         return waterCooler;
     }
 
-    public List<Houseware> getStadiometer() {
+    public List<Item> getStadiometer() {
         return stadiometer;
     }
 
-    public List<Houseware> getTulipSurpriseBox() {
+    public List<Item> getTulipSurpriseBox() {
         return tulipSurpriseBox;
     }
 
-    public List<Houseware> getIronwoodCupboard() {
+    public List<Item> getIronwoodCupboard() {
         return ironwoodCupboard;
     }
 
-    public List<Houseware> getBambooFloorLamp() {
+    public List<Item> getBambooFloorLamp() {
         return bambooFloorLamp;
     }
 
-    public List<Houseware> getClackercart() {
+    public List<Item> getClackercart() {
         return clackercart;
     }
 
-    public List<Houseware> getSleepingBag() {
+    public List<Item> getSleepingBag() {
         return sleepingBag;
     }
 
-    public List<Houseware> getUprightPiano() {
+    public List<Item> getUprightPiano() {
         return uprightPiano;
     }
 
-    public List<Houseware> getFreezer() {
+    public List<Item> getFreezer() {
         return freezer;
     }
 
-    public List<Houseware> getSolarPanel() {
+    public List<Item> getSolarPanel() {
         return solarPanel;
     }
 
-    public List<Houseware> getTireToy() {
+    public List<Item> getTireToy() {
         return tireToy;
     }
 
-    public List<Houseware> getBonfire() {
+    public List<Item> getBonfire() {
         return bonfire;
     }
 
-    public List<Houseware> getPansyTable() {
+    public List<Item> getPansyTable() {
         return pansyTable;
     }
 
-    public List<Houseware> getRefrigerator() {
+    public List<Item> getRefrigerator() {
         return refrigerator;
     }
 
-    public List<Houseware> getDoubleDoorRefrigerator() {
+    public List<Item> getDoubleDoorRefrigerator() {
         return doubleDoorRefrigerator;
     }
 
-    public List<Houseware> getPondStone() {
+    public List<Item> getPondStone() {
         return pondStone;
     }
 
-    public List<Houseware> getBunnyDayVanity() {
+    public List<Item> getBunnyDayVanity() {
         return bunnyDayVanity;
     }
 
-    public List<Houseware> getGrassStandee() {
+    public List<Item> getGrassStandee() {
         return grassStandee;
     }
 
-    public List<Houseware> getSynthesizer() {
+    public List<Item> getSynthesizer() {
         return synthesizer;
     }
 
-    public List<Houseware> getWoodenEndTable() {
+    public List<Item> getWoodenEndTable() {
         return woodenEndTable;
     }
 
-    public List<Houseware> getGrandAtlasMothModel() {
+    public List<Item> getGrandAtlasMothModel() {
         return grandAtlasMothModel;
     }
 
-    public List<Houseware> getMarimba() {
+    public List<Item> getMarimba() {
         return marimba;
     }
 
-    public List<Houseware> getFanPalm() {
+    public List<Item> getFanPalm() {
         return fanPalm;
     }
 
-    public List<Houseware> getHarp() {
+    public List<Item> getHarp() {
         return harp;
     }
 
-    public List<Houseware> getTikiTorch() {
+    public List<Item> getTikiTorch() {
         return tikiTorch;
     }
 
-    public List<Houseware> getFrozenBed() {
+    public List<Item> getFrozenBed() {
         return frozenBed;
     }
 
-    public List<Houseware> getAntiqueChair() {
+    public List<Item> getAntiqueChair() {
         return antiqueChair;
     }
 
-    public List<Houseware> getImperialBed() {
+    public List<Item> getImperialBed() {
         return imperialBed;
     }
 
-    public List<Houseware> getBabyChair() {
+    public List<Item> getBabyChair() {
         return babyChair;
     }
 
-    public List<Houseware> getCapricornOrnament() {
+    public List<Item> getCapricornOrnament() {
         return capricornOrnament;
     }
 
-    public List<Houseware> getUtilityPole() {
+    public List<Item> getUtilityPole() {
         return utilityPole;
     }
 
-    public List<Houseware> getScarecrow() {
+    public List<Item> getScarecrow() {
         return scarecrow;
     }
 
-    public List<Houseware> getFrozenPartition() {
+    public List<Item> getFrozenPartition() {
         return frozenPartition;
     }
 
-    public List<Houseware> getJuicyAppleTV() {
+    public List<Item> getJuicyAppleTV() {
         return juicyAppleTV;
     }
 
-    public List<Houseware> getWeddingArch() {
+    public List<Item> getWeddingArch() {
         return weddingArch;
     }
 
-    public List<Houseware> getShowerBooth() {
+    public List<Item> getShowerBooth() {
         return showerBooth;
     }
 
-    public List<Houseware> getFestivaleGarland() {
+    public List<Item> getFestivaleGarland() {
         return festivaleGarland;
     }
 
-    public List<Houseware> getMiniDIYWorkbench() {
+    public List<Item> getMiniDIYWorkbench() {
         return miniDIYWorkbench;
     }
 
-    public List<Houseware> getRockingChair() {
+    public List<Item> getRockingChair() {
         return rockingChair;
     }
 
-    public List<Houseware> getMiniFridge() {
+    public List<Item> getMiniFridge() {
         return miniFridge;
     }
 
-    public List<Houseware> getFishDryingRack() {
+    public List<Item> getFishDryingRack() {
         return fishDryingRack;
     }
 
-    public List<Houseware> getIlluminatedPresent() {
+    public List<Item> getIlluminatedPresent() {
         return illuminatedPresent;
     }
 
-    public List<Houseware> getSatellite() {
+    public List<Item> getSatellite() {
         return satellite;
     }
 
-    public List<Houseware> getCherryBlossomPetalPile() {
+    public List<Item> getCherryBlossomPetalPile() {
         return cherryBlossomPetalPile;
     }
 
-    public List<Houseware> getGardenWagon() {
+    public List<Item> getGardenWagon() {
         return gardenWagon;
     }
 
-    public List<Houseware> getAnchorStatue() {
+    public List<Item> getAnchorStatue() {
         return anchorStatue;
     }
 
-    public List<Houseware> getGiftPile() {
+    public List<Item> getGiftPile() {
         return giftPile;
     }
 
-    public List<Houseware> getBilliardTable() {
+    public List<Item> getBilliardTable() {
         return billiardTable;
     }
 
-    public List<Houseware> getPirateShipHelm() {
+    public List<Item> getPirateShipHelm() {
         return pirateShipHelm;
     }
 
-    public List<Houseware> getHiFiStereo() {
+    public List<Item> getHiFiStereo() {
         return hiFiStereo;
     }
 
-    public List<Houseware> getDinerMiniTable() {
+    public List<Item> getDinerMiniTable() {
         return dinerMiniTable;
     }
 
-    public List<Houseware> getSphinx() {
+    public List<Item> getSphinx() {
         return sphinx;
     }
 
-    public List<Houseware> getStudyDesk() {
+    public List<Item> getStudyDesk() {
         return studyDesk;
     }
 
-    public List<Houseware> getRodeoStyleSpringyRideOn() {
+    public List<Item> getRodeoStyleSpringyRideOn() {
         return rodeoStyleSpringyRideOn;
     }
 
-    public List<Houseware> getAntiqueTable() {
+    public List<Item> getAntiqueTable() {
         return antiqueTable;
     }
 
-    public List<Houseware> getDestinationsSignpost() {
+    public List<Item> getDestinationsSignpost() {
         return destinationsSignpost;
     }
 
-    public List<Houseware> getPyramid() {
+    public List<Item> getPyramid() {
         return pyramid;
     }
 
-    public List<Houseware> getPearBed() {
+    public List<Item> getPearBed() {
         return pearBed;
     }
 
-    public List<Houseware> getVelvetStool() {
+    public List<Item> getVelvetStool() {
         return velvetStool;
     }
 
-    public List<Houseware> getFountain() {
+    public List<Item> getFountain() {
         return fountain;
     }
 
-    public List<Houseware> getFishingRodStand() {
+    public List<Item> getFishingRodStand() {
         return fishingRodStand;
     }
 
-    public List<Houseware> getCherryBlossomBranches() {
+    public List<Item> getCherryBlossomBranches() {
         return cherryBlossomBranches;
     }
 
-    public List<Houseware> getBambooBasket() {
+    public List<Item> getBambooBasket() {
         return bambooBasket;
     }
 
-    public List<Houseware> getBrickOven() {
+    public List<Item> getBrickOven() {
         return brickOven;
     }
 
-    public List<Houseware> getBrickWell() {
+    public List<Item> getBrickWell() {
         return brickWell;
     }
 
-    public List<Houseware> getWeddingPipeOrgan() {
+    public List<Item> getWeddingPipeOrgan() {
         return weddingPipeOrgan;
     }
 
-    public List<Houseware> getGiantTeddyBear() {
+    public List<Item> getGiantTeddyBear() {
         return giantTeddyBear;
     }
 
-    public List<Houseware> getTatamiBed() {
+    public List<Item> getTatamiBed() {
         return tatamiBed;
     }
 
-    public List<Houseware> getElaborateKimonoStand() {
+    public List<Item> getElaborateKimonoStand() {
         return elaborateKimonoStand;
     }
 
-    public List<Houseware> getPantsPress() {
+    public List<Item> getPantsPress() {
         return pantsPress;
     }
 
-    public List<Houseware> getRocketLamp() {
+    public List<Item> getRocketLamp() {
         return rocketLamp;
     }
 
-    public List<Houseware> getBlock() {
+    public List<Item> getBlock() {
         return block;
     }
 
-    public List<Houseware> getIronFrame() {
+    public List<Item> getIronFrame() {
         return ironFrame;
     }
 
-    public List<Houseware> getWeddingChair() {
+    public List<Item> getWeddingChair() {
         return weddingChair;
     }
 
-    public List<Houseware> getCacaoTree() {
+    public List<Item> getCacaoTree() {
         return cacaoTree;
     }
 
-    public List<Houseware> getDJSTurntable() {
+    public List<Item> getDJSTurntable() {
         return dJSTurntable;
     }
 
-    public List<Houseware> getStall() {
+    public List<Item> getStall() {
         return stall;
     }
 
-    public List<Houseware> getDenChair() {
+    public List<Item> getDenChair() {
         return denChair;
     }
 
-    public List<Houseware> getFlatGardenRock() {
+    public List<Item> getFlatGardenRock() {
         return flatGardenRock;
     }
 
-    public List<Houseware> getIronwoodTable() {
+    public List<Item> getIronwoodTable() {
         return ironwoodTable;
     }
 
-    public List<Houseware> getWoodenBlockChest() {
+    public List<Item> getWoodenBlockChest() {
         return woodenBlockChest;
     }
 
-    public List<Houseware> getJsonMember2021CelebratoryArch() {
+    public List<Item> getJsonMember2021CelebratoryArch() {
         return jsonMember2021CelebratoryArch;
     }
 
-    public List<Houseware> getSpookyLanternSet() {
+    public List<Item> getSpookyLanternSet() {
         return spookyLanternSet;
     }
 
-    public List<Houseware> getCuteVanity() {
+    public List<Item> getCuteVanity() {
         return cuteVanity;
     }
 
-    public List<Houseware> getPodium() {
+    public List<Item> getPodium() {
         return podium;
     }
 
-    public List<Houseware> getRattanWasteBin() {
+    public List<Item> getRattanWasteBin() {
         return rattanWasteBin;
     }
 
-    public List<Houseware> getIronShelf() {
+    public List<Item> getIronShelf() {
         return ironShelf;
     }
 
-    public List<Houseware> getThrowbackDinoScreen() {
+    public List<Item> getThrowbackDinoScreen() {
         return throwbackDinoScreen;
     }
 
-    public List<Houseware> getElectricGuitar() {
+    public List<Item> getElectricGuitar() {
         return electricGuitar;
     }
 
-    public List<Houseware> getSoftServeLamp() {
+    public List<Item> getSoftServeLamp() {
         return softServeLamp;
     }
 
-    public List<Houseware> getRetroStereo() {
+    public List<Item> getRetroStereo() {
         return retroStereo;
     }
 
-    public List<Houseware> getServer() {
+    public List<Item> getServer() {
         return server;
     }
 
-    public List<Houseware> getLilyRecordPlayer() {
+    public List<Item> getLilyRecordPlayer() {
         return lilyRecordPlayer;
     }
 
-    public List<Houseware> getFestivaleStall() {
+    public List<Item> getFestivaleStall() {
         return festivaleStall;
     }
 
-    public List<Houseware> getBunnyDayArch() {
+    public List<Item> getBunnyDayArch() {
         return bunnyDayArch;
     }
 
-    public List<Houseware> getSignpost() {
+    public List<Item> getSignpost() {
         return signpost;
     }
 
-    public List<Houseware> getGrandBDragonflyModel() {
+    public List<Item> getGrandBDragonflyModel() {
         return grandBDragonflyModel;
     }
 
-    public List<Houseware> getAntiqueVanity() {
+    public List<Item> getAntiqueVanity() {
         return antiqueVanity;
     }
 
-    public List<Houseware> getShadedFloorLamp() {
+    public List<Item> getShadedFloorLamp() {
         return shadedFloorLamp;
     }
 
-    public List<Houseware> getSpringyRideOn() {
+    public List<Item> getSpringyRideOn() {
         return springyRideOn;
     }
 
-    public List<Houseware> getMountainStandee() {
+    public List<Item> getMountainStandee() {
         return mountainStandee;
     }
 
-    public List<Houseware> getPaperLantern() {
+    public List<Item> getPaperLantern() {
         return paperLantern;
     }
 
-    public List<Houseware> getKotatsu() {
+    public List<Item> getKotatsu() {
         return kotatsu;
     }
 
-    public List<Houseware> getBarbecue() {
+    public List<Item> getBarbecue() {
         return barbecue;
     }
 
-    public List<Houseware> getBunnyDayBed() {
+    public List<Item> getBunnyDayBed() {
         return bunnyDayBed;
     }
 
-    public List<Houseware> getVintageTVTray() {
+    public List<Item> getVintageTVTray() {
         return vintageTVTray;
     }
 
-    public List<Houseware> getSidewaysPirateBarrel() {
+    public List<Item> getSidewaysPirateBarrel() {
         return sidewaysPirateBarrel;
     }
 
-    public List<Houseware> getBambooBench() {
+    public List<Item> getBambooBench() {
         return bambooBench;
     }
 
-    public List<Houseware> getLifeguardChair() {
+    public List<Item> getLifeguardChair() {
         return lifeguardChair;
     }
 
-    public List<Houseware> getLogBed() {
+    public List<Item> getLogBed() {
         return logBed;
     }
 
-    public List<Houseware> getPileOfZenCushions() {
+    public List<Item> getPileOfZenCushions() {
         return pileOfZenCushions;
     }
 
-    public List<Houseware> getRobotHero() {
+    public List<Item> getRobotHero() {
         return robotHero;
     }
 
-    public List<Houseware> getMushLowStool() {
+    public List<Item> getMushLowStool() {
         return mushLowStool;
     }
 
-    public List<Houseware> getGardenRock() {
+    public List<Item> getGardenRock() {
         return gardenRock;
     }
 
-    public List<Houseware> getFoosballTable() {
+    public List<Item> getFoosballTable() {
         return foosballTable;
     }
 
-    public List<Houseware> getWoodenWardrobe() {
+    public List<Item> getWoodenWardrobe() {
         return woodenWardrobe;
     }
 
-    public List<Houseware> getHedgeStandee() {
+    public List<Item> getHedgeStandee() {
         return hedgeStandee;
     }
 
-    public List<Houseware> getEffectsRack() {
+    public List<Item> getEffectsRack() {
         return effectsRack;
     }
 
-    public List<Houseware> getTaurusBathtub() {
+    public List<Item> getTaurusBathtub() {
         return taurusBathtub;
     }
 
-    public List<Houseware> getMermaidTable() {
+    public List<Item> getMermaidTable() {
         return mermaidTable;
     }
 
-    public List<Houseware> getChalkboard() {
+    public List<Item> getChalkboard() {
         return chalkboard;
     }
 
-    public List<Houseware> getRCHelicopter() {
+    public List<Item> getRCHelicopter() {
         return rCHelicopter;
     }
 
-    public List<Houseware> getPullUpBarStand() {
+    public List<Item> getPullUpBarStand() {
         return pullUpBarStand;
     }
 
-    public List<Houseware> getOKMotorsSign() {
+    public List<Item> getOKMotorsSign() {
         return oKMotorsSign;
     }
 
-    public List<Houseware> getAutomaticWasher() {
+    public List<Item> getAutomaticWasher() {
         return automaticWasher;
     }
 
-    public List<Houseware> getDinerCounterTable() {
+    public List<Item> getDinerCounterTable() {
         return dinerCounterTable;
     }
 
-    public List<Houseware> getRoseBed() {
+    public List<Item> getRoseBed() {
         return roseBed;
     }
 
-    public List<Houseware> getMermaidSofa() {
+    public List<Item> getMermaidSofa() {
         return mermaidSofa;
     }
 
-    public List<Houseware> getScreen() {
+    public List<Item> getScreen() {
         return screen;
     }
 
-    public List<Houseware> getThreeTieredSnowperson() {
+    public List<Item> getThreeTieredSnowperson() {
         return threeTieredSnowperson;
     }
 
-    public List<Houseware> getDinerSofa() {
+    public List<Item> getDinerSofa() {
         return dinerSofa;
     }
 
-    public List<Houseware> getElectricBass() {
+    public List<Item> getElectricBass() {
         return electricBass;
     }
 
-    public List<Houseware> getTableWithCloth() {
+    public List<Item> getTableWithCloth() {
         return tableWithCloth;
     }
 
-    public List<Houseware> getMenuChalkboard() {
+    public List<Item> getMenuChalkboard() {
         return menuChalkboard;
     }
 
-    public List<Houseware> getIronGardenChair() {
+    public List<Item> getIronGardenChair() {
         return ironGardenChair;
     }
 
-    public List<Houseware> getMapleLeafPondStone() {
+    public List<Item> getMapleLeafPondStone() {
         return mapleLeafPondStone;
     }
 
-    public List<Houseware> getRedCorner() {
+    public List<Item> getRedCorner() {
         return redCorner;
     }
 
-    public List<Houseware> getPipe() {
+    public List<Item> getPipe() {
         return pipe;
     }
 
-    public List<Houseware> getIronwoodKitchenette() {
+    public List<Item> getIronwoodKitchenette() {
         return ironwoodKitchenette;
     }
 
-    public List<Houseware> getAntiqueClock() {
+    public List<Item> getAntiqueClock() {
         return antiqueClock;
     }
 
-    public List<Houseware> getCuteFloorLamp() {
+    public List<Item> getCuteFloorLamp() {
         return cuteFloorLamp;
     }
 
-    public List<Houseware> getOutdoorBath() {
+    public List<Item> getOutdoorBath() {
         return outdoorBath;
     }
 
-    public List<Houseware> getCuteChair() {
+    public List<Item> getCuteChair() {
         return cuteChair;
     }
 
-    public List<Houseware> getOutdoorPicnicSet() {
+    public List<Item> getOutdoorPicnicSet() {
         return outdoorPicnicSet;
     }
 
-    public List<Houseware> getNaturalGardenChair() {
+    public List<Item> getNaturalGardenChair() {
         return naturalGardenChair;
     }
 
-    public List<Houseware> getNaturalSquareTable() {
+    public List<Item> getNaturalSquareTable() {
         return naturalSquareTable;
     }
 
-    public List<Houseware> getOpenFrameKitchen() {
+    public List<Item> getOpenFrameKitchen() {
         return openFrameKitchen;
     }
 
-    public List<Houseware> getFestivaleParasol() {
+    public List<Item> getFestivaleParasol() {
         return festivaleParasol;
     }
 
-    public List<Houseware> getThrowbackMittChair() {
+    public List<Item> getThrowbackMittChair() {
         return throwbackMittChair;
     }
 
-    public List<Houseware> getClawFootTub() {
+    public List<Item> getClawFootTub() {
         return clawFootTub;
     }
 
-    public List<Houseware> getWoodenFullLengthMirror() {
+    public List<Item> getWoodenFullLengthMirror() {
         return woodenFullLengthMirror;
     }
 
-    public List<Houseware> getWoodenSimpleBed() {
+    public List<Item> getWoodenSimpleBed() {
         return woodenSimpleBed;
     }
 
-    public List<Houseware> getMarketPlaceDecoration() {
+    public List<Item> getMarketPlaceDecoration() {
         return marketPlaceDecoration;
     }
 
-    public List<Houseware> getSouthPole() {
+    public List<Item> getSouthPole() {
         return southPole;
     }
 
-    public List<Houseware> getYucca() {
+    public List<Item> getYucca() {
         return yucca;
     }
 
-    public List<Houseware> getClayFurnace() {
+    public List<Item> getClayFurnace() {
         return clayFurnace;
     }
 
-    public List<Houseware> getWoodenMiniTable() {
+    public List<Item> getWoodenMiniTable() {
         return woodenMiniTable;
     }
 
-    public List<Houseware> getRockGuitar() {
+    public List<Item> getRockGuitar() {
         return rockGuitar;
     }
 
-    public List<Houseware> getPlasticPool() {
+    public List<Item> getPlasticPool() {
         return plasticPool;
     }
 
-    public List<Houseware> getAriesRockingChair() {
+    public List<Item> getAriesRockingChair() {
         return ariesRockingChair;
     }
 
-    public List<Houseware> getSaunaHeater() {
+    public List<Item> getSaunaHeater() {
         return saunaHeater;
     }
 
-    public List<Houseware> getIlluminatedSnowflakes() {
+    public List<Item> getIlluminatedSnowflakes() {
         return illuminatedSnowflakes;
     }
 
-    public List<Houseware> getGoldenCasket() {
+    public List<Item> getGoldenCasket() {
         return goldenCasket;
     }
 
-    public List<Houseware> getSnackMachine() {
+    public List<Item> getSnackMachine() {
         return snackMachine;
     }
 
-    public List<Houseware> getServingCart() {
+    public List<Item> getServingCart() {
         return servingCart;
     }
 
-    public List<Houseware> getCampfireCookware() {
+    public List<Item> getCampfireCookware() {
         return campfireCookware;
     }
 
-    public List<Houseware> getIronHangerStand() {
+    public List<Item> getIronHangerStand() {
         return ironHangerStand;
     }
 
-    public List<Houseware> getParabolicAntenna() {
+    public List<Item> getParabolicAntenna() {
         return parabolicAntenna;
     }
 
-    public List<Houseware> getPhoneBox() {
+    public List<Item> getPhoneBox() {
         return phoneBox;
     }
 
-    public List<Houseware> getFloatingBlock() {
+    public List<Item> getFloatingBlock() {
         return floatingBlock;
     }
 
-    public List<Houseware> getFoldingFloorLamp() {
+    public List<Item> getFoldingFloorLamp() {
         return foldingFloorLamp;
     }
 
-    public List<Houseware> getSpookyCarriage() {
+    public List<Item> getSpookyCarriage() {
         return spookyCarriage;
     }
 
-    public List<Houseware> getPianoBench() {
+    public List<Item> getPianoBench() {
         return pianoBench;
     }
 
-    public List<Houseware> getOilBarrelBathtub() {
+    public List<Item> getOilBarrelBathtub() {
         return oilBarrelBathtub;
     }
 
-    public List<Houseware> getDeerScare() {
+    public List<Item> getDeerScare() {
         return deerScare;
     }
 
-    public List<Houseware> getAntiqueWardrobe() {
+    public List<Item> getAntiqueWardrobe() {
         return antiqueWardrobe;
     }
 
-    public List<Houseware> getBeachTowel() {
+    public List<Item> getBeachTowel() {
         return beachTowel;
     }
 
-    public List<Houseware> getTreeSBountyArch() {
+    public List<Item> getTreeSBountyArch() {
         return treeSBountyArch;
     }
 
-    public List<Houseware> getShellStool() {
+    public List<Item> getShellStool() {
         return shellStool;
     }
 
-    public List<Houseware> getZenCushion() {
+    public List<Item> getZenCushion() {
         return zenCushion;
     }
 
-    public List<Houseware> getFestivaleStage() {
+    public List<Item> getFestivaleStage() {
         return festivaleStage;
     }
 
-    public List<Houseware> getSandbox() {
+    public List<Item> getSandbox() {
         return sandbox;
     }
 
-    public List<Houseware> getLogChair() {
+    public List<Item> getLogChair() {
         return logChair;
     }
 
-    public List<Houseware> getSpookyScarecrow() {
+    public List<Item> getSpookyScarecrow() {
         return spookyScarecrow;
     }
 
-    public List<Houseware> getLogStakes() {
+    public List<Item> getLogStakes() {
         return logStakes;
     }
 
-    public List<Houseware> getTireStack() {
+    public List<Item> getTireStack() {
         return tireStack;
     }
 
-    public List<Houseware> getMushTable() {
+    public List<Item> getMushTable() {
         return mushTable;
     }
 
-    public List<Houseware> getStoneTablet() {
+    public List<Item> getStoneTablet() {
         return stoneTablet;
     }
 
-    public List<Houseware> getWoodenBlockChair() {
+    public List<Item> getWoodenBlockChair() {
         return woodenBlockChair;
     }
 
-    public List<Houseware> getWoodenBlockBookshelf() {
+    public List<Item> getWoodenBlockBookshelf() {
         return woodenBlockBookshelf;
     }
 
-    public List<Houseware> getCampingCot() {
+    public List<Item> getCampingCot() {
         return campingCot;
     }
 
-    public List<Houseware> getDirectorSChair() {
+    public List<Item> getDirectorSChair() {
         return directorSChair;
     }
 
-    public List<Houseware> getMicStand() {
+    public List<Item> getMicStand() {
         return micStand;
     }
 
-    public List<Houseware> getMonsterStatue() {
+    public List<Item> getMonsterStatue() {
         return monsterStatue;
     }
 
-    public List<Houseware> getBirdbath() {
+    public List<Item> getBirdbath() {
         return birdbath;
     }
 
-    public List<Houseware> getOutdoorBench() {
+    public List<Item> getOutdoorBench() {
         return outdoorBench;
     }
 
-    public List<Houseware> getFrozenChair() {
+    public List<Item> getFrozenChair() {
         return frozenChair;
     }
 
-    public List<Houseware> getRattanLowTable() {
+    public List<Item> getRattanLowTable() {
         return rattanLowTable;
     }
 
-    public List<Houseware> getMermaidBed() {
+    public List<Item> getMermaidBed() {
         return mermaidBed;
     }
 
-    public List<Houseware> getTurkeyDayTable() {
+    public List<Item> getTurkeyDayTable() {
         return turkeyDayTable;
     }
 
-    public List<Houseware> getRetroGasPump() {
+    public List<Item> getRetroGasPump() {
         return retroGasPump;
     }
 
-    public List<Houseware> getIronwoodDIYWorkbench() {
+    public List<Item> getIronwoodDIYWorkbench() {
         return ironwoodDIYWorkbench;
     }
 
-    public List<Houseware> getRocket() {
+    public List<Item> getRocket() {
         return rocket;
     }
 
-    public List<Houseware> getSwingingBench() {
+    public List<Item> getSwingingBench() {
         return swingingBench;
     }
 
-    public List<Houseware> getArcadeSeat() {
+    public List<Item> getArcadeSeat() {
         return arcadeSeat;
     }
 
-    public List<Houseware> getIronGardenBench() {
+    public List<Item> getIronGardenBench() {
         return ironGardenBench;
     }
 
-    public List<Houseware> getFloorLight() {
+    public List<Item> getFloorLight() {
         return floorLight;
     }
 
-    public List<Houseware> getTeacupRide() {
+    public List<Item> getTeacupRide() {
         return teacupRide;
     }
 
-    public List<Houseware> getCuteSofa() {
+    public List<Item> getCuteSofa() {
         return cuteSofa;
     }
 
-    public List<Houseware> getKettleBathtub() {
+    public List<Item> getKettleBathtub() {
         return kettleBathtub;
     }
 
-    public List<Houseware> getSpeedBag() {
+    public List<Item> getSpeedBag() {
         return speedBag;
     }
 
-    public List<Houseware> getBeekeeperSHive() {
+    public List<Item> getBeekeeperSHive() {
         return beekeeperSHive;
     }
 
-    public List<Houseware> getAirCirculator() {
+    public List<Item> getAirCirculator() {
         return airCirculator;
     }
 
-    public List<Houseware> getCuteWardrobe() {
+    public List<Item> getCuteWardrobe() {
         return cuteWardrobe;
     }
 
-    public List<Houseware> getDinerNeonSign() {
+    public List<Item> getDinerNeonSign() {
         return dinerNeonSign;
     }
 
-    public List<Houseware> getDoghouse() {
+    public List<Item> getDoghouse() {
         return doghouse;
     }
 
-    public List<Houseware> getGardenFaucet() {
+    public List<Item> getGardenFaucet() {
         return gardenFaucet;
     }
 
-    public List<Houseware> getLowScreen() {
+    public List<Item> getLowScreen() {
         return lowScreen;
     }
 
-    public List<Houseware> getDigitalScale() {
+    public List<Item> getDigitalScale() {
         return digitalScale;
     }
 
-    public List<Houseware> getHighEndStereo() {
+    public List<Item> getHighEndStereo() {
         return highEndStereo;
     }
 
-    public List<Houseware> getBunkBed() {
+    public List<Item> getBunkBed() {
         return bunkBed;
     }
 
-    public List<Houseware> getPlainWoodenShopSign() {
+    public List<Item> getPlainWoodenShopSign() {
         return plainWoodenShopSign;
     }
 
-    public List<Houseware> getFortuneCookieCart() {
+    public List<Item> getFortuneCookieCart() {
         return fortuneCookieCart;
     }
 
-    public List<Houseware> getRedLeafPile() {
+    public List<Item> getRedLeafPile() {
         return redLeafPile;
     }
 
-    public List<Houseware> getTrophyCase() {
+    public List<Item> getTrophyCase() {
         return trophyCase;
     }
 
-    public List<Houseware> getBirthdaySign() {
+    public List<Item> getBirthdaySign() {
         return birthdaySign;
     }
 
-    public List<Houseware> getWindTurbine() {
+    public List<Item> getWindTurbine() {
         return windTurbine;
     }
 
-    public List<Houseware> getToilet() {
+    public List<Item> getToilet() {
         return toilet;
     }
 
-    public List<Houseware> getSystemKitchen() {
+    public List<Item> getSystemKitchen() {
         return systemKitchen;
     }
 
-    public List<Houseware> getIroningBoard() {
+    public List<Item> getIroningBoard() {
         return ironingBoard;
     }
 
-    public List<Houseware> getTelescope() {
+    public List<Item> getTelescope() {
         return telescope;
     }
 
-    public List<Houseware> getTurkeyDayChair() {
+    public List<Item> getTurkeyDayChair() {
         return turkeyDayChair;
     }
 
-    public List<Houseware> getCosmosShower() {
+    public List<Item> getCosmosShower() {
         return cosmosShower;
     }
 
-    public List<Houseware> getIlluminatedTree() {
+    public List<Item> getIlluminatedTree() {
         return illuminatedTree;
     }
 
-    public List<Houseware> getMumCushion() {
+    public List<Item> getMumCushion() {
         return mumCushion;
     }
 
-    public List<Houseware> getSpaceShuttle() {
+    public List<Item> getSpaceShuttle() {
         return spaceShuttle;
     }
 
-    public List<Houseware> getVacuumCleaner() {
+    public List<Item> getVacuumCleaner() {
         return vacuumCleaner;
     }
 
-    public List<Houseware> getRaccoonFigurine() {
+    public List<Item> getRaccoonFigurine() {
         return raccoonFigurine;
     }
 
-    public List<Houseware> getSurfboard() {
+    public List<Item> getSurfboard() {
         return surfboard;
     }
 
-    public List<Houseware> getIronwoodDresser() {
+    public List<Item> getIronwoodDresser() {
         return ironwoodDresser;
     }
 
-    public List<Houseware> getThwomp() {
+    public List<Item> getThwomp() {
         return thwomp;
     }
 
-    public List<Houseware> getArcadeMahjongGame() {
+    public List<Item> getArcadeMahjongGame() {
         return arcadeMahjongGame;
     }
 
-    public List<Houseware> getToolCart() {
+    public List<Item> getToolCart() {
         return toolCart;
     }
 
-    public List<Houseware> getWeddingFlowerStand() {
+    public List<Item> getWeddingFlowerStand() {
         return weddingFlowerStand;
     }
 
-    public List<Houseware> getWoodenChest() {
+    public List<Item> getWoodenChest() {
         return woodenChest;
     }
 
-    public List<Houseware> getBirthdayTable() {
+    public List<Item> getBirthdayTable() {
         return birthdayTable;
     }
 
-    public List<Houseware> getScatteredPapers() {
+    public List<Item> getScatteredPapers() {
         return scatteredPapers;
     }
 
-    public List<Houseware> getBrakeTapper() {
+    public List<Item> getBrakeTapper() {
         return brakeTapper;
     }
 
-    public List<Houseware> getGreenLeafPile() {
+    public List<Item> getGreenLeafPile() {
         return greenLeafPile;
     }
 
-    public List<Houseware> getCancerTable() {
+    public List<Item> getCancerTable() {
         return cancerTable;
     }
 
-    public List<Houseware> getFestivaleFloat() {
+    public List<Item> getFestivaleFloat() {
         return festivaleFloat;
     }
 
-    public List<Houseware> getPortableToilet() {
+    public List<Item> getPortableToilet() {
         return portableToilet;
     }
 
-    public List<Houseware> getLawnMower() {
+    public List<Item> getLawnMower() {
         return lawnMower;
     }
 
-    public List<Houseware> getMrsFlamingo() {
+    public List<Item> getMrsFlamingo() {
         return mrsFlamingo;
     }
 
-    public List<Houseware> getRattanWardrobe() {
+    public List<Item> getRattanWardrobe() {
         return rattanWardrobe;
     }
 
-    public List<Houseware> getDryingRack() {
+    public List<Item> getDryingRack() {
         return dryingRack;
     }
 
-    public List<Houseware> getKimonoStand() {
+    public List<Item> getKimonoStand() {
         return kimonoStand;
     }
 
-    public List<Houseware> getIronwoodLowTable() {
+    public List<Item> getIronwoodLowTable() {
         return ironwoodLowTable;
     }
 
-    public List<Houseware> getCandyMachine() {
+    public List<Item> getCandyMachine() {
         return candyMachine;
     }
 
-    public List<Houseware> getWoodenBlockStereo() {
+    public List<Item> getWoodenBlockStereo() {
         return woodenBlockStereo;
     }
 
-    public List<Houseware> getFrozenPillar() {
+    public List<Item> getFrozenPillar() {
         return frozenPillar;
     }
 
-    public List<Houseware> getSilo() {
+    public List<Item> getSilo() {
         return silo;
     }
 
-    public List<Houseware> getStreetOrgan() {
+    public List<Item> getStreetOrgan() {
         return streetOrgan;
     }
 
-    public List<Houseware> getKadomatsu() {
+    public List<Item> getKadomatsu() {
         return kadomatsu;
     }
 
-    public List<Houseware> getShellArch() {
+    public List<Item> getShellArch() {
         return shellArch;
     }
 
-    public List<Houseware> getWildLogBench() {
+    public List<Item> getWildLogBench() {
         return wildLogBench;
     }
 
-    public List<Houseware> getFirePit() {
+    public List<Item> getFirePit() {
         return firePit;
     }
 
-    public List<Houseware> getSchoolChair() {
+    public List<Item> getSchoolChair() {
         return schoolChair;
     }
 
-    public List<Houseware> getOceanSunfishModel() {
+    public List<Item> getOceanSunfishModel() {
         return oceanSunfishModel;
     }
 
-    public List<Houseware> getPunchingBag() {
+    public List<Item> getPunchingBag() {
         return punchingBag;
     }
 
-    public List<Houseware> getShellBed() {
+    public List<Item> getShellBed() {
         return shellBed;
     }
 
-    public List<Houseware> getRetroFan() {
+    public List<Item> getRetroFan() {
         return retroFan;
     }
 
-    public List<Houseware> getWoodenChair() {
+    public List<Item> getWoodenChair() {
         return woodenChair;
     }
 
-    public List<Houseware> getLogDiningTable() {
+    public List<Item> getLogDiningTable() {
         return logDiningTable;
     }
 
-    public List<Houseware> getBasicTeacherSDesk() {
+    public List<Item> getBasicTeacherSDesk() {
         return basicTeacherSDesk;
     }
 
-    public List<Houseware> getLawnChair() {
+    public List<Item> getLawnChair() {
         return lawnChair;
     }
 
-    public List<Houseware> getSmoker() {
+    public List<Item> getSmoker() {
         return smoker;
     }
 
-    public List<Houseware> getGeminiCloset() {
+    public List<Item> getGeminiCloset() {
         return geminiCloset;
     }
 
-    public List<Houseware> getLoom() {
+    public List<Item> getLoom() {
         return loom;
     }
 
-    public List<Houseware> getLongBathtub() {
+    public List<Item> getLongBathtub() {
         return longBathtub;
     }
 
-    public List<Houseware> getMamaBear() {
+    public List<Item> getMamaBear() {
         return mamaBear;
     }
 
-    public List<Houseware> getPinballMachine() {
+    public List<Item> getPinballMachine() {
         return pinballMachine;
     }
 
-    public List<Houseware> getMrFlamingo() {
+    public List<Item> getMrFlamingo() {
         return mrFlamingo;
     }
 
-    public List<Houseware> getTreeStandee() {
+    public List<Item> getTreeStandee() {
         return treeStandee;
     }
 
-    public List<Houseware> getWeddingHeadTable() {
+    public List<Item> getWeddingHeadTable() {
         return weddingHeadTable;
     }
 
-    public List<Houseware> getBoxCornerSofa() {
+    public List<Item> getBoxCornerSofa() {
         return boxCornerSofa;
     }
 
-    public List<Houseware> getGardenBench() {
+    public List<Item> getGardenBench() {
         return gardenBench;
     }
 
-    public List<Houseware> getLeafCampfire() {
+    public List<Item> getLeafCampfire() {
         return leafCampfire;
     }
 
-    public List<Houseware> getLectureHallBench() {
+    public List<Item> getLectureHallBench() {
         return lectureHallBench;
     }
 
-    public List<Houseware> getTowerOfPisa() {
+    public List<Item> getTowerOfPisa() {
         return towerOfPisa;
     }
 
-    public List<Houseware> getBirdhouse() {
+    public List<Item> getBirdhouse() {
         return birdhouse;
     }
 
-    public List<Houseware> getLogBench() {
+    public List<Item> getLogBench() {
         return logBench;
     }
 
-    public List<Houseware> getOldSewingMachine() {
+    public List<Item> getOldSewingMachine() {
         return oldSewingMachine;
     }
 
-    public List<Houseware> getPearWardrobe() {
+    public List<Item> getPearWardrobe() {
         return pearWardrobe;
     }
 
-    public List<Houseware> getWoodenTable() {
+    public List<Item> getWoodenTable() {
         return woodenTable;
     }
 
-    public List<Houseware> getHoseReel() {
+    public List<Item> getHoseReel() {
         return hoseReel;
     }
 
-    public List<Houseware> getFloorLamp() {
+    public List<Item> getFloorLamp() {
         return floorLamp;
     }
 
-    public List<Houseware> getWaveBreaker() {
+    public List<Item> getWaveBreaker() {
         return waveBreaker;
     }
 
-    public List<Houseware> getBambooSpeaker() {
+    public List<Item> getBambooSpeaker() {
         return bambooSpeaker;
     }
 
-    public List<Houseware> getWeddingBench() {
+    public List<Item> getWeddingBench() {
         return weddingBench;
     }
 
-    public List<Houseware> getCatTower() {
+    public List<Item> getCatTower() {
         return catTower;
     }
 
-    public List<Houseware> getPopcornMachine() {
+    public List<Item> getPopcornMachine() {
         return popcornMachine;
     }
 
-    public List<Houseware> getUprightLocker() {
+    public List<Item> getUprightLocker() {
         return uprightLocker;
     }
 
-    public List<Houseware> getSmallCardboardBoxes() {
+    public List<Item> getSmallCardboardBoxes() {
         return smallCardboardBoxes;
     }
 
-    public List<Houseware> getWoodenBlockStool() {
+    public List<Item> getWoodenBlockStool() {
         return woodenBlockStool;
     }
 
-    public List<Houseware> getBambooStool() {
+    public List<Item> getBambooStool() {
         return bambooStool;
     }
 
-    public List<Houseware> getSpookyChair() {
+    public List<Item> getSpookyChair() {
         return spookyChair;
     }
 
-    public List<Houseware> getWheelchair() {
+    public List<Item> getWheelchair() {
         return wheelchair;
     }
 
-    public List<Houseware> getGarbageBin() {
+    public List<Item> getGarbageBin() {
         return garbageBin;
     }
 
-    public List<Houseware> getPetBed() {
+    public List<Item> getPetBed() {
         return petBed;
     }
 
-    public List<Houseware> getDinerChair() {
+    public List<Item> getDinerChair() {
         return dinerChair;
     }
 
-    public List<Houseware> getMoaiStatue() {
+    public List<Item> getMoaiStatue() {
         return moaiStatue;
     }
 
-    public List<Houseware> getJukebox() {
+    public List<Item> getJukebox() {
         return jukebox;
     }
 
-    public List<Houseware> getFloorSeat() {
+    public List<Item> getFloorSeat() {
         return floorSeat;
     }
 
-    public List<Houseware> getSandCastle() {
+    public List<Item> getSandCastle() {
         return sandCastle;
     }
 
-    public List<Houseware> getPlaygroundGym() {
+    public List<Item> getPlaygroundGym() {
         return playgroundGym;
     }
 
-    public List<Houseware> getTurkeyDayHearth() {
+    public List<Item> getTurkeyDayHearth() {
         return turkeyDayHearth;
     }
 
-    public List<Houseware> getStreetPiano() {
+    public List<Item> getStreetPiano() {
         return streetPiano;
     }
 
-    public List<Houseware> getLogRoundTable() {
+    public List<Item> getLogRoundTable() {
         return logRoundTable;
     }
 
-    public List<Houseware> getTinyLibrary() {
+    public List<Item> getTinyLibrary() {
         return tinyLibrary;
     }
 
-    public List<Houseware> getLeafStool() {
+    public List<Item> getLeafStool() {
         return leafStool;
     }
 
-    public List<Houseware> getModernOfficeChair() {
+    public List<Item> getModernOfficeChair() {
         return modernOfficeChair;
     }
 
-    public List<Houseware> getStudioSpotlight() {
+    public List<Item> getStudioSpotlight() {
         return studioSpotlight;
     }
 
-    public List<Houseware> getTallGardenRock() {
+    public List<Item> getTallGardenRock() {
         return tallGardenRock;
     }
 
-    public List<Houseware> getDeluxeWasher() {
+    public List<Item> getDeluxeWasher() {
         return deluxeWasher;
     }
 
-    public List<Houseware> getAntiqueBureau() {
+    public List<Item> getAntiqueBureau() {
         return antiqueBureau;
     }
 
-    public List<Houseware> getExerciseBall() {
+    public List<Item> getExerciseBall() {
         return exerciseBall;
     }
 
-    public List<Houseware> getStatueOfLiberty() {
+    public List<Item> getStatueOfLiberty() {
         return statueOfLiberty;
     }
 
-    public List<Houseware> getLogDecorativeShelves() {
+    public List<Item> getLogDecorativeShelves() {
         return logDecorativeShelves;
     }
 
-    public List<Houseware> getCampsiteSign() {
+    public List<Item> getCampsiteSign() {
         return campsiteSign;
     }
 
-    public List<Houseware> getShellFountain() {
+    public List<Item> getShellFountain() {
         return shellFountain;
     }
 
-    public List<Houseware> getBambooDoll() {
+    public List<Item> getBambooDoll() {
         return bambooDoll;
     }
 
-    public List<Houseware> getAntiqueConsoleTable() {
+    public List<Item> getAntiqueConsoleTable() {
         return antiqueConsoleTable;
     }
 
-    public List<Houseware> getMermaidVanity() {
+    public List<Item> getMermaidVanity() {
         return mermaidVanity;
     }
 
-    public List<Houseware> getSmallMushroomPlatform() {
+    public List<Item> getSmallMushroomPlatform() {
         return smallMushroomPlatform;
     }
 
-    public List<Houseware> getCello() {
+    public List<Item> getCello() {
         return cello;
     }
 
-    public List<Houseware> getNeutralCorner() {
+    public List<Item> getNeutralCorner() {
         return neutralCorner;
     }
 
-    public List<Houseware> getSilverMic() {
+    public List<Item> getSilverMic() {
         return silverMic;
     }
 
-    public List<Houseware> getCardboardTable() {
+    public List<Item> getCardboardTable() {
         return cardboardTable;
     }
 
-    public List<Houseware> getCardboardChair() {
+    public List<Item> getCardboardChair() {
         return cardboardChair;
     }
 
-    public List<Houseware> getUnknownBlock() {
+    public List<Item> getUnknownBlock() {
         return unknownBlock;
     }
 
-    public List<Houseware> getLectureHallDesk() {
+    public List<Item> getLectureHallDesk() {
         return lectureHallDesk;
     }
 
-    public List<Houseware> getBonsaiShelf() {
+    public List<Item> getBonsaiShelf() {
         return bonsaiShelf;
     }
 
-    public List<Houseware> getPirateShipCannon() {
+    public List<Item> getPirateShipCannon() {
         return pirateShipCannon;
     }
 
-    public List<Houseware> getButterChurn() {
+    public List<Item> getButterChurn() {
         return butterChurn;
     }
 
-    public List<Houseware> getStoneLionDog() {
+    public List<Item> getStoneLionDog() {
         return stoneLionDog;
     }
 
-    public List<Houseware> getOrangeEndTable() {
+    public List<Item> getOrangeEndTable() {
         return orangeEndTable;
     }
 
-    public List<Houseware> getWeddingTable() {
+    public List<Item> getWeddingTable() {
         return weddingTable;
     }
 
-    public List<Houseware> getBambooNoodleSlide() {
+    public List<Item> getBambooNoodleSlide() {
         return bambooNoodleSlide;
     }
 
-    public List<Houseware> getClotheslinePole() {
+    public List<Item> getClotheslinePole() {
         return clotheslinePole;
     }
 
-    public List<Houseware> getCone() {
+    public List<Item> getCone() {
         return cone;
     }
 
-    public List<Houseware> getPlainSink() {
+    public List<Item> getPlainSink() {
         return plainSink;
     }
 
-    public List<Houseware> getExerciseBike() {
+    public List<Item> getExerciseBike() {
         return exerciseBike;
     }
 
-    public List<Houseware> getFan() {
+    public List<Item> getFan() {
         return fan;
     }
 
-    public List<Houseware> getInflatableSofa() {
+    public List<Item> getInflatableSofa() {
         return inflatableSofa;
     }
 
-    public List<Houseware> getBambooStopblock() {
+    public List<Item> getBambooStopblock() {
         return bambooStopblock;
     }
 
-    public List<Houseware> getLogGardenLounge() {
+    public List<Item> getLogGardenLounge() {
         return logGardenLounge;
     }
 
-    public List<Houseware> getFrozenTree() {
+    public List<Item> getFrozenTree() {
         return frozenTree;
     }
 
-    public List<Houseware> getOutdoorTable() {
+    public List<Item> getOutdoorTable() {
         return outdoorTable;
     }
 
-    public List<Houseware> getLogStool() {
+    public List<Item> getLogStool() {
         return logStool;
     }
 
-    public List<Houseware> getBigFestiveTree() {
+    public List<Item> getBigFestiveTree() {
         return bigFestiveTree;
     }
 
-    public List<Houseware> getFlowerStand() {
+    public List<Item> getFlowerStand() {
         return flowerStand;
     }
 
-    public List<Houseware> getStudyChair() {
+    public List<Item> getStudyChair() {
         return studyChair;
     }
 
-    public List<Houseware> getThrowbackRocket() {
+    public List<Item> getThrowbackRocket() {
         return throwbackRocket;
     }
 
-    public List<Houseware> getFestivaleBalloonLamp() {
+    public List<Item> getFestivaleBalloonLamp() {
         return festivaleBalloonLamp;
     }
 
-    public List<Houseware> getUprightVacuum() {
+    public List<Item> getUprightVacuum() {
         return uprightVacuum;
     }
 
-    public List<Houseware> getFlyingSaucer() {
+    public List<Item> getFlyingSaucer() {
         return flyingSaucer;
     }
 
-    public List<Houseware> getMermaidShelf() {
+    public List<Item> getMermaidShelf() {
         return mermaidShelf;
     }
 
-    public List<Houseware> getWoodenLowTable() {
+    public List<Item> getWoodenLowTable() {
         return woodenLowTable;
     }
 
-    public List<Houseware> getPeachChair() {
+    public List<Item> getPeachChair() {
         return peachChair;
     }
 
-    public List<Houseware> getStandardUmbrellaStand() {
+    public List<Item> getStandardUmbrellaStand() {
         return standardUmbrellaStand;
     }
 
-    public List<Houseware> getCottonCandyStall() {
+    public List<Item> getCottonCandyStall() {
         return cottonCandyStall;
     }
 
-    public List<Houseware> getGolfBag() {
+    public List<Item> getGolfBag() {
         return golfBag;
     }
 
-    public List<Houseware> getLunaSBed() {
+    public List<Item> getLunaSBed() {
         return lunaSBed;
     }
 
-    public List<Houseware> getManholeCover() {
+    public List<Item> getManholeCover() {
         return manholeCover;
     }
 
-    public List<Houseware> getParkClock() {
+    public List<Item> getParkClock() {
         return parkClock;
     }
 
-    public List<Houseware> getBirdcage() {
+    public List<Item> getBirdcage() {
         return birdcage;
     }
 
-    public List<Houseware> getSimplePanel() {
+    public List<Item> getSimplePanel() {
         return simplePanel;
     }
 
-    public List<Houseware> getTurkeyDayGardenStand() {
+    public List<Item> getTurkeyDayGardenStand() {
         return turkeyDayGardenStand;
     }
 
-    public List<Houseware> getSpookyStandingLamp() {
+    public List<Item> getSpookyStandingLamp() {
         return spookyStandingLamp;
     }
 
-    public List<Houseware> getMoon() {
+    public List<Item> getMoon() {
         return moon;
     }
 
-    public List<Houseware> getPalmTreeLamp() {
+    public List<Item> getPalmTreeLamp() {
         return palmTreeLamp;
     }
 
-    public List<Houseware> getMonstera() {
+    public List<Item> getMonstera() {
         return monstera;
     }
 
-    public List<Houseware> getImperialPartition() {
+    public List<Item> getImperialPartition() {
         return imperialPartition;
     }
 
-    public List<Houseware> getFestivaleFlag() {
+    public List<Item> getFestivaleFlag() {
         return festivaleFlag;
     }
 
-    public List<Houseware> getPileOfLeaves() {
+    public List<Item> getPileOfLeaves() {
         return pileOfLeaves;
     }
 
-    public List<Houseware> getBeachChair() {
+    public List<Item> getBeachChair() {
         return beachChair;
     }
 
-    public List<Houseware> getPoolsideBed() {
+    public List<Item> getPoolsideBed() {
         return poolsideBed;
     }
 
-    public List<Houseware> getIronwoodBed() {
+    public List<Item> getIronwoodBed() {
         return ironwoodBed;
     }
 
-    public List<Houseware> getIlluminatedReindeer() {
+    public List<Item> getIlluminatedReindeer() {
         return illuminatedReindeer;
     }
 
-    public List<Houseware> getLunarLander() {
+    public List<Item> getLunarLander() {
         return lunarLander;
     }
 
-    public List<Houseware> getSpookyTable() {
+    public List<Item> getSpookyTable() {
         return spookyTable;
     }
 
-    public List<Houseware> getAquariusUrn() {
+    public List<Item> getAquariusUrn() {
         return aquariusUrn;
     }
 
-    public List<Houseware> getToiletCleaningSet() {
+    public List<Item> getToiletCleaningSet() {
         return toiletCleaningSet;
     }
 
-    public List<Houseware> getWoodenBlockBed() {
+    public List<Item> getWoodenBlockBed() {
         return woodenBlockBed;
     }
 
-    public List<Houseware> getAntiqueMiniTable() {
+    public List<Item> getAntiqueMiniTable() {
         return antiqueMiniTable;
     }
 
-    public List<Houseware> getPapaBear() {
+    public List<Item> getPapaBear() {
         return papaBear;
     }
 
-    public List<Houseware> getFireplace() {
+    public List<Item> getFireplace() {
         return fireplace;
     }
 
-    public List<Houseware> getCrescentMoonChair() {
+    public List<Item> getCrescentMoonChair() {
         return crescentMoonChair;
     }
 
-    public List<Houseware> getStandingToilet() {
+    public List<Item> getStandingToilet() {
         return standingToilet;
     }
 
-    public List<Houseware> getCardboardBed() {
+    public List<Item> getCardboardBed() {
         return cardboardBed;
     }
 
-    public List<Houseware> getGardenLantern() {
+    public List<Item> getGardenLantern() {
         return gardenLantern;
     }
 
-    public List<Houseware> getImperialLowTable() {
+    public List<Item> getImperialLowTable() {
         return imperialLowTable;
     }
 
-    public List<Houseware> getSquatToilet() {
+    public List<Item> getSquatToilet() {
         return squatToilet;
     }
 
-    public List<Houseware> getBunnyDayTable() {
+    public List<Item> getBunnyDayTable() {
         return bunnyDayTable;
     }
 
-    public List<Houseware> getMermaidDresser() {
+    public List<Item> getMermaidDresser() {
         return mermaidDresser;
     }
 
-    public List<Houseware> getShellPartition() {
+    public List<Item> getShellPartition() {
         return shellPartition;
     }
 
-    public List<Houseware> getGoldenToilet() {
+    public List<Item> getGoldenToilet() {
         return goldenToilet;
     }
 
-    public List<Houseware> getIronWorktable() {
+    public List<Item> getIronWorktable() {
         return ironWorktable;
     }
 
-    public List<Houseware> getPirateTreasureChest() {
+    public List<Item> getPirateTreasureChest() {
         return pirateTreasureChest;
     }
 
-    public List<Houseware> getWeightBench() {
+    public List<Item> getWeightBench() {
         return weightBench;
     }
 
-    public List<Houseware> getLunarRover() {
+    public List<Item> getLunarRover() {
         return lunarRover;
     }
 
-    public List<Houseware> getHammock() {
+    public List<Item> getHammock() {
         return hammock;
     }
 
-    public List<Houseware> getCuteTeaTable() {
+    public List<Item> getCuteTeaTable() {
         return cuteTeaTable;
     }
 
-    public List<Houseware> getBarrel() {
+    public List<Item> getBarrel() {
         return barrel;
     }
 
-    public List<Houseware> getElephantSlide() {
+    public List<Item> getElephantSlide() {
         return elephantSlide;
     }
 
-    public List<Houseware> getFreshCooler() {
+    public List<Item> getFreshCooler() {
         return freshCooler;
     }
 
-    public List<Houseware> getBunnyDayFestiveBalloons() {
+    public List<Item> getBunnyDayFestiveBalloons() {
         return bunnyDayFestiveBalloons;
     }
 
-    public List<Houseware> getChampionSPennant() {
+    public List<Item> getChampionSPennant() {
         return championSPennant;
     }
 
-    public List<Houseware> getRattanEndTable() {
+    public List<Item> getRattanEndTable() {
         return rattanEndTable;
     }
 
-    public List<Houseware> getCardboardSofa() {
+    public List<Item> getCardboardSofa() {
         return cardboardSofa;
     }
 
-    public List<Houseware> getThrowbackRaceCarBed() {
+    public List<Item> getThrowbackRaceCarBed() {
         return throwbackRaceCarBed;
     }
 
-    public List<Houseware> getVirgoHarp() {
+    public List<Item> getVirgoHarp() {
         return virgoHarp;
     }
 
-    public List<Houseware> getMermaidChair() {
+    public List<Item> getMermaidChair() {
         return mermaidChair;
     }
 
-    public List<Houseware> getChangingRoom() {
+    public List<Item> getChangingRoom() {
         return changingRoom;
     }
 
-    public List<Houseware> getTricycle() {
+    public List<Item> getTricycle() {
         return tricycle;
     }
 
-    public List<Houseware> getFestivaleDrum() {
+    public List<Item> getFestivaleDrum() {
         return festivaleDrum;
     }
 
-    public List<Houseware> getGasRange() {
+    public List<Item> getGasRange() {
         return gasRange;
     }
 
-    public List<Houseware> getWesternStyleStone() {
+    public List<Item> getWesternStyleStone() {
         return westernStyleStone;
     }
 
-    public List<Houseware> getHayBed() {
+    public List<Item> getHayBed() {
         return hayBed;
     }
 
-    public List<Houseware> getTVCamera() {
+    public List<Item> getTVCamera() {
         return tVCamera;
     }
 
-    public List<Houseware> getMushLamp() {
+    public List<Item> getMushLamp() {
         return mushLamp;
     }
 
-    public List<Houseware> getMusicStand() {
+    public List<Item> getMusicStand() {
         return musicStand;
     }
 
-    public List<Houseware> getTallLantern() {
+    public List<Item> getTallLantern() {
         return tallLantern;
     }
 
-    public List<Houseware> getBarbell() {
+    public List<Item> getBarbell() {
         return barbell;
     }
 
-    public List<Houseware> getWoodenDoubleBed() {
+    public List<Item> getWoodenDoubleBed() {
         return woodenDoubleBed;
     }
 
-    public List<Houseware> getBlueCorner() {
+    public List<Item> getBlueCorner() {
         return blueCorner;
     }
 
-    public List<Houseware> getJailBars() {
+    public List<Item> getJailBars() {
         return jailBars;
     }
 
-    public List<Houseware> getPublicBench() {
+    public List<Item> getPublicBench() {
         return publicBench;
     }
 
-    public List<Houseware> getGrandPiano() {
+    public List<Item> getGrandPiano() {
         return grandPiano;
     }
 
-    public List<Houseware> getWhirlpoolBath() {
+    public List<Item> getWhirlpoolBath() {
         return whirlpoolBath;
     }
 
-    public List<Houseware> getColorfulWheel() {
+    public List<Item> getColorfulWheel() {
         return colorfulWheel;
     }
 
-    public List<Houseware> getToolShelf() {
+    public List<Item> getToolShelf() {
         return toolShelf;
     }
 
-    public List<Houseware> getTouristTelescope() {
+    public List<Item> getTouristTelescope() {
         return touristTelescope;
     }
 
-    public List<Houseware> getCampfire() {
+    public List<Item> getCampfire() {
         return campfire;
     }
 
-    public List<Houseware> getWoodenStool() {
+    public List<Item> getWoodenStool() {
         return woodenStool;
     }
 
-    public List<Houseware> getKidsTent() {
+    public List<Item> getKidsTent() {
         return kidsTent;
     }
 
-    public List<Houseware> getSchoolDesk() {
+    public List<Item> getSchoolDesk() {
         return schoolDesk;
     }
 
-    public List<Houseware> getRattanBed() {
+    public List<Item> getRattanBed() {
         return rattanBed;
     }
 
-    public List<Houseware> getSpookyArch() {
+    public List<Item> getSpookyArch() {
         return spookyArch;
     }
 
-    public List<Houseware> getDrinkMachine() {
+    public List<Item> getDrinkMachine() {
         return drinkMachine;
     }
 
-    public List<Houseware> getCypressBathtub() {
+    public List<Item> getCypressBathtub() {
         return cypressBathtub;
     }
 
-    public List<Houseware> getIronCloset() {
+    public List<Item> getIronCloset() {
         return ironCloset;
     }
 
-    public List<Houseware> getPirateBarrel() {
+    public List<Item> getPirateBarrel() {
         return pirateBarrel;
     }
 
-    public List<Houseware> getThrowbackHatTable() {
+    public List<Item> getThrowbackHatTable() {
         return throwbackHatTable;
     }
 
-    public List<Houseware> getBathroomSink() {
+    public List<Item> getBathroomSink() {
         return bathroomSink;
     }
 
-    public List<Houseware> getHinaningyo() {
+    public List<Item> getHinaningyo() {
         return hinaningyo;
     }
 
-    public List<Houseware> getOilBarrel() {
+    public List<Item> getOilBarrel() {
         return oilBarrel;
     }
 
-    public List<Houseware> getMamaPanda() {
+    public List<Item> getMamaPanda() {
         return mamaPanda;
     }
 
-    public List<Houseware> getClothesline() {
+    public List<Item> getClothesline() {
         return clothesline;
     }
 
-    public List<Houseware> getSafe() {
+    public List<Item> getSafe() {
         return safe;
     }
 
-    public List<Houseware> getNaturalGardenTable() {
+    public List<Item> getNaturalGardenTable() {
         return naturalGardenTable;
     }
 
-    public List<Houseware> getFrozenSculpture() {
+    public List<Item> getFrozenSculpture() {
         return frozenSculpture;
     }
 
-    public List<Houseware> getSoccerGoal() {
+    public List<Item> getSoccerGoal() {
         return soccerGoal;
     }
 
-    public List<Houseware> getLighthouse() {
+    public List<Item> getLighthouse() {
         return lighthouse;
     }
 
-    public List<Houseware> getKittyLitterBox() {
+    public List<Item> getKittyLitterBox() {
         return kittyLitterBox;
     }
 
-    public List<Houseware> getIronwoodChair() {
+    public List<Item> getIronwoodChair() {
         return ironwoodChair;
     }
 
-    public List<Houseware> getWoodenBlockTable() {
+    public List<Item> getWoodenBlockTable() {
         return woodenBlockTable;
     }
 
-    public List<Houseware> getMossyGardenRock() {
+    public List<Item> getMossyGardenRock() {
         return mossyGardenRock;
     }
 
-    public List<Houseware> getWhiteboard() {
+    public List<Item> getWhiteboard() {
         return whiteboard;
     }
 
-    public List<Houseware> getAsteroid() {
+    public List<Item> getAsteroid() {
         return asteroid;
     }
 
-    public List<Houseware> getGoldenSeat() {
+    public List<Item> getGoldenSeat() {
         return goldenSeat;
     }
 
-    public List<Houseware> getHearth() {
+    public List<Item> getHearth() {
         return hearth;
     }
 
-    public List<Houseware> getRattanArmchair() {
+    public List<Item> getRattanArmchair() {
         return rattanArmchair;
     }
 
-    public List<Houseware> getDartboard() {
+    public List<Item> getDartboard() {
         return dartboard;
     }
 
-    public List<Houseware> getClimbingWall() {
+    public List<Item> getClimbingWall() {
         return climbingWall;
     }
 
-    public List<Houseware> getCuteDIYTable() {
+    public List<Item> getCuteDIYTable() {
         return cuteDIYTable;
     }
 
-    public List<Houseware> getFoldingChair() {
+    public List<Item> getFoldingChair() {
         return foldingChair;
     }
 
-    public List<Houseware> getStoneStool() {
+    public List<Item> getStoneStool() {
         return stoneStool;
     }
 
-    public List<Houseware> getGrandQABirdwingModel() {
+    public List<Item> getGrandQABirdwingModel() {
         return grandQABirdwingModel;
     }
 
-    public List<Houseware> getWoodenBucket() {
+    public List<Item> getWoodenBucket() {
         return woodenBucket;
     }
 
-    public List<Houseware> getGoalPole() {
+    public List<Item> getGoalPole() {
         return goalPole;
     }
 
-    public List<Houseware> getBambooPartition() {
+    public List<Item> getBambooPartition() {
         return bambooPartition;
     }
 
-    public List<Houseware> getOfficeDesk() {
+    public List<Item> getOfficeDesk() {
         return officeDesk;
     }
 
-    public List<Houseware> getCrewedSpaceship() {
+    public List<Item> getCrewedSpaceship() {
         return crewedSpaceship;
     }
 
-    public List<Houseware> getDIYWorkbench() {
+    public List<Item> getDIYWorkbench() {
         return dIYWorkbench;
     }
 
-    public List<Houseware> getTermiteMound() {
+    public List<Item> getTermiteMound() {
         return termiteMound;
     }
 
-    public List<Houseware> getFrozenTable() {
+    public List<Item> getFrozenTable() {
         return frozenTable;
     }
 
-    public List<Houseware> getIronGardenTable() {
+    public List<Item> getIronGardenTable() {
         return ironGardenTable;
     }
 
-    public List<Houseware> getGoBoard() {
+    public List<Item> getGoBoard() {
         return goBoard;
     }
 
-    public List<Houseware> getAppleChair() {
+    public List<Item> getAppleChair() {
         return appleChair;
     }
 
-    public List<Houseware> getDinerCounterChair() {
+    public List<Item> getDinerCounterChair() {
         return dinerCounterChair;
     }
 
-    public List<Houseware> getUtilitySink() {
+    public List<Item> getUtilitySink() {
         return utilitySink;
     }
 
-    public List<Houseware> getFuton() {
+    public List<Item> getFuton() {
         return futon;
     }
 
-    public List<Houseware> getWoodBurningStove() {
+    public List<Item> getWoodBurningStove() {
         return woodBurningStove;
     }
 
-    public List<Houseware> getAntiqueBed() {
+    public List<Item> getAntiqueBed() {
         return antiqueBed;
     }
 
-    public List<Houseware> getSpookyTower() {
+    public List<Item> getSpookyTower() {
         return spookyTower;
     }
 
-    public List<Houseware> getTreeSBountyBigTree() {
+    public List<Item> getTreeSBountyBigTree() {
         return treeSBountyBigTree;
     }
 
-    public List<Houseware> getGarbageCan() {
+    public List<Item> getGarbageCan() {
         return garbageCan;
     }
 
-    public List<Houseware> getBidet() {
+    public List<Item> getBidet() {
         return bidet;
     }
 
-    public List<Houseware> getConstructionSign() {
+    public List<Item> getConstructionSign() {
         return constructionSign;
     }
 
-    public List<Houseware> getFlashyFlowerSign() {
+    public List<Item> getFlashyFlowerSign() {
         return flashyFlowerSign;
     }
 
-    public List<Houseware> getRandomType() {
-        List<List<Houseware>> housewares = Arrays.asList(sleigh, artisanalBugCage, drumSet, electricKickScooter, papaPanda, kitchenIsland, mermaidCloset, largeMushroomPlatform, handcart, anatomicalModel, bunnyDayMerryBalloons, rattanStool, teaTable, imperialDiningTable, drinkingFountain, outdoorAirConditioner, spinningWheel, mediumCardboardBoxes, bambooShelf, mushPartition, pool, mermaidScreen, stonehenge, simpleDIYWorkbench, boxSofa, bambooGrass, outdoorGenerator, toyDaySleigh, imperialDiningChair, mushLog, festiveTree, zenStyleStone, tanklessToilet, loftBedWithDesk, trainSet, mermaidLamp, altoSaxophone, cypressPlant, ironwoodCart, tennisTable, imperialChest, streetlamp, astronautSuit, woodenBookshelf, yellowLeafPile, logExtraLongSofa, simpleWell, blossomViewingLantern, doubleSofa, frozenArch, mushParasol, dinerDiningTable, garbagePail, woodenWasteBin, cuteBed, arcadeCombatGame, basketballHoop, woodenBlockBench, acousticGuitar, denDesk, largeCardboardBoxes, clothesCloset, arcadeFightingGame, piscesLamp, angledSignpost, pagoda, roundSpaceHeater, waterPump, rattanVanity, rockingHorse, weddingWelcomeBoard, treadmill, videoCamera, stoneTable, cherryBlossomPondStone, bunnyDayStool, gong, skeleton, mountainBike, bunnyDayWardrobe, frozenCounter, shellTable, stoneArch, waterCooler, stadiometer, tulipSurpriseBox, ironwoodCupboard, bambooFloorLamp, clackercart, sleepingBag, uprightPiano, freezer, solarPanel, tireToy, bonfire, pansyTable, refrigerator, doubleDoorRefrigerator, pondStone, bunnyDayVanity, grassStandee, synthesizer, woodenEndTable, grandAtlasMothModel, marimba, fanPalm, harp, tikiTorch, frozenBed, antiqueChair, imperialBed, babyChair, capricornOrnament, utilityPole, scarecrow, frozenPartition, juicyAppleTV, weddingArch, showerBooth, festivaleGarland, miniDIYWorkbench, rockingChair, miniFridge, fishDryingRack, illuminatedPresent, satellite, cherryBlossomPetalPile, gardenWagon, anchorStatue, giftPile, billiardTable, pirateShipHelm, hiFiStereo, dinerMiniTable, sphinx, studyDesk, rodeoStyleSpringyRideOn, antiqueTable, destinationsSignpost, pyramid, pearBed, velvetStool, fountain, fishingRodStand, cherryBlossomBranches, bambooBasket, brickOven, brickWell, weddingPipeOrgan, giantTeddyBear, tatamiBed, elaborateKimonoStand, pantsPress, rocketLamp, block, ironFrame, weddingChair, cacaoTree, dJSTurntable, stall, denChair, flatGardenRock, ironwoodTable, woodenBlockChest, jsonMember2021CelebratoryArch, spookyLanternSet, cuteVanity, podium, rattanWasteBin, ironShelf, throwbackDinoScreen, electricGuitar, softServeLamp, retroStereo, server, lilyRecordPlayer, festivaleStall, bunnyDayArch, signpost, grandBDragonflyModel, antiqueVanity, shadedFloorLamp, springyRideOn, mountainStandee, paperLantern, kotatsu, barbecue, bunnyDayBed, vintageTVTray, sidewaysPirateBarrel, bambooBench, lifeguardChair, logBed, pileOfZenCushions, robotHero, mushLowStool, gardenRock, foosballTable, woodenWardrobe, hedgeStandee, effectsRack, taurusBathtub, mermaidTable, chalkboard, rCHelicopter, pullUpBarStand, oKMotorsSign, automaticWasher, dinerCounterTable, roseBed, mermaidSofa, screen, threeTieredSnowperson, dinerSofa, electricBass, tableWithCloth, menuChalkboard, ironGardenChair, mapleLeafPondStone, redCorner, pipe, ironwoodKitchenette, antiqueClock, cuteFloorLamp, outdoorBath, cuteChair, outdoorPicnicSet, naturalGardenChair, naturalSquareTable, openFrameKitchen, festivaleParasol, throwbackMittChair, clawFootTub, woodenFullLengthMirror, woodenSimpleBed, marketPlaceDecoration, southPole, yucca, clayFurnace, woodenMiniTable, rockGuitar, plasticPool, ariesRockingChair, saunaHeater, illuminatedSnowflakes, goldenCasket, snackMachine, servingCart, campfireCookware, ironHangerStand, parabolicAntenna, phoneBox, floatingBlock, foldingFloorLamp, spookyCarriage, pianoBench, oilBarrelBathtub, deerScare, antiqueWardrobe, beachTowel, treeSBountyArch, shellStool, zenCushion, festivaleStage, sandbox, logChair, spookyScarecrow, logStakes, tireStack, mushTable, stoneTablet, woodenBlockChair, woodenBlockBookshelf, campingCot, directorSChair, micStand, monsterStatue, birdbath, outdoorBench, frozenChair, rattanLowTable, mermaidBed, turkeyDayTable, retroGasPump, ironwoodDIYWorkbench, rocket, swingingBench, arcadeSeat, ironGardenBench, floorLight, teacupRide, cuteSofa, kettleBathtub, speedBag, beekeeperSHive, airCirculator, cuteWardrobe, dinerNeonSign, doghouse, gardenFaucet, lowScreen, digitalScale, highEndStereo, bunkBed, plainWoodenShopSign, fortuneCookieCart, redLeafPile, trophyCase, birthdaySign, windTurbine, toilet, systemKitchen, ironingBoard, telescope, turkeyDayChair, cosmosShower, illuminatedTree, mumCushion, spaceShuttle, vacuumCleaner, raccoonFigurine, surfboard, ironwoodDresser, thwomp, arcadeMahjongGame, toolCart, weddingFlowerStand, woodenChest, birthdayTable, scatteredPapers, brakeTapper, greenLeafPile, cancerTable, festivaleFloat, portableToilet, lawnMower, mrsFlamingo, rattanWardrobe, dryingRack, kimonoStand, ironwoodLowTable, candyMachine, woodenBlockStereo, frozenPillar, silo, streetOrgan, kadomatsu, shellArch, wildLogBench, firePit, schoolChair, oceanSunfishModel, punchingBag, shellBed, retroFan, woodenChair, logDiningTable, basicTeacherSDesk, lawnChair, smoker, geminiCloset, loom, longBathtub, mamaBear, pinballMachine, mrFlamingo, treeStandee, weddingHeadTable, boxCornerSofa, gardenBench, leafCampfire, lectureHallBench, towerOfPisa, birdhouse, logBench, oldSewingMachine, pearWardrobe, woodenTable, hoseReel, floorLamp, waveBreaker, bambooSpeaker, weddingBench, catTower, popcornMachine, uprightLocker, smallCardboardBoxes, woodenBlockStool, bambooStool, spookyChair, wheelchair, garbageBin, petBed, dinerChair, moaiStatue, jukebox, floorSeat, sandCastle, playgroundGym, turkeyDayHearth, streetPiano, logRoundTable, tinyLibrary, leafStool, modernOfficeChair, studioSpotlight, tallGardenRock, deluxeWasher, antiqueBureau, exerciseBall, statueOfLiberty, logDecorativeShelves, campsiteSign, shellFountain, bambooDoll, antiqueConsoleTable, mermaidVanity, smallMushroomPlatform, cello, neutralCorner, silverMic, cardboardTable, cardboardChair, block, lectureHallDesk, bonsaiShelf, pirateShipCannon, butterChurn, stoneLionDog, orangeEndTable, weddingTable, bambooNoodleSlide, clotheslinePole, cone, plainSink, exerciseBike, fan, inflatableSofa, bambooStopblock, logGardenLounge, frozenTree, outdoorTable, logStool, bigFestiveTree, flowerStand, studyChair, throwbackRocket, festivaleBalloonLamp, uprightVacuum, flyingSaucer, mermaidShelf, woodenLowTable, peachChair, standardUmbrellaStand, cottonCandyStall, golfBag, lunaSBed, manholeCover, parkClock, birdcage, simplePanel, turkeyDayGardenStand, spookyStandingLamp, moon, palmTreeLamp, monstera, imperialPartition, festivaleFlag, pileOfLeaves, beachChair, poolsideBed, ironwoodBed, illuminatedReindeer, lunarLander, spookyTable, aquariusUrn, toiletCleaningSet, woodenBlockBed, antiqueMiniTable, papaBear, fireplace, crescentMoonChair, standingToilet, cardboardBed, gardenLantern, imperialLowTable, squatToilet, bunnyDayTable, mermaidDresser, shellPartition, goldenToilet, ironWorktable, pirateTreasureChest, weightBench, lunarRover, hammock, cuteTeaTable, barrel, elephantSlide, freshCooler, bunnyDayFestiveBalloons, championSPennant, rattanEndTable, cardboardSofa, throwbackRaceCarBed, virgoHarp, mermaidChair, changingRoom, tricycle, festivaleDrum, gasRange, westernStyleStone, hayBed, tVCamera, mushLamp, musicStand, tallLantern, barbell, woodenDoubleBed, blueCorner, jailBars, publicBench, grandPiano, whirlpoolBath, colorfulWheel, toolShelf, touristTelescope, campfire, woodenStool, kidsTent, schoolDesk, rattanBed, spookyArch, drinkMachine, cypressBathtub, ironCloset, pirateBarrel, throwbackHatTable, bathroomSink, hinaningyo, oilBarrel, mamaPanda, clothesline, safe, naturalGardenTable, frozenSculpture, soccerGoal, lighthouse, kittyLitterBox, ironwoodChair, woodenBlockTable, mossyGardenRock, whiteboard, asteroid, goldenSeat, hearth, rattanArmchair, dartboard, climbingWall, cuteDIYTable, foldingChair, stoneStool, grandQABirdwingModel, woodenBucket, goalPole, bambooPartition, officeDesk, crewedSpaceship, dIYWorkbench, termiteMound, frozenTable, ironGardenTable, goBoard, appleChair, dinerCounterChair, utilitySink, futon, woodBurningStove, antiqueBed, spookyTower, treeSBountyBigTree, garbageCan, bidet, constructionSign, flashyFlowerSign);
+    public List<Item> getRandomType() {
+        List<List<Item>> housewares = Arrays.asList(sleigh, artisanalBugCage, drumSet, electricKickScooter, papaPanda, kitchenIsland, mermaidCloset, largeMushroomPlatform, handcart, anatomicalModel, bunnyDayMerryBalloons, rattanStool, teaTable, imperialDiningTable, drinkingFountain, outdoorAirConditioner, spinningWheel, mediumCardboardBoxes, bambooShelf, mushPartition, pool, mermaidScreen, stonehenge, simpleDIYWorkbench, boxSofa, bambooGrass, outdoorGenerator, toyDaySleigh, imperialDiningChair, mushLog, festiveTree, zenStyleStone, tanklessToilet, loftBedWithDesk, trainSet, mermaidLamp, altoSaxophone, cypressPlant, ironwoodCart, tennisTable, imperialChest, streetlamp, astronautSuit, woodenBookshelf, yellowLeafPile, logExtraLongSofa, simpleWell, blossomViewingLantern, doubleSofa, frozenArch, mushParasol, dinerDiningTable, garbagePail, woodenWasteBin, cuteBed, arcadeCombatGame, basketballHoop, woodenBlockBench, acousticGuitar, denDesk, largeCardboardBoxes, clothesCloset, arcadeFightingGame, piscesLamp, angledSignpost, pagoda, roundSpaceHeater, waterPump, rattanVanity, rockingHorse, weddingWelcomeBoard, treadmill, videoCamera, stoneTable, cherryBlossomPondStone, bunnyDayStool, gong, skeleton, mountainBike, bunnyDayWardrobe, frozenCounter, shellTable, stoneArch, waterCooler, stadiometer, tulipSurpriseBox, ironwoodCupboard, bambooFloorLamp, clackercart, sleepingBag, uprightPiano, freezer, solarPanel, tireToy, bonfire, pansyTable, refrigerator, doubleDoorRefrigerator, pondStone, bunnyDayVanity, grassStandee, synthesizer, woodenEndTable, grandAtlasMothModel, marimba, fanPalm, harp, tikiTorch, frozenBed, antiqueChair, imperialBed, babyChair, capricornOrnament, utilityPole, scarecrow, frozenPartition, juicyAppleTV, weddingArch, showerBooth, festivaleGarland, miniDIYWorkbench, rockingChair, miniFridge, fishDryingRack, illuminatedPresent, satellite, cherryBlossomPetalPile, gardenWagon, anchorStatue, giftPile, billiardTable, pirateShipHelm, hiFiStereo, dinerMiniTable, sphinx, studyDesk, rodeoStyleSpringyRideOn, antiqueTable, destinationsSignpost, pyramid, pearBed, velvetStool, fountain, fishingRodStand, cherryBlossomBranches, bambooBasket, brickOven, brickWell, weddingPipeOrgan, giantTeddyBear, tatamiBed, elaborateKimonoStand, pantsPress, rocketLamp, block, ironFrame, weddingChair, cacaoTree, dJSTurntable, stall, denChair, flatGardenRock, ironwoodTable, woodenBlockChest, jsonMember2021CelebratoryArch, spookyLanternSet, cuteVanity, podium, rattanWasteBin, ironShelf, throwbackDinoScreen, electricGuitar, softServeLamp, retroStereo, server, lilyRecordPlayer, festivaleStall, bunnyDayArch, signpost, grandBDragonflyModel, antiqueVanity, shadedFloorLamp, springyRideOn, mountainStandee, paperLantern, kotatsu, barbecue, bunnyDayBed, vintageTVTray, sidewaysPirateBarrel, bambooBench, lifeguardChair, logBed, pileOfZenCushions, robotHero, mushLowStool, gardenRock, foosballTable, woodenWardrobe, hedgeStandee, effectsRack, taurusBathtub, mermaidTable, chalkboard, rCHelicopter, pullUpBarStand, oKMotorsSign, automaticWasher, dinerCounterTable, roseBed, mermaidSofa, screen, threeTieredSnowperson, dinerSofa, electricBass, tableWithCloth, menuChalkboard, ironGardenChair, mapleLeafPondStone, redCorner, pipe, ironwoodKitchenette, antiqueClock, cuteFloorLamp, outdoorBath, cuteChair, outdoorPicnicSet, naturalGardenChair, naturalSquareTable, openFrameKitchen, festivaleParasol, throwbackMittChair, clawFootTub, woodenFullLengthMirror, woodenSimpleBed, marketPlaceDecoration, southPole, yucca, clayFurnace, woodenMiniTable, rockGuitar, plasticPool, ariesRockingChair, saunaHeater, illuminatedSnowflakes, goldenCasket, snackMachine, servingCart, campfireCookware, ironHangerStand, parabolicAntenna, phoneBox, floatingBlock, foldingFloorLamp, spookyCarriage, pianoBench, oilBarrelBathtub, deerScare, antiqueWardrobe, beachTowel, treeSBountyArch, shellStool, zenCushion, festivaleStage, sandbox, logChair, spookyScarecrow, logStakes, tireStack, mushTable, stoneTablet, woodenBlockChair, woodenBlockBookshelf, campingCot, directorSChair, micStand, monsterStatue, birdbath, outdoorBench, frozenChair, rattanLowTable, mermaidBed, turkeyDayTable, retroGasPump, ironwoodDIYWorkbench, rocket, swingingBench, arcadeSeat, ironGardenBench, floorLight, teacupRide, cuteSofa, kettleBathtub, speedBag, beekeeperSHive, airCirculator, cuteWardrobe, dinerNeonSign, doghouse, gardenFaucet, lowScreen, digitalScale, highEndStereo, bunkBed, plainWoodenShopSign, fortuneCookieCart, redLeafPile, trophyCase, birthdaySign, windTurbine, toilet, systemKitchen, ironingBoard, telescope, turkeyDayChair, cosmosShower, illuminatedTree, mumCushion, spaceShuttle, vacuumCleaner, raccoonFigurine, surfboard, ironwoodDresser, thwomp, arcadeMahjongGame, toolCart, weddingFlowerStand, woodenChest, birthdayTable, scatteredPapers, brakeTapper, greenLeafPile, cancerTable, festivaleFloat, portableToilet, lawnMower, mrsFlamingo, rattanWardrobe, dryingRack, kimonoStand, ironwoodLowTable, candyMachine, woodenBlockStereo, frozenPillar, silo, streetOrgan, kadomatsu, shellArch, wildLogBench, firePit, schoolChair, oceanSunfishModel, punchingBag, shellBed, retroFan, woodenChair, logDiningTable, basicTeacherSDesk, lawnChair, smoker, geminiCloset, loom, longBathtub, mamaBear, pinballMachine, mrFlamingo, treeStandee, weddingHeadTable, boxCornerSofa, gardenBench, leafCampfire, lectureHallBench, towerOfPisa, birdhouse, logBench, oldSewingMachine, pearWardrobe, woodenTable, hoseReel, floorLamp, waveBreaker, bambooSpeaker, weddingBench, catTower, popcornMachine, uprightLocker, smallCardboardBoxes, woodenBlockStool, bambooStool, spookyChair, wheelchair, garbageBin, petBed, dinerChair, moaiStatue, jukebox, floorSeat, sandCastle, playgroundGym, turkeyDayHearth, streetPiano, logRoundTable, tinyLibrary, leafStool, modernOfficeChair, studioSpotlight, tallGardenRock, deluxeWasher, antiqueBureau, exerciseBall, statueOfLiberty, logDecorativeShelves, campsiteSign, shellFountain, bambooDoll, antiqueConsoleTable, mermaidVanity, smallMushroomPlatform, cello, neutralCorner, silverMic, cardboardTable, cardboardChair, block, lectureHallDesk, bonsaiShelf, pirateShipCannon, butterChurn, stoneLionDog, orangeEndTable, weddingTable, bambooNoodleSlide, clotheslinePole, cone, plainSink, exerciseBike, fan, inflatableSofa, bambooStopblock, logGardenLounge, frozenTree, outdoorTable, logStool, bigFestiveTree, flowerStand, studyChair, throwbackRocket, festivaleBalloonLamp, uprightVacuum, flyingSaucer, mermaidShelf, woodenLowTable, peachChair, standardUmbrellaStand, cottonCandyStall, golfBag, lunaSBed, manholeCover, parkClock, birdcage, simplePanel, turkeyDayGardenStand, spookyStandingLamp, moon, palmTreeLamp, monstera, imperialPartition, festivaleFlag, pileOfLeaves, beachChair, poolsideBed, ironwoodBed, illuminatedReindeer, lunarLander, spookyTable, aquariusUrn, toiletCleaningSet, woodenBlockBed, antiqueMiniTable, papaBear, fireplace, crescentMoonChair, standingToilet, cardboardBed, gardenLantern, imperialLowTable, squatToilet, bunnyDayTable, mermaidDresser, shellPartition, goldenToilet, ironWorktable, pirateTreasureChest, weightBench, lunarRover, hammock, cuteTeaTable, barrel, elephantSlide, freshCooler, bunnyDayFestiveBalloons, championSPennant, rattanEndTable, cardboardSofa, throwbackRaceCarBed, virgoHarp, mermaidChair, changingRoom, tricycle, festivaleDrum, gasRange, westernStyleStone, hayBed, tVCamera, mushLamp, musicStand, tallLantern, barbell, woodenDoubleBed, blueCorner, jailBars, publicBench, grandPiano, whirlpoolBath, colorfulWheel, toolShelf, touristTelescope, campfire, woodenStool, kidsTent, schoolDesk, rattanBed, spookyArch, drinkMachine, cypressBathtub, ironCloset, pirateBarrel, throwbackHatTable, bathroomSink, hinaningyo, oilBarrel, mamaPanda, clothesline, safe, naturalGardenTable, frozenSculpture, soccerGoal, lighthouse, kittyLitterBox, ironwoodChair, woodenBlockTable, mossyGardenRock, whiteboard, asteroid, goldenSeat, hearth, rattanArmchair, dartboard, climbingWall, cuteDIYTable, foldingChair, stoneStool, grandQABirdwingModel, woodenBucket, goalPole, bambooPartition, officeDesk, crewedSpaceship, dIYWorkbench, termiteMound, frozenTable, ironGardenTable, goBoard, appleChair, dinerCounterChair, utilitySink, futon, woodBurningStove, antiqueBed, spookyTower, treeSBountyBigTree, garbageCan, bidet, constructionSign, flashyFlowerSign);
         return getRandomValue(housewares);
     }
 
-    private List<Houseware> getRandomValue(List<List<Houseware>> housewares) {
+    private List<Item> getRandomValue(List<List<Item>> housewares) {
         int index = new Random().nextInt(housewares.size());
         return housewares.get(index);
     }

@@ -10,7 +10,7 @@
 package io.github.jisungbin.rainbow.user
 
 import io.github.jisungbin.acnhapi.AcnhApi
-import io.github.jisungbin.acnhapi.models.items.ItemWrapper
+import io.github.jisungbin.acnhapi.models.items.common.Item
 import io.github.jisungbin.acnhapi.models.items.houseware.Housewares
 import io.github.jisungbin.acnhapi.models.items.misc.Miscs
 import io.github.jisungbin.acnhapi.models.items.wallmounted.Wallmounteds
@@ -18,10 +18,11 @@ import kotlin.random.Random
 
 suspend fun getNewUser() = User(
     villager = AcnhApi.getVillagers().getOrNull()!!.random,
-    items = listOf(getStartItem())
+    items = listOf(getRandomItem()),
+    money = 0,
 )
 
-suspend fun getStartItem(): ItemWrapper {
+suspend fun getRandomItem(): Item {
     val items = AcnhApi.getItems().getOrNull()!!
     return when (Random.nextInt(0, 3)) {
         0 -> (items[0] as Housewares).randomType.random()
