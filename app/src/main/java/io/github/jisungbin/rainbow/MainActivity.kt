@@ -12,10 +12,8 @@ package io.github.jisungbin.rainbow
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.google.gson.Gson
-import io.github.jisungbin.acnhapi.AcnhApi
-import io.github.jisungbin.acnhapi.models.villager.Villager
 import io.github.jisungbin.rainbow.databinding.ActivityMainBinding
+import io.github.jisungbin.rainbow.user.getNewUser
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,9 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         lifecycleScope.launchWhenCreated {
-            val villagers = AcnhApi.instance.getVillagers().getOrNull()
-            // println("String: $villagers")
-            println("Json: " + Gson().fromJson(villagers, Villager::class.java)!!.ant00)
+            println(getNewUser())
         }
     }
 }

@@ -2,6 +2,24 @@
  * © 2021 지성빈. all rights reserved.
  * This project license is under the MIT.
  *
+ * [Villager.kt] created by Ji Sungbin on 21. 7. 23. 오전 2:26.
+ *
+ * Please see project github repository license.
+ */
+
+/*
+ * © 2021 지성빈. all rights reserved.
+ * This project license is under the MIT.
+ *
+ * [Villager.kt] created by Ji Sungbin on 21. 7. 23. 오전 2:26.
+ *
+ * Please see project github repository license.
+ */
+
+/*
+ * © 2021 지성빈. all rights reserved.
+ * This project license is under the MIT.
+ *
  * [Ant00.kt] created by Ji Sungbin on 21. 7. 22. 오후 11:09.
  *
  * Please see project github repository license.
@@ -11,7 +29,7 @@ package io.github.jisungbin.acnhapi.models.villager
 
 import com.google.gson.annotations.SerializedName
 
-data class Response(
+data class Villager(
     @field:SerializedName("birthday")
     val birthday: String,
 

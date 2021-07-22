@@ -14,7 +14,7 @@ import retrofit2.Retrofit
 internal object AcnhModule {
     private const val BaseUrl = "https://acnhapi.com"
 
-    fun get() = Retrofit.Builder()
+    fun get(): Retrofit = Retrofit.Builder()
         .baseUrl(BaseUrl)
         .build()
 }
