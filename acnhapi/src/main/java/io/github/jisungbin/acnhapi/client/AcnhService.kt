@@ -19,4 +19,10 @@ internal interface AcnhService {
 
     @GET("/v1/houseware")
     fun getHouseWare(): Call<ResponseBody>
+
+    @GET("/v1/wallmounted")
+    fun getWallmounted(): Call<ResponseBody>
+
+    @GET("/v1/misc")
+    fun getMiscs(): Call<ResponseBody>
 }

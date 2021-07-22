@@ -10,5 +10,23 @@
 package io.github.jisungbin.rainbow.user
 
 import io.github.jisungbin.acnhapi.AcnhApi
+import io.github.jisungbin.acnhapi.models.items.ItemWrapper
+import io.github.jisungbin.acnhapi.models.items.houseware.Housewares
+import io.github.jisungbin.acnhapi.models.items.misc.Miscs
+import io.github.jisungbin.acnhapi.models.items.wallmounted.Wallmounteds
+import kotlin.random.Random
 
-suspend fun getNewUser() = User(AcnhApi().getVillagers().getOrNull()!!.random)
+suspend fun getNewUser() = User(
+    villager = AcnhApi.getVillagers().getOrNull()!!.random,
+    items = listOf(getStartItem())
+)
+
+suspend fun getStartItem(): ItemWrapper {
+    val items = AcnhApi.getItems().getOrNull()!!
+    return when (Random.nextInt(0, 3)) {
+        0 -> (items[0] as Housewares).randomType.random()
+        1 -> (items[1] as Miscs).randomType.random()
+        2 -> (items[2] as Wallmounteds).randomType.random()
+        else -> throw IndexOutOfBoundsException()
+    }
+}

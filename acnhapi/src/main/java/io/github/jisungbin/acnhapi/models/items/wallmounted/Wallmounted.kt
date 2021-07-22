@@ -2,17 +2,17 @@
  * © 2021 지성빈. all rights reserved.
  * This project license is under the MIT.
  *
- * [AcousticGuitarItem.kt] created by Ji Sungbin on 21. 7. 23. 오전 2:21.
+ * [Wallmounted.kt] created by Ji Sungbin on 21. 7. 23. 오전 3:06.
  *
  * Please see project github repository license.
  */
 
-package io.github.jisungbin.acnhapi.models.items.houseware
+package io.github.jisungbin.acnhapi.models.items.wallmounted
 
 import com.google.gson.annotations.SerializedName
 import io.github.jisungbin.acnhapi.models.items.ItemWrapper
 
-data class Houseware(
+data class Wallmounted(
     @field:SerializedName("body-title")
     val bodyTitle: String,
 
@@ -55,6 +55,9 @@ data class Houseware(
     @field:SerializedName("internal-id")
     val internalId: Int,
 
+    @field:SerializedName("isDoorDeco")
+    val isDoorDeco: Boolean,
+
     @field:SerializedName("canCustomizePattern")
     val canCustomizePattern: Boolean,
 
@@ -84,9 +87,6 @@ data class Houseware(
 
     @field:SerializedName("image_uri")
     val imageUri: String,
-
-    @field:SerializedName("speaker-type")
-    val speakerType: Any,
 
     @field:SerializedName("lighting-type")
     val lightingType: Any,

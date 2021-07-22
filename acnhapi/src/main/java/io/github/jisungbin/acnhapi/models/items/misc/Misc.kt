@@ -2,22 +2,22 @@
  * © 2021 지성빈. all rights reserved.
  * This project license is under the MIT.
  *
- * [AcousticGuitarItem.kt] created by Ji Sungbin on 21. 7. 23. 오전 2:21.
+ * [Misc.kt] created by Ji Sungbin on 21. 7. 23. 오전 3:17.
  *
  * Please see project github repository license.
  */
 
-package io.github.jisungbin.acnhapi.models.items.houseware
+package io.github.jisungbin.acnhapi.models.items.misc
 
 import com.google.gson.annotations.SerializedName
 import io.github.jisungbin.acnhapi.models.items.ItemWrapper
 
-data class Houseware(
+data class Misc(
     @field:SerializedName("body-title")
-    val bodyTitle: String,
+    val bodyTitle: Any,
 
     @field:SerializedName("kit-cost")
-    val kitCost: String,
+    val kitCost: Any,
 
     @field:SerializedName("pattern-title")
     val patternTitle: Any,
@@ -35,7 +35,7 @@ data class Houseware(
     val source: String,
 
     @field:SerializedName("hha-series")
-    val hhaSeries: Any,
+    val hhaSeries: String,
 
     @field:SerializedName("source-detail")
     val sourceDetail: String,
@@ -50,7 +50,7 @@ data class Houseware(
     val hhaConcept1: String,
 
     @field:SerializedName("hha-concept-2")
-    val hhaConcept2: Any,
+    val hhaConcept2: String,
 
     @field:SerializedName("internal-id")
     val internalId: Int,
@@ -59,10 +59,10 @@ data class Houseware(
     val canCustomizePattern: Boolean,
 
     @field:SerializedName("buy-price")
-    val buyPrice: Any,
+    val buyPrice: Int,
 
     @field:SerializedName("variant")
-    val variant: String,
+    val variant: Any,
 
     @field:SerializedName("hha-set")
     val hhaSet: Any,
@@ -80,7 +80,7 @@ data class Houseware(
     val canCustomizeBody: Boolean,
 
     @field:SerializedName("variant-id")
-    val variantId: String,
+    val variantId: Any,
 
     @field:SerializedName("image_uri")
     val imageUri: String,
