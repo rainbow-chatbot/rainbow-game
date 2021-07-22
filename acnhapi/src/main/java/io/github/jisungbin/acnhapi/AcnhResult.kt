@@ -9,7 +9,10 @@
 
 package io.github.jisungbin.acnhapi
 
-sealed class Result<out T> {
-    data class Success<out T>(val response: T) : Result<T>()
-    data class Error(val exception: Exception) : Result<Nothing>()
+import io.github.jisungbin.acnhapi.models.AcnhModelWrapper
+
+sealed class AcnhResult {
+    data class Success(val response: AcnhModelWrapper) : AcnhResult()
+    data class Error(val exception: Exception) : AcnhResult()
 }
+
