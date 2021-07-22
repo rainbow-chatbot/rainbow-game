@@ -10,6 +10,8 @@
 package io.github.jisungbin.acnhapi
 
 import io.github.jisungbin.acnhapi.client.AcnhModule
+import io.github.jisungbin.acnhapi.client.AcnhService
+import retrofit2.await
 
 class AcnhApi private constructor() {
 
@@ -17,7 +19,9 @@ class AcnhApi private constructor() {
         val instance by lazy { AcnhApi() }
     }
 
-    private val repo = AcnhModule.provideRepo()
+    private val repo = AcnhModule.get().create(AcnhService::class.java)
 
-    fun getVillagers() = repo.getVillagers()
+    suspend fun getVillagers() = runCatching {
+        repo.getVillagers().await().use { it.string() }
+    }
 }

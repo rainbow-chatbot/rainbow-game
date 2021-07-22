@@ -2,7 +2,7 @@
  * © 2021 지성빈. all rights reserved.
  * This project license is under the MIT.
  *
- * [Response.kt] created by Ji Sungbin on 21. 7. 22. 오후 11:47.
+ * [AcousticGuitarItem.kt] created by Ji Sungbin on 21. 7. 23. 오전 2:21.
  *
  * Please see project github repository license.
  */
@@ -100,7 +100,7 @@ data class Response(
     val isDIY: Boolean,
 
     @field:SerializedName("name")
-    val name: NameTranslations,
+    val name: Name,
 
     @field:SerializedName("file-name")
     val fileName: String

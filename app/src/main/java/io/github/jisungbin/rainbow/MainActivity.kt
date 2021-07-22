@@ -12,11 +12,10 @@ package io.github.jisungbin.rainbow
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.google.gson.Gson
 import io.github.jisungbin.acnhapi.AcnhApi
-import io.github.jisungbin.acnhapi.AcnhResult
 import io.github.jisungbin.acnhapi.models.villager.Villager
 import io.github.jisungbin.rainbow.databinding.ActivityMainBinding
-import kotlinx.coroutines.flow.collect
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -27,17 +26,10 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-
         lifecycleScope.launchWhenCreated {
-            AcnhApi.instance.getVillagers().collect { result ->
-                println(
-                    when (result) {
-                        is AcnhResult.Success -> (result.response as Villager).random()
-                        is AcnhResult.Error -> result.exception.message
-                    }
-                )
-            }
+            val villagers = AcnhApi.instance.getVillagers().getOrNull()
+            // println("String: $villagers")
+            println("Json: " + Gson().fromJson(villagers, Villager::class.java)!!.ant00)
         }
     }
 }

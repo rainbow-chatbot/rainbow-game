@@ -9,15 +9,14 @@
 
 package io.github.jisungbin.acnhapi.client
 
-import io.github.jisungbin.acnhapi.models.items.houseware.Houseware
-import io.github.jisungbin.acnhapi.models.villager.Villager
+import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET
 
 internal interface AcnhService {
     @GET("/v1/villagers")
-    fun getVillagers(): Call<Villager>
+    fun getVillagers(): Call<ResponseBody>
 
     @GET("/v1/houseware")
-    fun getHouseWare(): Call<Houseware>
+    fun getHouseWare(): Call<ResponseBody>
 }

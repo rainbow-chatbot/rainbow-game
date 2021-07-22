@@ -1,16 +1,6 @@
-/*
- * © 2021 지성빈. all rights reserved.
- * This project license is under the MIT.
- *
- * [Houseware.kt] created by Ji Sungbin on 21. 7. 22. 오후 11:50.
- *
- * Please see project github repository license.
- */
-
 package io.github.jisungbin.acnhapi.models.items.houseware
 
 import com.google.gson.annotations.SerializedName
-import io.github.jisungbin.acnhapi.models.AcnhModelWrapper
 
 data class Houseware(
     @field:SerializedName("sleigh")
@@ -1283,7 +1273,7 @@ data class Houseware(
     val cardboardChair: List<Response>,
 
     @field:SerializedName("?_Block")
-    val unknownBlock: List<Response>,
+    val unknonwBlock: List<Response>,
 
     @field:SerializedName("lecture-hall_desk")
     val lectureHallDesk: List<Response>,
@@ -1767,4 +1757,4 @@ data class Houseware(
 
     @field:SerializedName("flashy-flower_sign")
     val flashyFlowerSign: List<Response>
-) : AcnhModelWrapper
+)
