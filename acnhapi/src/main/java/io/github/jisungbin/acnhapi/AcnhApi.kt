@@ -10,6 +10,7 @@
 package io.github.jisungbin.acnhapi
 
 import com.google.gson.Gson
+import io.github.jisungbin.acnhapi.DataStore.villagers
 import io.github.jisungbin.acnhapi.client.AcnhModule
 import io.github.jisungbin.acnhapi.client.AcnhService
 import io.github.jisungbin.acnhapi.models.villager.Villagers
@@ -20,9 +21,12 @@ class AcnhApi {
     private val repo = AcnhModule.get().create(AcnhService::class.java)
 
     suspend fun getVillagers() = runCatching {
-        repo.getVillagers().await().use {
-            val json = it.string()
-            Gson().fromJson(json, Villagers::class.java)
-        }
+        if (villagers == null) {
+            repo.getVillagers().await().use {
+                val json = it.string()
+                villagers = Gson().fromJson(json, Villagers::class.java)
+                villagers
+            }
+        } else villagers!!
     }
 }
