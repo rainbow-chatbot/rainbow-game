@@ -45,10 +45,17 @@ class MainActivity : AppCompatActivity() {
                 notificationImage: Bitmap?,
                 bot: KakaoBot,
             ) {
+                fun reply(message: String) {
+                    bot.reply(action, message)
+                }
+
+                println(listOf(sender, _message, room))
+
+                if (_message == Command.CheckBotRunning) {
+                    reply(listOf("살았다!", "죽었다!").random())
+                }
+
                 if (_message.startsWith(Command.Prefix)) {
-                    fun reply(message: String) {
-                        bot.reply(action, message)
-                    }
 
                     val message = _message.substring(1)
                     lifecycleScope.launchWhenCreated {

@@ -12,4 +12,5 @@ package io.github.jisungbin.rainbow.util.config
 object Command {
     const val Prefix = "."
     const val GetNewCharacter = "캐릭터뽑기"
+    const val CheckBotRunning = "살았니"
 }
