@@ -1,8 +1,7 @@
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-    id 'kotlin-kapt'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -42,5 +41,5 @@ dependencies {
     implementation 'androidx.room:room-ktx:2.3.0'
     implementation project(":acnhapi")
 
-    kapt 'androidx.room:room-compiler:2.3.0'
+     kapt 'androidx.room:room-compiler:2.3.0'
 }
