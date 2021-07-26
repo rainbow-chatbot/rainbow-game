@@ -14,8 +14,10 @@ import android.graphics.Bitmap
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import io.github.jisungbin.rainbow.database.DatabaseStore
+import io.github.jisungbin.rainbow.database.RainbowDatabase
 import io.github.jisungbin.rainbow.databinding.ActivityMainBinding
-import io.github.jisungbin.rainbow.user.getNewUser
+import io.github.jisungbin.rainbow.function.createNewUser
 import io.github.jisungbin.rainbow.util.config.Command
 import me.sungbin.kakaotalkbotbasemodule.library.KakaoBot
 import me.sungbin.kakaotalkbotbasemodule.library.NotificationListener
@@ -31,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val database = RainbowDatabase.instance(applicationContext).userDao()
         BatteryUtil.requestIgnoreBatteryOptimization(applicationContext)
         NotificationUtil.requestListenerPermission(applicationContext)
 
@@ -56,20 +59,39 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 if (_message.startsWith(Command.Prefix)) {
-
                     val message = _message.substring(1)
                     lifecycleScope.launchWhenCreated {
-                        if (message == Command.GetNewCharacter) {
-                            val user = getNewUser()
+                        if (message == Command.Login) {
+                            var user = DatabaseStore.getUserByNameOrNull(sender)
+                            if (user == null) {
+                                user = database.getUserFromNameOrNull(sender)
+                                if (user == null) {
+                                    user = createNewUser(sender)
+                                    reply(
+                                        """
+                                        $sender 님의 기존 캐릭터가 없어서 새로 생성했어요!
+                                        
+                                        [시작 캐릭터 정보]
+                                        이름: ${user.villager.name.nameKRko}
+                                        아이콘: ${user.villager.iconUri}
+                                        성별: ${if (user.villager.gender == "Female") "여성" else "남성"}
+                                        """.trimIndent()
+                                    )
+                                }
+                            }
+                        }
+
+                        if (message == Command.MyCharacter) {
+                            val user = createNewUser()
                             val character = user.villager
                             val item = user.items.first()
 
-                            val header = "[${sender}님 시작 캐릭터 정보]"
+                            val header = "[${sender}님 캐릭터 정보]"
 
                             val characterInfo = """
                                 캐릭터 이름: ${character.name.nameKRko}
                                 캐릭터 아이콘: ${character.iconUri}
-                                캐릭터 전신샷: ${character.imageUri}
+                                캐릭터 전신샷: ${if (user.takePicture) character.imageUri else "먼저 사진관에서 사진을 찍어주세요."}
                                 캐릭터 성별: ${if (character.gender == "Female") "여성" else "남성"}
                                 캐릭터 말버릇: ${character.catchTranslations.catchKRko}
                                 캐릭터 성격: ${character.personality}
@@ -79,14 +101,14 @@ class MainActivity : AppCompatActivity() {
                                 캐릭터 명언: ${character.saying}
                             """.trimIndent()
 
-                            val itemInfo = """
-                                시작 아이템 이름: ${item.name.nameKRko}
-                                시작 아이템 사진: ${item.imageUri}
-                                시작 아이템 구매가: ${item.buyPrice ?: "구매할수 없는 아이템"}
-                                시작 아이템 판매가: ${item.sellPrice}
-                            """.trimIndent()
+                            /* val itemInfo = """
+                                 시작 아이템 이름: ${item.name.nameKRko}
+                                 시작 아이템 사진: ${item.imageUri}
+                                 시작 아이템 구매가: ${item.buyPrice ?: "구매할수 없는 아이템"}
+                                 시작 아이템 판매가: ${item.sellPrice}
+                             """.trimIndent()*/
 
-                            val content = header + "\n\n\n" + characterInfo + "\n\n" + itemInfo
+                            val content = header + "\n\n\n" + characterInfo/* + "\n\n" + itemInfo*/
                             reply(content)
                         }
                     }

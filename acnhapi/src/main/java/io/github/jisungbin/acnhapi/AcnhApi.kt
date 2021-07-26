@@ -21,11 +21,11 @@ import io.github.jisungbin.acnhapi.models.villager.Villagers
 import retrofit2.await
 
 object AcnhApi {
-    private val repo = AcnhModule.get().create(AcnhService::class.java)
+    private val client = AcnhModule.get().create(AcnhService::class.java)
 
     suspend fun getVillagers() = runCatching {
         if (villagers == null) {
-            repo.getVillagers().await().use {
+            client.getVillagers().await().use {
                 val json = it.string()
                 villagers = Gson().fromJson(json, Villagers::class.java)
                 villagers
@@ -35,19 +35,19 @@ object AcnhApi {
 
     suspend fun getItems() = runCatching {
         if (items.isEmpty()) {
-            repo.getHouseWare().await().use {
+            client.getHouseWare().await().use {
                 val json = it.string()
                 val housewares = Gson().fromJson(json, Housewares::class.java)
                 items.add(housewares)
             }
 
-            repo.getMiscs().await().use {
+            client.getMiscs().await().use {
                 val json = it.string()
                 val miscs = Gson().fromJson(json, Miscs::class.java)
                 items.add(miscs)
             }
 
-            repo.getWallmounted().await().use {
+            client.getWallmounted().await().use {
                 val json = it.string()
                 val wallmounteds = Gson().fromJson(json, Wallmounteds::class.java)
                 items.add(wallmounteds)
