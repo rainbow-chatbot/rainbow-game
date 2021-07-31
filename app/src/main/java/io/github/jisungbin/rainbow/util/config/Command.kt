@@ -10,6 +10,7 @@
 package io.github.jisungbin.rainbow.util.config
 
 object Command {
+    const val ServiceName = "모여봐요 포켓몬숲"
     const val Prefix = "."
     const val Login = "로그인"
     const val MyCharacter = "내캐릭터"

@@ -18,8 +18,8 @@ internal abstract class AcnhApiLauncher : ContentProvider() {
     override fun onCreate(): Boolean {
         CoroutineScope(Dispatchers.IO).launch {
             AcnhApi.run {
-                getItems()
-                getVillagers()
+                println(getItems())
+                println(getVillagers())
             }
         }
         return true

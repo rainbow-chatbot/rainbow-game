@@ -20,7 +20,7 @@ package io.github.jisungbin.rainbow.database.user
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import io.github.jisungbin.acnhapi.models.items.common.Item
+import io.github.jisungbin.acnhapi.models.items.Item
 import io.github.jisungbin.acnhapi.models.villager.Villager
 
 @Entity
@@ -28,6 +28,7 @@ data class User(
     @PrimaryKey(autoGenerate = true) var id: Int = 0,
     val name: String,
     var villager: Villager,
+    var pocketmons: List<> = listOf(),
     var items: List<Item> = listOf(),
     var money: Int = 0,
     var takePicture: Boolean = false

@@ -9,57 +9,57 @@
 
 package io.github.jisungbin.acnhapi.models.villager
 
-import com.google.gson.annotations.SerializedName
+import com.beust.klaxon.Json
 
 data class Villager(
-    @field:SerializedName("birthday")
+    @Json(name = "birthday")
     val birthday: String,
 
-    @field:SerializedName("gender")
+    @Json(name = "gender")
     val gender: String,
 
-    @field:SerializedName("catch-translations")
+    @Json(name = "catch-translations")
     val catchTranslations: CatchTranslations,
 
-    @field:SerializedName("image_uri")
+    @Json(name = "image_uri")
     val imageUri: String,
 
-    @field:SerializedName("icon_uri")
+    @Json(name = "icon_uri")
     val iconUri: String,
 
-    @field:SerializedName("birthday-string")
+    @Json(name = "birthday-string")
     val birthdayString: String,
 
-    @field:SerializedName("catch-phrase")
+    @Json(name = "catch-phrase")
     val catchPhrase: String,
 
-    @field:SerializedName("personality")
+    @Json(name = "personality")
     val personality: String,
 
-    @field:SerializedName("species")
+    @Json(name = "species")
     val species: String,
 
-    @field:SerializedName("subtype")
+    @Json(name = "subtype")
     val subtype: String,
 
-    @field:SerializedName("name")
+    @Json(name = "name")
     val name: NameTranslations,
 
-    @field:SerializedName("id")
+    @Json(name = "id")
     val id: Int,
 
-    @field:SerializedName("file-name")
+    @Json(name = "file-name")
     val fileName: String,
 
-    @field:SerializedName("text-color")
+    @Json(name = "text-color")
     val textColor: String,
 
-    @field:SerializedName("saying")
+    @Json(name = "saying")
     val saying: String,
 
-    @field:SerializedName("bubble-color")
+    @Json(name = "bubble-color")
     val bubbleColor: String,
 
-    @field:SerializedName("hobby")
+    @Json(name = "hobby")
     val hobby: String
 )

@@ -9,48 +9,48 @@
 
 package io.github.jisungbin.acnhapi.models.villager
 
-import com.google.gson.annotations.SerializedName
+import com.beust.klaxon.Json
 
 data class CatchTranslations(
-    @field:SerializedName("catch-KRko")
+    @Json(name = "catch-KRko")
     val catchKRko: String,
 
-    @field:SerializedName("catch-EUes")
+    @Json(name = "catch-EUes")
     val catchEUes: String,
 
-    @field:SerializedName("catch-EUen")
+    @Json(name = "catch-EUen")
     val catchEUen: String,
 
-    @field:SerializedName("catch-JPja")
+    @Json(name = "catch-JPja")
     val catchJPja: String,
 
-    @field:SerializedName("catch-EUit")
+    @Json(name = "catch-EUit")
     val catchEUit: String,
 
-    @field:SerializedName("catch-EUfr")
+    @Json(name = "catch-EUfr")
     val catchEUfr: String,
 
-    @field:SerializedName("catch-EUnl")
+    @Json(name = "catch-EUnl")
     val catchEUnl: String,
 
-    @field:SerializedName("catch-USen")
+    @Json(name = "catch-USen")
     val catchUSen: String,
 
-    @field:SerializedName("catch-EUde")
+    @Json(name = "catch-EUde")
     val catchEUde: String,
 
-    @field:SerializedName("catch-USfr")
+    @Json(name = "catch-USfr")
     val catchUSfr: String,
 
-    @field:SerializedName("catch-CNzh")
+    @Json(name = "catch-CNzh")
     val catchCNzh: String,
 
-    @field:SerializedName("catch-TWzh")
+    @Json(name = "catch-TWzh")
     val catchTWzh: String,
 
-    @field:SerializedName("catch-EUru")
+    @Json(name = "catch-EUru")
     val catchEUru: String,
 
-    @field:SerializedName("catch-USes")
+    @Json(name = "catch-USes")
     val catchUSes: String
 )

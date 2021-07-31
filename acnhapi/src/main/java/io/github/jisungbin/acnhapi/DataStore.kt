@@ -9,10 +9,10 @@
 
 package io.github.jisungbin.acnhapi
 
-import io.github.jisungbin.acnhapi.models.items.common.ItemWrapper
-import io.github.jisungbin.acnhapi.models.villager.Villagers
+import io.github.jisungbin.acnhapi.models.items.Item
+import io.github.jisungbin.acnhapi.models.villager.Villager
 
 internal object DataStore {
-    var villagers: Villagers? = null
-    var items = mutableListOf<ItemWrapper>()
+    var villagers = mutableListOf<Villager>()
+    var items = mutableListOf<Item>()
 }

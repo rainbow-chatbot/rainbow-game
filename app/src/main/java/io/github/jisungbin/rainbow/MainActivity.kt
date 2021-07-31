@@ -70,6 +70,7 @@ class MainActivity : AppCompatActivity() {
                                     reply(
                                         """
                                         $sender 님의 기존 캐릭터가 없어서 새로 생성했어요!
+                                        "${Command.ServiceName}" 에 오신걸 환영합니다!! :)
                                         
                                         [시작 캐릭터 정보]
                                         이름: ${user.villager.name.nameKRko}
@@ -77,14 +78,14 @@ class MainActivity : AppCompatActivity() {
                                         성별: ${if (user.villager.gender == "Female") "여성" else "남성"}
                                         """.trimIndent()
                                     )
+                                    database.update(user)
                                 }
                             }
                         }
 
                         if (message == Command.MyCharacter) {
-                            val user = createNewUser()
+                            val user = createNewUser(sender)
                             val character = user.villager
-                            val item = user.items.first()
 
                             val header = "[${sender}님 캐릭터 정보]"
 
@@ -101,14 +102,7 @@ class MainActivity : AppCompatActivity() {
                                 캐릭터 명언: ${character.saying}
                             """.trimIndent()
 
-                            /* val itemInfo = """
-                                 시작 아이템 이름: ${item.name.nameKRko}
-                                 시작 아이템 사진: ${item.imageUri}
-                                 시작 아이템 구매가: ${item.buyPrice ?: "구매할수 없는 아이템"}
-                                 시작 아이템 판매가: ${item.sellPrice}
-                             """.trimIndent()*/
-
-                            val content = header + "\n\n\n" + characterInfo/* + "\n\n" + itemInfo*/
+                            val content = header + "\n\n\n" + characterInfo
                             reply(content)
                         }
                     }

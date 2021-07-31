@@ -9,48 +9,48 @@
 
 package io.github.jisungbin.acnhapi.models.common
 
-import com.google.gson.annotations.SerializedName
+import com.beust.klaxon.Json
 
 data class NameTranslations(
-    @field:SerializedName("name-EUru")
+    @Json(name = "name-EUru")
     val nameEUru: String,
 
-    @field:SerializedName("name-EUnl")
+    @Json(name = "name-EUnl")
     val nameEUnl: String,
 
-    @field:SerializedName("name-EUde")
+    @Json(name = "name-EUde")
     val nameEUde: String,
 
-    @field:SerializedName("name-EUit")
+    @Json(name = "name-EUit")
     val nameEUit: String,
 
-    @field:SerializedName("name-JPja")
+    @Json(name = "name-JPja")
     val nameJPja: String,
 
-    @field:SerializedName("name-EUfr")
+    @Json(name = "name-EUfr")
     val nameEUfr: String,
 
-    @field:SerializedName("name-EUen")
+    @Json(name = "name-EUen")
     val nameEUen: String,
 
-    @field:SerializedName("name-CNzh")
+    @Json(name = "name-CNzh")
     val nameCNzh: String,
 
-    @field:SerializedName("name-TWzh")
+    @Json(name = "name-TWzh")
     val nameTWzh: String,
 
-    @field:SerializedName("name-USfr")
+    @Json(name = "name-USfr")
     val nameUSfr: String,
 
-    @field:SerializedName("name-USes")
+    @Json(name = "name-USes")
     val nameUSes: String,
 
-    @field:SerializedName("name-USen")
+    @Json(name = "name-USen")
     val nameUSen: String,
 
-    @field:SerializedName("name-EUes")
+    @Json(name = "name-EUes")
     val nameEUes: String,
 
-    @field:SerializedName("name-KRko")
+    @Json(name = "name-KRko")
     val nameKRko: String
 )
