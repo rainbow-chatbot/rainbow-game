@@ -13,9 +13,9 @@ import io.github.jisungbin.acnhapi.AcnhApi
 import io.github.jisungbin.rainbow.database.user.User
 
 suspend fun createNewUser(sender: String) = User(
-    villager = AcnhApi.getVillagers().random(),
+    villager = AcnhApi.getVillagers().getOrNull()!!.random(),
     items = listOf(getRandomItem()),
     name = sender
 )
 
-suspend fun getRandomItem() = AcnhApi.getItems().random()
+suspend fun getRandomItem() = AcnhApi.getItems().getOrNull()!!.random()

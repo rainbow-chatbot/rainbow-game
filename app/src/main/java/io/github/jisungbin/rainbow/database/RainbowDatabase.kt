@@ -13,9 +13,11 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.TypeConverters
 import io.github.jisungbin.rainbow.database.user.User
 import io.github.jisungbin.rainbow.database.user.UserDao
 
+@TypeConverters(io.github.jisungbin.rainbow.database.TypeConverters::class)
 @Database(entities = [User::class], version = 1)
 abstract class RainbowDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao

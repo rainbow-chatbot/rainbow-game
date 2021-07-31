@@ -23,6 +23,6 @@ interface UserDao {
     @Delete
     suspend fun delete(user: User)
 
-    @Query("SELECT * FROM User WHERE name LIKE :sender")
+    @Query("SELECT * FROM User WHERE name = :sender")
     suspend fun getUserFromNameOrNull(sender: String): User?
 }

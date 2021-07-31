@@ -11,32 +11,34 @@ package io.github.jisungbin.acnhapi
 
 import com.beust.klaxon.JsonReader
 import com.beust.klaxon.Klaxon
+import com.google.gson.Gson
 import io.github.jisungbin.acnhapi.DataStore.items
 import io.github.jisungbin.acnhapi.DataStore.villagers
 import io.github.jisungbin.acnhapi.client.AcnhModule
 import io.github.jisungbin.acnhapi.client.AcnhService
+import io.github.jisungbin.acnhapi.models.villager.Villager
 import java.io.StringReader
+import org.json.JSONObject
 import retrofit2.await
 
 object AcnhApi {
     private val client = AcnhModule.get().create(AcnhService::class.java)
 
     suspend fun getVillagers() = runCatching {
-        val klaxon = Klaxon()
-
         if (villagers.isEmpty()) {
             client.getVillagers().await().use { json ->
-                JsonReader(StringReader(json.string())).use { reader ->
-                    reader.beginObject {
-                        while (reader.hasNext()) {
-                            villagers.add(klaxon.parse(reader)!!)
-                        }
-                    }
+                val jsonObject = JSONObject(json.string())
+                jsonObject.keys().forEach { key -> // 이런식으로 하면 작동 함
+                    val element = Gson().fromJson(
+                        jsonObject.getJSONObject(key).toString(),
+                        Villager::class.java
+                    )
+                    villagers.add(element)
                 }
-                villagers
+                villagers.toList()
             }
         } else villagers
-    }.getOrNull()!!
+    }
 
     suspend fun getItems() = runCatching {
         val klaxon = Klaxon()
@@ -74,5 +76,5 @@ object AcnhApi {
 
             items
         } else items
-    }.getOrNull()!!
+    }
 }
